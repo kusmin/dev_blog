@@ -5,6 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/es
+  label: Paginas ES
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/en
+  label: Paginas EN
+  create: all
+  match: "**/*"
+- type: directory
   path: content/pt
   label: Paginas BR
   create: all
