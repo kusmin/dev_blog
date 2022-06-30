@@ -1,10 +1,10 @@
 
 <div class="contact-form">
-  <form class="form-style" method="POST" action="{{ .Site.Params.contactFormAction }}" data-toggle="validator">
+  <form class="form-style kwes-form" method="POST"  action="{{ .Site.Params.contactFormAction }}" data-toggle="validator">
     <ul>
       <li class="teste">
-        <label for="username">{{ i18n "name" }}</label>
-        <input class="field-style field-full" type="text" name="username" id="username" placeholder="{{ i18n "name" }}" required>
+        <label for="name">{{ i18n "name" }}</label>
+        <input class="field-style field-full" type="text" name="name" id="username" rules="required|max:255" placeholder="{{ i18n "name" }}" required>
       </li>
       <li>
         <label for="email">{{ i18n "email" }}</label>
