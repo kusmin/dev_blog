@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>text on Website of Jane Doe</title>
-    <link>https://example.com/tags/text/</link>
-    <description>Recent content in text on Website of Jane Doe</description>
+    <title>text on Blog do programador apaixonado</title>
+    <link>https://kusmin.github.io/blog_dev/tags/text/</link>
+    <description>Recent content in text on Blog do programador apaixonado</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kusmin.github.io/blog_dev/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Text</title>
-      <link>https://example.com/english/post/placeholder-text/</link>
+      <link>https://kusmin.github.io/blog_dev/english/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/english/post/placeholder-text/</guid>
+      <guid>https://kusmin.github.io/blog_dev/english/post/placeholder-text/</guid>
       
         <description>Lorem Ipsum Dolor Si Amet</description>
       

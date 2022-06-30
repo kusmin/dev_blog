@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Meu blog on Website of Jane Doe</title>
-    <link>https://example.com/english/portfolio/</link>
-    <description>Recent content in Meu blog on Website of Jane Doe</description>
+    <title>Meu blog on Blog do programador apaixonado</title>
+    <link>https://kusmin.github.io/blog_dev/english/portfolio/</link>
+    <description>Recent content in Meu blog on Blog do programador apaixonado</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language><atom:link href="https://example.com/english/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language><atom:link href="https://kusmin.github.io/blog_dev/english/portfolio/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

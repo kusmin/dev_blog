@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>redirectUrl on Website of Jane Doe</title>
-    <link>https://example.com/tags/redirecturl/</link>
-    <description>Recent content in redirectUrl on Website of Jane Doe</description>
+    <title>redirectUrl on Blog do programador apaixonado</title>
+    <link>https://kusmin.github.io/blog_dev/tags/redirecturl/</link>
+    <description>Recent content in redirectUrl on Blog do programador apaixonado</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/redirecturl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kusmin.github.io/blog_dev/tags/redirecturl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redirect</title>
-      <link>https://example.com/english/post/redirect/</link>
+      <link>https://kusmin.github.io/blog_dev/english/post/redirect/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/english/post/redirect/</guid>
+      <guid>https://kusmin.github.io/blog_dev/english/post/redirect/</guid>
       
         <description>Usage of redirectUrl</description>
       
