@@ -1,0 +1,22 @@
+profilePicture = "images/imagem.jpeg"
+gtagId="G-RG5L7KE8CQ"
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+
+[[socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/kusmin"
+
+[[socialIcons]]
+icon = "fab fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/renanlagee/"
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:renan.lagee@gmail.com"
+

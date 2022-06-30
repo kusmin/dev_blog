@@ -1,11 +1,11 @@
 +++
-aliases = ["certifications"]
-author = "Renan Ribeiro Lage"
-date = 2022-04-10T00:00:00Z
-description = "Hugo Certifications"
 title = "Certifications"
-
+description = "Hugo Certifications"
+date = "2022-04-10"
+aliases = ["certifications"]
+author = "Hugo Authors"
 +++
+
 ## 3 Best Hugo Courses, Training, Classes & Tutorials Online
 
 1. “Migrate from WordPress to Hugo, Step by Step” Our Best Pick 2022

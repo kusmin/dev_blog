@@ -1,0 +1,21 @@
+
+[pt]
+    title = "Blog de programação"
+    weight = 1
+    LanguageName = "pt-br"
+    contentDir = "content/pt"
+    description = 'Notícias e informações sobre tecnologia e programação'
+
+[en]
+    title = "programming blog"
+    weight = 1
+    LanguageName = "en"
+    contentDir = "content/en"
+    description = 'Technology and programming news and information'
+
+[es]
+    title = "blog de programacion"
+    weight = 1
+    LanguageName = "es"
+    contentDir = "content/es"
+    description = 'Noticias e información sobre tecnología y programación'        

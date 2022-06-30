@@ -1,9 +1,10 @@
 baseURL = "https://kusmin.github.io/blog_dev/"
 languageCode = "pt-br"
 DefaultContentLanguage = "pt"
-title = "Blog do programador apaixonado"
+title = "Blog do programador"
+defaultContentLanguageInSubdir = true
 
-
+isMultiLingual = true
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
@@ -40,76 +41,10 @@ pygmentsCodefencesGuessSyntax = true
   name = 'tags'
   weight = 80
 
-
-[pt]
-title = "Meu blog"
-weight = 1
-LanguageName = "PT"
-contentDir = "content"
-description = 'Meu blog descrição'
-
-
-
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
-
-  [[menu.main]]
-  name = "Portfolio"
-  weight = 300
-  identifier = "portfolio"
-  url = "/portfolio/"
-
-  [[menu.main]]
-  name = "About"
-  weight = 400
-  identifier = "about"
-  url = "/about/"
-
-  [[menu.main]]
-  name = "Accomplishments"
-  weight = 500
-  identifier = "accomplishments"
-
-  [[menu.main]]
-  name = "Awards"
-  weight = 510
-  identifier = "awards"
-  url = "/awards/"
-  parent = "accomplishments"  
-
-  [[menu.main]]
-  name = "Certifications"
-  weight = 520
-  identifier = "certifications"
-  url = "/certifications/"
-  parent = "accomplishments"
-
-  [[menu.main]]
-  name = "Contato"
-  weight = 600
-  identifier = "contact"
-  url = "/contact/"
-
-  [[menu.footer]]
-  name = "imprint"
-  weight = 1
-  identifier = "imprint"
-  url = "/imprint/"
-
-
-title = "I'm Jane Doe"
-author = "Jane Doe"
+# title = "I'm Jane Doe"
+author = "Renan Ribeiro Lage"
 #copyright = "2020-2021"
-description = "Call me Jane"
+# description = "Call me Jane"
 
 keywords = ""
 favicon = "favicons/"
@@ -118,7 +53,7 @@ customCss = []
 # example ["js/custom.js"]
 customJs = [] 
 mainSections = ["post"]
-images = ["images/site-feature-image.png"]
+images = []
 doNotLoadAnimations = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
@@ -159,31 +94,6 @@ reversepagetitle = true # When set to 'true', the Window Title will be reversed 
 [math]
 enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
 use = "katex"  # options: "katex", "mathjax". default is "katex".
-
-## Social links
-# use 'fab' when brand icons, use 'fas' when standard solid icons.
-[[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/renan-ribeiro-b1368872/"
-
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/kusmin"
-
-[[params.socialIcons]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/renanlagee/"
-
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:renan.lagee@gmail.com"
-
-[params]
-profilePicture = "images/imagem.jpeg"
 
 [mermaid]
 # enable = true    
