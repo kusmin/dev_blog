@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 title: 'The Figure Shortcode'
-redirectUrl = "https://gohugo.io"
+redirectUrl : "https://gohugo.io"
 date: 2021-03-13T21:47:41+00:00
 draft: false
 tags:
@@ -10,11 +10,11 @@ tags:
 series:
   - series-setup
 math: true
-categories = [
+categories : [
     "themes",
     "syntax",
 ]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
-thumbnail= "images/landscape.jpg"
+series : ["Themes Guide"]
+aliases : ["migrate-from-jekyl"]
+thumbnail: "images/landscape.jpg"
 ---
