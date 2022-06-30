@@ -32,3 +32,5 @@ fields:
 - type: file
   name: thumbnail
   label: thumbnail
+pages:
+- content/pt/post/sites-dinamicos-x-sites-estaticos.md
