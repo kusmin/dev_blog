@@ -1,4 +1,4 @@
-baseURL = "https://kusmin.github.io/blog_dev/"
+baseURL = "http://updevblog.com/"
 languageCode = "pt-br"
 DefaultContentLanguage = "pt"
 title = "Blog do programador"
@@ -43,11 +43,9 @@ pygmentsCodefencesGuessSyntax = true
 
 # title = "I'm Jane Doe"
 author = "Renan Ribeiro Lage"
-#copyright = "2020-2021"
-# description = "Call me Jane"
 
 keywords = ""
-favicon = "favicons/"
+
 # example ["css/custom.css"]
 customCss = []
 # example ["js/custom.js"]

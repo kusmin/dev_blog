@@ -42,7 +42,7 @@
     # parent = "accomplishments"
 
     [[main]]
-    name = "Contato"
+    name = "Contacto"
     weight = 600
     identifier = "contact"
     url = "/es/contact/"
