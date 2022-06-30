@@ -5,18 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
-  path: content/post
-  label: Post
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/portfolio
-  label: Portfolio
+  path: content/pt
+  label: Paginas BR
   create: all
   match: "**/*"
 upload_dir: static/uploads
