@@ -1,7 +1,7 @@
 +++
-author = "Hugo Authors"
-+++
+author = "Renan Ribeiro Lage"
 
++++
 <!--
 This file is left intentionally empty by default to be backwards compatible with the initial theme setup.
 
