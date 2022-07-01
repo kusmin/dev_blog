@@ -33,4 +33,5 @@ fields:
   name: thumbnail
   label: thumbnail
 pages:
+- content/pt/post/gerenciadores-de-versao-sdkman.md
 - content/pt/post/sites-dinamicos-x-sites-estaticos.md
