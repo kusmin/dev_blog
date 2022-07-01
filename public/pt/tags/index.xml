@@ -6,145 +6,101 @@
     <description>Recent content in Tags on Blog de programação</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 18 Mar 2022 21:47:41 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>demo</title>
-      <link>http://updevblog.com/pt/tags/demo/</link>
-      <pubDate>Fri, 18 Mar 2022 21:47:41 +0000</pubDate>
+      <title>java</title>
+      <link>http://updevblog.com/pt/tags/java/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/demo/</guid>
+      <guid>http://updevblog.com/pt/tags/java/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>shortcode</title>
-      <link>http://updevblog.com/pt/tags/shortcode/</link>
-      <pubDate>Fri, 18 Mar 2022 21:47:41 +0000</pubDate>
+      <title>jdk</title>
+      <link>http://updevblog.com/pt/tags/jdk/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/shortcode/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>redirect</title>
-      <link>http://updevblog.com/pt/tags/redirect/</link>
-      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://updevblog.com/pt/tags/redirect/</guid>
+      <guid>http://updevblog.com/pt/tags/jdk/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>redirectUrl</title>
-      <link>http://updevblog.com/pt/tags/redirecturl/</link>
-      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      <title>jvm</title>
+      <link>http://updevblog.com/pt/tags/jvm/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/redirecturl/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>http://updevblog.com/pt/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://updevblog.com/pt/tags/css/</guid>
+      <guid>http://updevblog.com/pt/tags/jvm/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>html</title>
-      <link>http://updevblog.com/pt/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>opensource</title>
+      <link>http://updevblog.com/pt/tags/opensource/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/html/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>http://updevblog.com/pt/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://updevblog.com/pt/tags/markdown/</guid>
+      <guid>http://updevblog.com/pt/tags/opensource/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>privacy</title>
-      <link>http://updevblog.com/pt/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>sdkman</title>
+      <link>http://updevblog.com/pt/tags/sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/privacy/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>http://updevblog.com/pt/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://updevblog.com/pt/tags/shortcodes/</guid>
+      <guid>http://updevblog.com/pt/tags/sdkman/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>text</title>
-      <link>http://updevblog.com/pt/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>versionamento</title>
+      <link>http://updevblog.com/pt/tags/versionamento/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/text/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>emoji</title>
-      <link>http://updevblog.com/pt/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://updevblog.com/pt/tags/emoji/</guid>
+      <guid>http://updevblog.com/pt/tags/versionamento/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>thumbnail</title>
-      <link>http://updevblog.com/pt/tags/thumbnail/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <title>sites dinamicos</title>
+      <link>http://updevblog.com/pt/tags/sites-dinamicos/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/thumbnail/</guid>
+      <guid>http://updevblog.com/pt/tags/sites-dinamicos/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>index</title>
-      <link>http://updevblog.com/pt/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>sites estaticos</title>
+      <link>http://updevblog.com/pt/tags/sites-estaticos/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/pt/tags/index/</guid>
+      <guid>http://updevblog.com/pt/tags/sites-estaticos/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>http://updevblog.com/pt/tags/web/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/tags/web/</guid>
       
         <description></description>
       

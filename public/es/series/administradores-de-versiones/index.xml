@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Administradores de versiones on blog de programacion</title>
+    <link>http://updevblog.com/es/series/administradores-de-versiones/</link>
+    <description>Recent content in Administradores de versiones on blog de programacion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/series/administradores-de-versiones/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administradores de versiones: Sdkman</title>
+      <link>http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/</guid>
+      
+        <description>Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

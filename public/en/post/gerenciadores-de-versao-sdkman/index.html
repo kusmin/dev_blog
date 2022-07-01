@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+        |
+        Version managers: Sdkman
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.101.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Technology and programming news and information"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/faviconsfavicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/faviconsapple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/faviconsapple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/faviconsapple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/faviconsapple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/faviconsfavicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/faviconsfavicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/faviconsfavicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/en/post/gerenciadores-de-versao-sdkman/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Version managers: Sdkman"/>
+<meta name="twitter:description" content="Today we are going to start our first series here on the site, which will be about language version managers."/>
+
+
+
+  
+  <meta property="og:title" content="Version managers: Sdkman" />
+<meta property="og:description" content="Today we are going to start our first series here on the site, which will be about language version managers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/en/post/gerenciadores-de-versao-sdkman/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-01T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-01T03:00:00+00:00" /><meta property="og:site_name" content="programming blog" />
+
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Version managers: Sdkman",
+        "headline": "Version managers: Sdkman",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Today we are going to start our first series here on the site, which will be about language version managers.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/en\/post\/gerenciadores-de-versao-sdkman\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-01T03:00:00.00Z",
+        "datePublished": "2022-07-01T03:00:00.00Z",
+        "dateModified": "2022-07-01T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/faviconsfavicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/en\/post\/gerenciadores-de-versao-sdkman\/",
+        "wordCount" : "555",
+        "genre" : [ 
+      
+      "sdk"
+
+    
+      
+        ,
+
+      
+      "sdkman"
+
+    
+      
+        ,
+
+      
+      "java"
+
+    
+      
+        ,
+
+      
+      "gerenciadores de versão"
+
+    
+      
+        ,
+
+      
+      "programação"
+
+    ],
+        "keywords" : [ 
+      
+      "jvm"
+
+    
+      
+        ,
+
+      
+      "opensource"
+
+    
+      
+        ,
+
+      
+      "jdk"
+
+    
+      
+        ,
+
+      
+      "java"
+
+    
+      
+        ,
+
+      
+      "sdkman"
+
+    
+      
+        ,
+
+      
+      "versionamento"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/en">programming blog</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Technology and programming news and information</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/contact/"
+              
+              title=""
+              >Contact</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >en <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/es/post/gerenciadores-de-versao-sdkman/" title="es"
+                    ><span
+                      
+                      aria-label="es"
+                      >es</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/gerenciadores-de-versao-sdkman/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/uploads/images.png" alt="Thumbnail image" />
+      </div>
+
+    
+    <div class="post__content">
+      <h1>Version Managers: Sdkman</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Fri, Jul 1, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3-minute read</span>
+          </li>
+        </ul>
+
+      <p>Today we are going to start our first series here on the site, which will be about language version managers. If you&rsquo;ve been programming for some time, you must have gone through the little nightmare that is having a version of your jdk or your python interpreter installed on your machine, for example, and when running some other program I discovered that your version is incompatible with the program. Then you need to uninstall your version, install the new one, often change the environment variables and so on. What if you need the old version? Do it all over again&hellip;.</p>
+<p>Fortunately, nowadays almost every language has some version control tool that does this whole process for you and allows you to have several versions installed on your machine, and easily switch between them.</p>
+<p>And to start this series let&rsquo;s talk about SDKMAN, which is the Java world manager.</p>
+<h2 id="sdkman">SDKMAN</h2>
+<p>Accessing the official website <a href="https://sdkman.io/" title="https://sdkman.io/">https://sdkman.io/</a>, we can see a brief introduction in which they describe themselves as a software development kit manager. Now on to the installation!</p>
+<h5 id="installation">Installation</h5>
+<p>On the Sdkman page in the top menu you will see an option called install <a href="https://sdkman.io/install" title="https://sdkman.io/install">https://sdkman.io/install</a>, entering the page you will have instructions on how to install depending on your operating system, as Sdkman is cross-platform and can be installed on the most diverse operating systems. In this example we will install it on Linux.</p>
+<p>Following the commands can themselves described:</p>
+<pre><code>$ curl -s &quot;https://get.sdkman.io&quot; | bash
+</code></pre>
+<p>With this command, sdkman is already installed on your machine, now we need to set an environment variable for Linux, with the location of the sdkman script file</p>
+<pre><code>$ source &quot;$HOME/.sdkman/bin/sdkman-init.sh&quot;
+</code></pre>
+<p>Now just check the version.</p>
+<pre><code>$ sdk version
+</code></pre>
+<p><img src="/uploads/sdkversion.png" alt=""></p>
+<p>Maybe your version is different from this tutorial, no problem, they update from time to time.</p>
+<h5 id="using-o-sdkman">Using o Sdkman</h5>
+<p>Now with Sdkman installed, let&rsquo;s start using it. A useful command in Linux is help, we will use it here.</p>
+<pre><code>sdk help
+</code></pre>
+<p><img src="/uploads/sdkhelp.png" alt=""></p>
+<p>On this screen we can see the main commands of sdkman, and how to use them, for example, we want to see a list of all available Java versions&hellip;</p>
+<pre><code>sdk list java
+</code></pre>
+<p>A list of java versions available for installation will appear.</p>
+<p><img src="/uploads/listjava.png" alt=""></p>
+<p>Clicking the down arrow or scrolling the mouse you can see more versions, to exit the screen click &lsquo;q&rsquo;.</p>
+<p>Now let&rsquo;s choose a version i and install it on our machine.</p>
+<pre><code>sdk install java 17.0.3-zulu
+</code></pre>
+<p>And ready it will start installing this version of java. We can set this version as default by typing &lsquo;y&rsquo; after installation or not.</p>
+<p><img src="/uploads/sdkinstall.png" alt=""></p>
+<p>If you prefer you can change the default version later using the command.</p>
+<pre><code>sdk default java 17.0.3-zulu
+</code></pre>
+<p>If you need to use some other version (that you have already installed by the sdk) it is very simple too.</p>
+<p>For example:</p>
+<pre><code>sdk use java 18.0.1-zulu
+</code></pre>
+<p>It will define this version of java for the terminal you are typing so that you can use it without that complication because of version. Remembering that this version will only be available in the terminal you are using, if you open a new one, it will appear with the default version.</p>
+<p>Sdkman is a very simple tool that will help you to better deal with the different versions of the Jdk world, in the next post we will see about pyenv! To the next !</p>
+
+
+
+<h3>Posts in this Series</h3>
+<ul>
+  
+    <li><a href="/en/post/gerenciadores-de-versao-sdkman/">Version Managers: Sdkman</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/en/categories/sdk/">sdk</a><a class="category" href="/en/categories/sdkman/">sdkman</a><a class="category" href="/en/categories/java/">java</a><a class="category" href="/en/categories/gerenciadores-de-vers%C3%A3o/">gerenciadores de versão</a><a class="category" href="/en/categories/programa%C3%A7%C3%A3o/">programação</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/en/tags/jvm/">jvm</a><a class="tag" href="/en/tags/opensource/">opensource</a><a class="tag" href="/en/tags/jdk/">jdk</a><a class="tag" href="/en/tags/java/">java</a><a class="tag" href="/en/tags/sdkman/">sdkman</a><a class="tag" href="/en/tags/versionamento/">versionamento</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+</body>
+</html>

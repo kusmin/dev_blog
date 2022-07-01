@@ -25,7 +25,7 @@ Acessando o site oficial [https://sdkman.io/](https://sdkman.io/ "https://sdkman
 
 Na pagina do Sdkman no menu superior você verá uma opção chamada install [https://sdkman.io/install](https://sdkman.io/install "https://sdkman.io/install"), entrando na pagina terá instruções de como instalar dependendo do seu sistema operacional, como o Sdkman é multiplataforma pode ser instalado nos mais diversos sistemas operacionais. Neste exemplo faremos a instalação no Linux.
 
-Seguindo os comandos pode eles mesmos descritos:
+Seguindo os comandos por eles mesmos descritos:
 
     $ curl -s "https://get.sdkman.io" | bash
 
@@ -43,7 +43,7 @@ Talvez sua versão esteja diferente deste tutorial, não tem problema, eles atua
 
 ##### Usando o Sdkman
 
-Agora com o Sdkman instalado, vamos começar a utiliza-lo. Um comando útil no Linux é o help, vamos utiliza-lo aqui
+Agora com o Sdkman instalado, vamos começar a utiliza-lo. Um comando útil no Linux é o help, vamos utiliza-lo aqui.
 
     sdk help
 

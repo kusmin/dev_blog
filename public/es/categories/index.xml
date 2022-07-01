@@ -6,24 +6,68 @@
     <description>Recent content in Categories on blog de programacion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>syntax</title>
-      <link>http://updevblog.com/es/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>gerenciadores de versão</title>
+      <link>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/es/categories/syntax/</guid>
+      <guid>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>themes</title>
-      <link>http://updevblog.com/es/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>java</title>
+      <link>http://updevblog.com/es/categories/java/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/es/categories/themes/</guid>
+      <guid>http://updevblog.com/es/categories/java/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>programação</title>
+      <link>http://updevblog.com/es/categories/programa%C3%A7%C3%A3o/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/programa%C3%A7%C3%A3o/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>sdk</title>
+      <link>http://updevblog.com/es/categories/sdk/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/sdk/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>sdkman</title>
+      <link>http://updevblog.com/es/categories/sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/sdkman/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>http://updevblog.com/es/categories/web/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/web/</guid>
       
         <description></description>
       
