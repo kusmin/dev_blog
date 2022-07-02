@@ -11,6 +11,9 @@ other = "Tempo de leitura: {{ .Count }} minutos"
 [page_not_found]
 other = "Página não encontrada"
 
+[posts_series]
+other = "Posts desta série"
+
 [page_does_not_exist]
 other = "Desculpa, esta página não existe."
 

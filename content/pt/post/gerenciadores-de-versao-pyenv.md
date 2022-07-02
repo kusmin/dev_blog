@@ -5,10 +5,10 @@ categories = ["pyenv", "gerenciadores de versão", "python"]
 date = 2022-07-02T03:00:00Z
 math = false
 redirectUrl = ""
-series = []
+series = ["Gerenciadores de versão"]
 tags = ["pyenv", "versionamento", "python"]
 thumbnail = ""
-title = "Gerenciadores de versão: Sdkman"
+title = "Gerenciadores de versão: Pyenv"
 
 +++
 Em prosseguimento a nossa serie de gerenciadores de versão, hoje vamos tratar do mundo Python e conversar sobre o pyenv que é o meu gerenciador favorito de versão para o Python. Ele é baseado no rbenv que é um gerenciador ruby.

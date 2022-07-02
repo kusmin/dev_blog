@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="es"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+        |
+        Administradores de versiones: Pyenv
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.101.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Noticias e información sobre tecnología y programación"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/" />
+
+  
+  
+  
+  
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Administradores de versiones: Pyenv"/>
+<meta name="twitter:description" content="Continuando con nuestra serie sobre gestores de versiones, hoy vamos a tratar el mundo de Python y hablaremos de pyenv que es mi gestor de versiones favorito para Python."/>
+
+
+
+  
+  <meta property="og:title" content="Administradores de versiones: Pyenv" />
+<meta property="og:description" content="Continuando con nuestra serie sobre gestores de versiones, hoy vamos a tratar el mundo de Python y hablaremos de pyenv que es mi gestor de versiones favorito para Python." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-02T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-02T03:00:00+00:00" /><meta property="og:site_name" content="blog de programacion" />
+
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Administradores de versiones: Pyenv",
+        "headline": "Administradores de versiones: Pyenv",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Continuando con nuestra serie sobre gestores de versiones, hoy vamos a tratar el mundo de Python y hablaremos de pyenv que es mi gestor de versiones favorito para Python.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/es\/post\/gerenciadores-de-versao-pyenv\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-02T03:00:00.00Z",
+        "datePublished": "2022-07-02T03:00:00.00Z",
+        "dateModified": "2022-07-02T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/es\/post\/gerenciadores-de-versao-pyenv\/",
+        "wordCount" : "629",
+        "genre" : [ 
+      
+      "pyenv"
+
+    
+      
+        ,
+
+      
+      "gerenciadores de versão"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    ],
+        "keywords" : [ 
+      
+      "pyenv"
+
+    
+      
+        ,
+
+      
+      "versionamento"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/es">blog de programacion</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Noticias e información sobre tecnología y programación</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/contact/"
+              
+              title=""
+              >Contacto</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >es <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/gerenciadores-de-versao-pyenv/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/en/post/gerenciadores-de-versao-pyenv/" title="en"
+                    ><span
+                      
+                      aria-label="en"
+                      >en</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Administradores De Versiones: Pyenv</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Sat, Jul 2, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3 minutos de lectura</span>
+          </li>
+        </ul>
+
+      <p>Continuando con nuestra serie sobre gestores de versiones, hoy vamos a tratar el mundo de Python y hablaremos de pyenv que es mi gestor de versiones favorito para Python. Está basado en rbenv que es un gestor de versiones de ruby.</p>
+<p>Una de las ventajas que le veo a pyenv respecto a otros gestores de versiones de Python es que no depende del propio lenguaje para funcionar, se hace y se carga desde los scripts de la shell. Le permite cambiar fácilmente entre las versiones, y utilizarlas según sea necesario, lo que en Linux ayuda aún más ya que Python ya está instalado por defecto. Enlace al repositorio pyenv <a href="https://github.com/pyenv/pyenv" title="https://github.com/pyenv/pyenv">https://github.com/pyenv/pyenv</a></p>
+<h5 id="instalación">Instalación</h5>
+<p>En el caso de Linux es necesario realizar primero algunas instalaciones.</p>
+<pre><code>sudo apt-get update
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev git
+</code></pre>
+<p>Después de esta instalación inicial podemos instalar pyenv con este sencillo comando.</p>
+<pre><code>curl https://pyenv.run | bash
+</code></pre>
+<p>En este punto, pyenv ya está instalado en su máquina, pero todavía tenemos que configurar bash. Para hacer esto vaya a su archivo &lsquo;~/.bashrc&rsquo;.</p>
+<pre><code>sudo nano ~/.bashrc
+</code></pre>
+<p>Y pegar el siguiente código al final del archivo</p>
+<pre><code>export PATH=&quot;$HOME/.pyenv/bin:$PATH&quot;
+eval &quot;$(pyenv init -)&quot;
+eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre>
+<p>Los comandos de este archivo se ejecutan en el momento en que el usuario inicia un terminal de comandos. El punto al principio del nombre indica que se trata de un archivo oculto.</p>
+<p>Ahora puedes abrir una nueva terminal para iniciar pyenv o en la terminal que hizo la instalación ejecutar el siguiente comando.</p>
+<pre><code>exec &quot;$SHELL
+</code></pre>
+<h5 id="usando-pyenv">Usando Pyenv</h5>
+<p>Al igual que usamos en sdkman, vamos a empezar con el comando de ayuda.</p>
+<pre><code>Ayuda de pyenv
+</code></pre>
+<p><img src="/uploads/pyenvhelp.png" alt=""></p>
+<p>Aquí podemos ver los comandos de Pyenv, en el día a día las principales funciones que utilizaremos serán</p>
+<ul>
+<li>Enumerar las versiones disponibles para su descarga;</li>
+<li>Instalar una versión</li>
+<li>Mostrar las versiones instaladas</li>
+<li>Ejecutar una versión específica</li>
+<li>Desinstalar una versión;</li>
+</ul>
+<p>Otro comando muy útil para usar en linux es &lsquo;man&rsquo;, trae un manual completo sobre lo que se puede hacer con Pyenv.</p>
+<pre><code>man pyenv
+</code></pre>
+<p>También se puede utilizar para sacar un manual de otros comandos, pero eso es una conversación para otro día.</p>
+<p>Volviendo a Pyenv para listar las versiones disponibles, utilizamos el comando</p>
+<pre><code>pyenv install --list
+</code></pre>
+<p>Como podemos ver, hay varias versiones disponibles para su descarga. Todavía no he explorado este enorme catálogo. También es posible filtrar lo que se mostrará utilizando &quot; | grep &quot; combinado con regex.</p>
+<pre><code>$ pyenv install --list | grep &quot;3\.[8]&quot;
+</code></pre>
+<p>Con el comando anterior, sólo se mostrarán las versiones &ldquo;3.8&rdquo; disponibles para su descarga.</p>
+<p><img src="/uploads/versoespyenv.png" alt=""></p>
+<p>La instalación de una versión específica se realiza mediante el comando &ldquo;<em>pyenv</em> <em>install</em>&rdquo;, en el comando de abajo instalamos la versión 3.8-dev.</p>
+<pre><code>$ pyenv install 3.8-dev
+</code></pre>
+<p>Después de instalar diferentes versiones en su máquina, es necesario conocer las versiones instaladas. Al fin y al cabo, difícilmente memorizaremos esta información. Para comprobar las versiones instaladas en la máquina, escriba:</p>
+<pre><code>$ pyenv versions
+</code></pre>
+<p>La elección del intérprete que se utilizará en las aplicaciones se realiza mediante el comando &ldquo;pyenv global&rdquo; seguido de la versión. En el ejemplo siguiente elegiremos la versión 3.8-dev</p>
+<pre><code>$ pyenv global 3.8-dev
+</code></pre>
+<p>Una vez definida la versión del intérprete, basta con ejecutar &lsquo;python helloWorld.py&rsquo; y se ejecutará el archivo llamado helloWorld.py. Para comprobar la versión elegida escriba el comando</p>
+<pre><code>$ python -V
+</code></pre>
+<p>Para desinstalar una versión, basta con encontrar una versión presente en la máquina y escribir el comando &ldquo;<em>pyenv uninstall</em>&rdquo; seguido de la versión elegida. Desinstalar 3.8-dev</p>
+<pre><code>$ pyenv uninstall 3.8-dev
+</code></pre>
+<p>En esta guía de instalación hemos cubierto tres puntos relativos a Pyenv: descripción general y sus beneficios; comandos necesarios para la instalación; y las principales operaciones, todas aquellas necesarias para operar la herramienta en el día a día.</p>
+<p>Hasta la próxima.</p>
+
+
+
+<h3>Posts en esta serie</h3>
+<ul>
+  
+    <li><a href="/es/post/gerenciadores-de-versao-pyenv/">Administradores De Versiones: Pyenv</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/es/categories/pyenv/">pyenv</a><a class="category" href="/es/categories/gerenciadores-de-vers%C3%A3o/">gerenciadores de versão</a><a class="category" href="/es/categories/python/">python</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/es/tags/pyenv/">pyenv</a><a class="tag" href="/es/tags/versionamento/">versionamento</a><a class="tag" href="/es/tags/python/">python</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+</body>
+</html>

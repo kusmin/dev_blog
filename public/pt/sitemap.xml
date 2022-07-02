@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://updevblog.com/pt/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>http://updevblog.com/pt/categories/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,7 +39,7 @@
                 />
   </url><url>
     <loc>http://updevblog.com/pt/categories/gerenciadores-de-vers%C3%A3o/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,7 +57,184 @@
                 />
   </url><url>
     <loc>http://updevblog.com/pt/series/gerenciadores-de-vers%C3%A3o/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/series/gerenciadores-de-vers%C3%A3o/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/series/gerenciadores-de-vers%C3%A3o/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/series/gerenciadores-de-vers%C3%A3o/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/post/gerenciadores-de-versao-pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/post/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/post/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/tags/pyenv/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/tags/pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/tags/pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/tags/pyenv/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/categories/pyenv/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/categories/pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/categories/pyenv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/categories/pyenv/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/tags/python/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/tags/python/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/categories/python/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/categories/python/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/series/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/series/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/tags/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/tags/"
+                />
+  </url><url>
+    <loc>http://updevblog.com/pt/tags/versionamento/</loc>
+    <lastmod>2022-07-02T03:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://updevblog.com/en/tags/versionamento/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://updevblog.com/es/tags/versionamento/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://updevblog.com/pt/tags/versionamento/"
+                />
   </url><url>
     <loc>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</loc>
     <lastmod>2022-07-01T03:00:00+00:00</lastmod>
@@ -167,24 +344,6 @@
                 href="http://updevblog.com/pt/tags/opensource/"
                 />
   </url><url>
-    <loc>http://updevblog.com/pt/post/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://updevblog.com/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://updevblog.com/es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://updevblog.com/pt/post/"
-                />
-  </url><url>
     <loc>http://updevblog.com/pt/categories/programa%C3%A7%C3%A3o/</loc>
     <lastmod>2022-07-01T03:00:00+00:00</lastmod>
     <xhtml:link
@@ -255,60 +414,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://updevblog.com/pt/categories/sdkman/"
-                />
-  </url><url>
-    <loc>http://updevblog.com/pt/series/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://updevblog.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://updevblog.com/es/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://updevblog.com/pt/series/"
-                />
-  </url><url>
-    <loc>http://updevblog.com/pt/tags/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://updevblog.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://updevblog.com/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://updevblog.com/pt/tags/"
-                />
-  </url><url>
-    <loc>http://updevblog.com/pt/tags/versionamento/</loc>
-    <lastmod>2022-07-01T03:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://updevblog.com/en/tags/versionamento/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://updevblog.com/es/tags/versionamento/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://updevblog.com/pt/tags/versionamento/"
                 />
   </url><url>
     <loc>http://updevblog.com/pt/about/</loc>

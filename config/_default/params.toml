@@ -1,6 +1,6 @@
 profilePicture = "images/imagem.jpeg"
 gtagId="G-RG5L7KE8CQ"
-favicon = "favicons"
+favicon = "favicons/"
 contactFormAction="https://kwesforms.com/api/foreign/forms/TWboUdDBnvqStejn56BU"
 [[socialIcons]]
 icon = "fab fa-linkedin"

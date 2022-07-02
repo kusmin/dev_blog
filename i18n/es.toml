@@ -14,6 +14,9 @@ other = "Página no encontrada"
 [page_does_not_exist]
 other = "Disculpa, la página no existe."
 
+[posts_series]
+other = "Posts en esta serie"
+
 [head_back]
 other = "Puedes regresar a la <a href=\"{{ . }}\">página inicial</a>."
 

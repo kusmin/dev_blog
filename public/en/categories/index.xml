@@ -6,13 +6,35 @@
     <description>Recent content in Categories on programming blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gerenciadores de versão</title>
       <link>http://updevblog.com/en/categories/gerenciadores-de-vers%C3%A3o/</link>
-      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
       
       <guid>http://updevblog.com/en/categories/gerenciadores-de-vers%C3%A3o/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>http://updevblog.com/en/categories/pyenv/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/categories/pyenv/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://updevblog.com/en/categories/python/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/categories/python/</guid>
       
         <description></description>
       

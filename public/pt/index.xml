@@ -6,7 +6,18 @@
     <description>Recent content on Blog de programação</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerenciadores de versão: Pyenv</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</guid>
+      
+        <description>Em prosseguimento a nossa serie de gerenciadores de versão, hoje vamos tratar do mundo Python e conversar sobre o pyenv que é o meu gerenciador favorito de versão para o Python.</description>
+      
+    </item>
+    
     <item>
       <title>Gerenciadores de versão: Sdkman</title>
       <link>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</link>
