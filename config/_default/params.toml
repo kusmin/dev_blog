@@ -1,10 +1,10 @@
 profilePicture = "images/imagem.jpeg"
 gtagId="G-RG5L7KE8CQ"
 favicon = "favicons/"
-commentoURL="commento.updevblog.com/js/commento.js"
+commentoURL="https://commento.updevblog.com/js/commento.js"
 contactFormAction="https://kwesforms.com/api/foreign/forms/TWboUdDBnvqStejn56BU"
 [umami]
-serverURL="https://umami.updevblog.com"
+serverURL="umami.updevblog.com"
 id="48a61b1e-2fe0-4f38-8d5d-d01af53a7254"
 [[socialIcons]]
 icon = "fab fa-linkedin"
