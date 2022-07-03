@@ -1,7 +1,7 @@
 profilePicture = "images/imagem.jpeg"
 gtagId="G-RG5L7KE8CQ"
 favicon = "favicons/"
-commentoURL="https://commento.updevblog.com/js/commento.js"
+commentoURL="commento.updevblog.com/js/commento.js"
 contactFormAction="https://kwesforms.com/api/foreign/forms/TWboUdDBnvqStejn56BU"
 [umami]
 serverURL="https://umami.updevblog.com"
