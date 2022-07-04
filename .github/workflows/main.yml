@@ -18,7 +18,7 @@ jobs:
 
       - name: Build
         # remove --minify tag if you do not need it
-        # docs: https://gohugo.io/hugo-pipes/minification/
+        # docs: https://gohugo.io/hugo-pipes/minification/ajuste
         run: hugo --minify
 
       - name: Deploy
