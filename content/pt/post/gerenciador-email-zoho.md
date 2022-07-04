@@ -8,7 +8,7 @@ redirectUrl = ""
 series = []
 tags = ["email", "zoho"]
 thumbnail = "/uploads/zoho.jpeg"
-title = "Zoho"
+title = "Gerenciador de email: Zoho"
 
 +++
 Muitas vezes você vai querer o seu próprio serviço de e-mail para sua empresa ou para utilização pessoal, tem varias alternativas pagas e simples de implementar, talvez o mais conhecido seja o Gmail. Hoje veremos uma alternativa gratuita e fácil de implementar que é o Zoho.
