@@ -12,7 +12,7 @@ thumbnail = ""
 title = "Gerenciadores de versão: RVM"
 
 +++
-Hoje na nossa serie sobre gerenciadores de versão,vamos falar de um dos primeiros gerenciadores que foi o RVM(Ruby Version Manager), que é um gerenciador de versão para a linguagem ruby, que ficou muito conhecida pelo seu framework de Ruby on Rails. 
+Hoje na nossa serie sobre gerenciadores de versão,vamos falar de um dos primeiros gerenciadores que foi o RVM(Ruby Version Manager), que é um gerenciador de versão para a linguagem ruby, que ficou muito conhecida pelo seu framework de Ruby on Rails.
 
 Vamos passar pelo mesmo caminho que fizemos nos os outros posts da serie mostrando como configurar e instala-lo no Linux.
 
@@ -70,4 +70,14 @@ Como não temos nenhum versão ainda instalada, não vai aparecer nenhuma, vamos
 
 Agora temos varias opções de instalação, vamos instalar a versão 3.0.0 com o comando.
 
-    ruby install ruby-3.0.0
+    rvm install ruby-3.0.0
+
+Algumas vezes pode aparecer problema de permissão, assim uma solução simples é reiniciar o shell, para limpar as variáveis do mesmo. Pode reiniciar o computador ou deslogar o usuário. 
+
+Caso ocorra tudo certo na sua corra.
+
+    rvm current
+
+E verá a sua verão instalada no terminal.
+
+Hoje podemos ver mais um gerenciador de versão, desta vez para o mundo ruby. Na próxima veremos sobre o nvm! 
