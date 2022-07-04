@@ -25,7 +25,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.HUGODEPLOY }}
-          external_repository: kusmin/blog_dev.github.io
+          external_repository: kusmin/blog_dev
           publish_dir: ./public
           #   keep_files: true
           user_name: renan
