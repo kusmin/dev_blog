@@ -3,7 +3,6 @@ aliases = []
 author = "Renan Ribeiro Lage"
 categories = ["servidor", "zoho", "email"]
 date = 2022-07-03T03:00:00Z
-draft = true
 math = false
 redirectUrl = ""
 series = []
@@ -38,4 +37,26 @@ Conforme solicitado acrescentamos no nosso gerenciador de domínio o registro so
 
 ![](/uploads/txtverificacao.png)
 
-Agora é esperar ate os registros serem propagados, isto vai depender do seu gerenciador de domínio
+Agora é esperar ate os registros serem propagados, isto vai depender do seu gerenciador de domínio. 
+
+Obs: Além do TXT a outras formas de verificação como pelo CNAME.
+
+Na próxima página escolha o seu e-mail que vai ser o de administrador e clique em criar. 
+
+Adicione novos usuários, lembrando dos limites do plano gratuito de 5 usuários.
+
+Crie os grupos para separar os usuários, por setor ou da melhor forma que lhe convir, esta etapa, assim como a de criar outros usuários é opcional.
+
+Agora é a parte da configuração do registro DNS.
+
+![](/uploads/configuredns.png)
+
+Se tiver utilizando o route53 da AWS ficara algo assim.
+
+![](/uploads/mxconfigure.png)
+
+Lembrando que o processo do DNS pode levar algum tempo, dependendo da propagação.
+
+As duas últimas partes são a configuração final, caso deseje migrar emails de outro servidor e baixar os aplicativos moveis do Zoho que são uma ótima maneira de monitoramento.
+
+E pronto! Você tem um serviço de e-mail profissional de forma gratuita !
