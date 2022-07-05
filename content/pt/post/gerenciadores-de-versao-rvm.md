@@ -3,7 +3,6 @@ aliases = []
 author = "Renan Ribeiro Lage"
 categories = ["ferramentas", "ruby", "versionamento"]
 date = 2022-07-04T03:00:00Z
-draft = true
 math = false
 redirectUrl = ""
 series = ["Gerenciadores de versão"]
@@ -73,6 +72,10 @@ Agora temos varias opções de instalação, vamos instalar a versão 3.0.0 com 
     rvm install ruby-3.0.0
 
 Algumas vezes pode aparecer problema de permissão, assim uma solução simples é reiniciar o shell, para limpar as variáveis do mesmo. Pode reiniciar o computador ou deslogar o usuário. 
+
+Outro problema que pode ocorrer é de não conseguir instalar devido ao openssl, neste caso será necessário o comando abaixo, principalmente para versões mais recentes do ruby.
+
+    rvmsudo rvm pkg install openssl
 
 Caso ocorra tudo certo na sua corra.
 
