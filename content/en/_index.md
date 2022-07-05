@@ -23,3 +23,4 @@ Don't forget to check the README.md file!
 
 Remember that you can also specify a section header for the posts below by configuring the `mainSectionsTitle` parameter in the front matter of this file.
 -->
+## Latest publications
