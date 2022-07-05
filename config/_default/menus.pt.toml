@@ -1,6 +1,9 @@
+    # title="UpDev Blog"
+    
     [[main]]
     name = "Home"
     identifier = "home"
+    title = "Home"
     weight = 100
     url = "/pt/"
 

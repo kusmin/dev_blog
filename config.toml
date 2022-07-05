@@ -3,7 +3,7 @@ languageCode = "pt-br"
 DefaultContentLanguage = "pt"
 title = "Blog do programador"
 defaultContentLanguageInSubdir = true
-
+Title="Updev Blog"
 isMultiLingual = true
 summarylength = 10
 enableEmoji = true
