@@ -4,18 +4,18 @@
     weight = 1
     LanguageName = "pt-br"
     contentDir = "content/pt"
-    description = 'Notícias e informações sobre tecnologia e programação'
+    description = 'Um blog com notícias e informações sobre tecnologia e programação. Além de tutoriais e dicas que vão te fazer decolar no mundo do TI!'
 
 [en]
     title = "programming blog"
     weight = 1
     LanguageName = "en"
     contentDir = "content/en"
-    description = 'Technology and programming news and information'
+    description = 'A blog with news and information about technology and programming. In addition to tutorials and tips that will make you take off in the IT world!'
 
 [es]
     title = "blog de programacion"
     weight = 1
     LanguageName = "es"
     contentDir = "content/es"
-    description = 'Noticias e información sobre tecnología y programación'        
+    description = 'Un blog con noticias e información sobre tecnología y programación. ¡Además de tutoriales y tips que te harán despegar en el mundo IT!'        
