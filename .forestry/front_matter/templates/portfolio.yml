@@ -1,0 +1,45 @@
+---
+label: portfolio
+hide_body: false
+fields:
+- type: field_group_list
+  name: portfolioitems
+  label: portfolioitems
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: portfolioitem
+    label: portfolioitem
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: link
+      label: link
+    - type: text
+      name: linktext
+      label: linktext
+    - type: textarea
+      name: description
+      label: description
+    - type: list
+      name: tags
+      label: tags
+    - type: text
+      name: status
+      label: status
+    - type: text
+      name: start
+      label: start
+    - type: text
+      name: end
+      label: end
+    - type: list
+      name: authors
+      label: authors
