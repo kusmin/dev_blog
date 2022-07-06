@@ -1,0 +1,18 @@
+portfolioitems:
+  - title: Blogs
+    portfolioitem:
+      - name: Meu primeiro blog
+        image: "/uploads/primeiro-blog.png"
+        link: https://blogdopensadormoderno.com.br/
+        linktext: Primeiro blog pessoal
+        tags:
+          - site estatico
+          - Jekil
+          - bulma
+          - primeiro projeto pessoal
+          - blog
+        status: Em reforma
+        start: "2020"
+        end: "2020"
+        authors: ['Renan Ribeiro Lage']
+        description: 'Foi meu primeiro blog pessoal, nele estive um contato inicial com o framework de css Bulma e com o Jekyll que é um gerador de site estaticos. '
