@@ -43,3 +43,5 @@ fields:
     - type: list
       name: authors
       label: authors
+pages:
+- data/portfolio.yml.yml
