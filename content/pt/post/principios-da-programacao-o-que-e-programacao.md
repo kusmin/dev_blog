@@ -37,4 +37,4 @@ Ele tem o papel de garantir que o que esta sendo pedido em linguagem humana, sej
 
 ##### Conclusão
 
-Neste artigo, colocamos alguns conceitos iniciais que qualquer pessoa que esteja querendo entrar no mundo da programação deve procurar saber, para que entenda melhor para onde esta indo e o que deve fazer para entrar com o pé direito. Nos próximos posts vamos ver mais alguns conceitos e nos aprofundar no que é a programação. Até a próxima !
+Neste artigo, colocamos alguns conceitos iniciais que qualquer pessoa que esteja querendo entrar no mundo da programação deve procurar saber, para que entenda melhor para onde esta indo e o que deve fazer para entrar com o pé direito. Nos próximos posts vamos ver mais alguns conceitos e nos aprofundar no que é a programação. Até a próxima!
