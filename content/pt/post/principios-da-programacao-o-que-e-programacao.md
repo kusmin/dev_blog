@@ -19,15 +19,15 @@ E para começar nada melhor falando sobre o que é programação tanto em teoria
 
 Quando você acorda de manha, muitas vezes encontramos outras pessoas, cumprimentamos, damos aquele bom dia, conversamos, perguntamos como vão as coisas, ou as vezes apenas maneamos a cabeça em cumprimento ou muito vezes nem isso, mesmo não nos comunicando verbalmente, nossas ações e corpos falam se comunicam. Cada ação que realizamos ou não realizamos comunica algo a alguém ou alguma coisa, somos seres intrinsecamente sociais. Por mais que digamos que eu diga que é anti-social(eu mesmo falo muito isso !), a verdade é que a comunicação é a base de nossa sociedade.
 
-E neste caso quando falamos em programação, estamos falando em uma forma de comunicação entre homem-maquina, criador-criação. Neste caso temos um problema grave que um não entendo o outro, o homem fala por meio de letras e palavras, uma maquina consegue entender zeros e uns. Para que possamos conversar e interagir com a maquina precisamos de um interprete, que consiga fazer a tradução de um lado para o outro, para isto temos as Linguagens de Programação, que tem este papel de garantir uma comunicação eficiente entre homem e maquina.  
+E neste caso quando falamos em programação, estamos falando em uma forma de comunicação entre homem-maquina, criador-criação. Neste caso temos um problema grave que um não entendo o outro, o homem fala por meio de letras e palavras, uma maquina consegue entender zeros e uns. Para que possamos conversar e interagir com a maquina precisamos de um interprete, que consiga fazer a tradução de um lado para o outro, para isto temos as Linguagens de Programação, que tem este papel de garantir uma comunicação eficiente entre homem e maquina.
 
-Conseguindo ali nos comunicar o que deve ser feito à maquina, através desta interação, conseguimos criar sites, aplicativos, aplicações, processar dados e varias outras ferramentas que nos ajudam no nosso dia-a-dia. 
+Conseguindo ali nos comunicar o que deve ser feito à maquina, através desta interação, conseguimos criar sites, aplicativos, aplicações, processar dados e varias outras ferramentas que nos ajudam no nosso dia-a-dia.
 
 Este aqui um conceito inicial do que é programação, tem muitas outros conceitos por traz disso que neste primeiro momento não faz muito sentido abordamos neste momento, mas que vamos ir refinando conforme esta serie vai seguindo.
 
 E agora, onde entra o programador nisso tudo ?
 
-#####  O que faz o programador ?
+##### O que faz o programador ?
 
 O programador, mais uma vez um conceito inicial, ele é responsável por redigir em uma linguagem de programação instruções para a maquina realizar alguma ação.
 
@@ -37,4 +37,4 @@ Ele tem o papel de garantir que o que esta sendo pedido em linguagem humana, sej
 
 ##### Conclusão
 
-Neste artigo, colocamos alguns conceitos iniciais que qualquer pessoa que esteja querendo entrar no mundo da programação deve procurar saber
+Neste artigo, colocamos alguns conceitos iniciais que qualquer pessoa que esteja querendo entrar no mundo da programação deve procurar saber, para que entenda melhor para onde esta indo e o que deve fazer para entrar com o pé direito. Nos próximos posts vamos ver mais alguns conceitos e nos aprofundar no que é a programação. Até a próxima !
