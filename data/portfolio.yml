@@ -1,18 +1,38 @@
+---
 portfolioitems:
-  - title: Blogs
-    portfolioitem:
-      - name: Meu primeiro blog
-        image: "/uploads/primeiro-blog.png"
-        link: https://blogdopensadormoderno.com.br/
-        linktext: Primeiro blog pessoal
-        tags:
-          - site estatico
-          - Jekil
-          - bulma
-          - primeiro projeto pessoal
-          - blog
-        status: Em reforma
-        start: "2020"
-        end: "2020"
-        authors: ['Renan Ribeiro Lage']
-        description: 'Foi meu primeiro blog pessoal, nele estive um contato inicial com o framework de css Bulma e com o Jekyll que é um gerador de site estaticos. '
+- title: Blogs
+  portfolioitem:
+  - name: Blog do programador
+    image: "/uploads/updevblog.png"
+    link: https://updevblog.com/pt/
+    linktext: http://updevblog.com/pt/
+    tags:
+    - blog
+    - programação
+    - hugo
+    - site estatico
+    status: Em contínua construção
+    start: "2022"
+    end: "2022"
+    authors:
+    - Renan Ribeiro Lage
+    description: 'Blog sobre programação e tecnologia, que utiliza o gerador de sites
+      estáticos Hugo com o tema Anatole, possui analytics do google e do Umami, utilizando
+      como chat o Commentos '
+  - name: Meu primeiro blog
+    image: "/uploads/primeiro-blog.png"
+    link: https://blogdopensadormoderno.com.br/
+    linktext: Primeiro blog pessoal
+    tags:
+    - site estatico
+    - Jekil
+    - bulma
+    - primeiro projeto pessoal
+    - blog
+    status: Em reforma
+    start: "2020"
+    end: "2020"
+    authors:
+    - Renan Ribeiro Lage
+    description: 'Foi meu primeiro blog pessoal, nele estive um contato inicial com
+      o framework de css Bulma e com o Jekyll que é um gerador de site estaticos. '
