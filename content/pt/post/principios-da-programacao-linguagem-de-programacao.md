@@ -3,7 +3,6 @@ aliases = []
 author = "Renan Ribeiro Lage"
 categories = ["princípios da programação", "linguagem"]
 date = 2022-07-09T03:00:00Z
-draft = true
 math = false
 redirectUrl = ""
 series = ["Princípios da programação"]
