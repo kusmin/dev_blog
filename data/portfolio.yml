@@ -5,7 +5,7 @@ portfolioitems:
   - name: Blog do programador
     image: "/uploads/updevblog.png"
     link: https://updevblog.com/pt/
-    linktext: http://updevblog.com/pt/
+    linktext: O programador moderno
     tags:
     - blog
     - programação
