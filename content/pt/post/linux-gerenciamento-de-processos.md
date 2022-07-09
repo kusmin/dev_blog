@@ -7,7 +7,7 @@ math = false
 redirectUrl = ""
 series = []
 tags = ["processos", "Linux"]
-thumbnail = "/uploads/linux.jpeg"
+thumbnail = ""
 title = "Linux: Gerenciamento de Processos"
 
 +++
