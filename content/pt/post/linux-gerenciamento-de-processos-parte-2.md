@@ -31,7 +31,7 @@ Podemos passar alguns parâmetros junto ao _ps_ para maior detalhe de informaç�
 Ele trás  uma lista de parâmetros que podemos utilizar, sendo os mais importantes de sabermos:
 
 * -u => Mostra mais informações relacionadas ao usuário.
-* -x => Mostra processos que não foram iniciados diretamente em seu terminal. 
+* -x => Mostra processos que não foram iniciados diretamente em seu terminal.
 * -a => Mostra os processos de todos os usuários.
 
 Se digitarmos o comando:
@@ -50,7 +50,7 @@ Retorna a lista de todos os processos bem detalhadamente, é um comando bem úti
 
 Com o grep podemos ver apenas os processos que nos interessam, neste caso, ele não retornou os processos do nginx que estão sendo executados na minha maquina.
 
-####  Enviando sinais aos processos
+#### Enviando sinais aos processos
 
 ##### kill
 
@@ -82,15 +82,45 @@ Por padrão o kill é o 15 SIGTERM, caso deseja enviar este sinal para o process
 O killall mata o processo baseado no nome exato do processo e o pkill é uma forma de grep ele vai matar todos os processos encontrados com aquele regex.
 
     killall "NOME-PROCESSO"
-
+    
     pkill "REGEX-PROCESSOS"
 
 #### Foreground(fg) e Background(bg)
 
-O foreground é o processo que aparece executando no seu terminal naquele momento, "prendendo" o seu terminal a ele. Por outro lado o background é o processo que acontece por trás, sem você "ver", nesse caso ele libera o terminal para você. 
+O foreground é o processo que aparece executando no seu terminal naquele momento, "prendendo" o seu terminal a ele. Por outro lado o background é o processo que acontece por trás, sem você "ver", nesse caso ele libera o terminal para você.
 
 Um exemplo de processo em foreground é quando utilizamos o comando:
 
      tail -f "nome-arquivo"
 
-Em que ficamos esperando por novas escritas no arquivo, isso é muito útil para acompanhar logs. Um outro exemplo de foreground:
+Em que ficamos esperando por novas escritas no arquivo, isso é muito útil para acompanhar logs. Um outro exemplo de foreground, vou criar um processo de for que vai ficar preso:
+
+    for i in `seq 1000` ; do sleep 2 ; echo $i ; done
+
+O comando executa um for de 0 ate 1000, imprimindo os valores a cada 2 segundos, se você executou na sua maquina, verá que não consegui executar mais nenhum comando, o processo 'prendeu' seu terminal. O comando esta em primeiro plano.
+
+Podemos executar o mesmo comando em backgound, utilizando o mesmo comando vamos acrescentar um '&' no final. Vejam só:
+
+    for i in `seq 1000` ; do sleep 2 ; echo $i ; done &
+
+Agora ele esta executando o processo, em segundo plano, background e você pode executar outros comandos no terminal, enquanto este fica sendo executado em segundo plano. Quando digito jobs ele mostra todos os processos que estão sendo executados em segundo plano no terminal.
+
+    jobs
+
+![jobs](/uploads/jobs.png "jobs")
+
+Retorna o numero dos jobs, o estado deles e o comando que esta executando. Se quiser passar o processo para foreground digito fg seguido do numero do job neste caso 1.
+
+    fg 1
+
+O processo agora esta em foreground. Caso digite agora Ctrl + Z ele pausa o processo e coloca em background novamente. Colocando ele para rodar novamente em backgound, basta digitar o comando bg seguido do numero do jobs.
+
+    bg 1
+
+Caso deseje matar o job, temos o comando kill. O comando kill seguido de % e o numero do job.
+
+    kill %1
+
+Agora para finalizar vamos falar sobre as prioridades.
+
+#### Prioridades
