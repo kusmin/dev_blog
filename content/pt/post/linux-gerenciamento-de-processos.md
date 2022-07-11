@@ -8,7 +8,7 @@ redirectUrl = ""
 series = ["Linux"]
 tags = ["processos", "Linux"]
 thumbnail = ""
-title = "Linux: Gerenciamento de Processos"
+title = "Linux: Gerenciamento de Processos - Parte 1"
 
 +++
 Neste post de hoje vamos falar sobre alguns comando uteis de gerenciamento de processos no Linux.
