@@ -3,7 +3,6 @@ aliases = []
 author = "Renan Ribeiro Lage"
 categories = []
 date = 2022-07-11T03:00:00Z
-draft = true
 math = false
 redirectUrl = ""
 series = ["Linux"]
@@ -124,3 +123,35 @@ Caso deseje matar o job, temos o comando kill. O comando kill seguido de % e o n
 Agora para finalizar vamos falar sobre as prioridades.
 
 #### Prioridades
+
+As prioridades no Linux que vão de 0 a 39, em geral quando o Linux cria um novo processo este já 'nasce' com prioridade 20 é a padrão do sistema. Quanto menor o valor de prioridade do processo, vai prioritário ele da mesma forma quando maior o valor de prioridade, menor é sua prioridade. Neste caso o processo com 0 é o mais prioritário e os de 39.
+
+Podemos definir ou alterar o valor da prioridade com o nice, que vai de -20 a 19, caso definimos o nice como -20, o processo vai ter prioridade 0, caso definimos como 19 vai ter prioridade 39.
+
+Ao rodarmos o comando top, podemos ver os valores de prioridade e nice dos processos.
+
+    top
+
+![prioridades](/uploads/prioridades.png "prioridades")
+
+A 3 coluna, 'PR' mostra os valores de prioridade e a c 4 coluna, 'NI' representa o valor do nice. Como dito antes o processo nasce com prioridade 20 e nice 0.
+
+Para definir a prioridade manualmente podemos usar o comando nice seguido de -n, o valor do nice, seguido do comando. Por exemplo vamos executar o comando top com prioridade máxima 0.
+
+    nice -n -20 top
+
+Ou com a prioridade minima.
+
+    nice -n 19 top
+
+O nice somente pode ser utilizado ao criar um processo. Para alterar o processo depois de criado temos o renice. É executado usando renice -n numero do nice, seguido do pido do processo.
+
+    renice -n 'NUMERO_RENICE' 'NUMERO_PID'
+
+Um detalhe que usuários comuns somente podem utilizar o renice com valores positivos. Para valores negativos tem que ser com usuário root
+
+#### Conclusão
+
+Neste post fechamos os principais comandos para gerenciamento do Linux, vimos os processo ps, kill, foreground, background e como definir prioridade com o nice e renice.
+
+Espero que com este post consiga dar mais um passo na utilização do Linux. Até a próxima !
