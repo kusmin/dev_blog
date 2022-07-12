@@ -11,118 +11,118 @@ thumbnail = ""
 title = "Version managers: NVM"
 
 +++
-O nvm(node version manager), é o gerenciador de versão para o node. Se você já trabalho com express, angular, react, vue entre outros dos milhões de framework Javascript, em algum momento teve que utiliza-lo e como sabemos existem diversas versões do node. Ai você teve que instalar aquela versão especifica para aquele componente react e depois quando mudou de projeto, teve que instalar outra versão. Que pesadelo !
+The nvm(node version manager), is the version manager for node. If you already work with express, angular, react, vue and other of the millions of Javascript frameworks, at some point you had to use it and as we know there are several versions of node. So you had to install that specific version for that particular react component and then when you changed projects, you had to install another version. What a nightmare!
 
-Como bem sabemos ficar gerenciando várias versões de algo pode ser chato.
+As we well know, managing several versions of something can be a pain.
 
-Com o NVM a gente pode ver as versões do Node, escolher quais queremos instalar ou desinstalar e definir qual queremos usar em cada momento ou projeto.
+With NVM we can see the Node versions, choose which ones we want to install or uninstall and define which one we want to use in each moment or project.
 
-Ele funciona em MacOS e Linux. Caso você precise gerenciar no Windows existe um outro projeto chamado **nvm-windows** que também é muito bom (recomendado até mesmo por NPM, Google e Microsoft) e os comandos são iguais aos do **NVM**.
+It works on MacOS and Linux. If you need to manage on Windows there is another project called **nvm-windows** which is also very good (recommended even by NPM, Google and Microsoft) and the commands are the same as for **NVM**.
 
-##### Instalação
+##### Installation
 
-Veremos a instalar do NVM no Linux.
+We will see how to install NVM on Linux.
 
-Obs: É recomendado desinstalar qualquer versão do Node.js presente em sua máquina antes de instalar o NVM para evitar colisões.
+Note: It is recommended to uninstall any version of Node.js present in your machine before installing NVM to avoid collisions.
 
-Vamos acompanha a instalação da documentação do github em [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm"), é bom conferir por lá qual a última versão disponível no momento deste post a ultima é a 0.39.1.
+Let's follow the installation from github documentation at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm"), it's good to check there which is the latest version available at the time of this post the latest is 0.39.1.
 
-Para instalar o NVM basta usar o curl ou Wget. Execute no terminal:
+To install NVM just use curl or Wget. Run in terminal:
 
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-Ou
+Or
 
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-Isso vai executar um script que vai clonar o repositório do NVM e jogar em um diretório chamado `~/.nvm/`, que é onde serão instaladas as várias versões do Node.js que quisermos.
+This will run a script that will clone the NVM repository and drop it into a directory called `~/.nvm/` which is where we will install the various versions of Node.js we want.
 
-Em alguns casos vai ser necessário atualizar o shell. Execute o comando:
+In some cases you will need to update the shell. Run the command:
 
      source ~/.bashrc
 
-Para conferir se foi tudo instalado certinho e nada versão correta podemos usar o comando help a qual já estamos familiarizados que é o help:
+To check that everything has been installed correctly and that nothing is the right version we can use the help command which we are already familiar with:
 
     nvm help
 
-![Nvm Help](/uploads/nvmhelp.png "Nvm Help")
+Nvm Help](/uploads/nvmhelp.png "Nvm Help")
 
-Podemos ver na tela a versão logo no inicio, com alguns comandos e exemplos.
+We can see the version on the screen right at the beginning, with some commands and examples.
 
-##### Usando o NVM
+##### Using NVM
 
-Em alguns caso, pode ser que você precise logo após instalar, fechar o terminal e abrir outro ou mesmo reiniciar a sua máquina para pegar a instalação certinha.
+In some cases, you may need to close the terminal after installation and open another one or even reboot your machine to get the installation right.
 
-###### Listar versões instaladas
+###### List installed versions
 
- Para ver as versões que estão instaladas em sua máquina:
+ To see which versions are installed on your machine:
 
     nvm ls
 
-![Versões instaladas](/uploads/versoes-instaladas.png "Versões instaladas")
+![Installed versions](/uploads/versions-installed.png "Installed versions")
 
-Essas são as versões que tenho hoje instalado na minha maquina, caso tenha acabado de instalar o nvm não vai aparecer nenhuma versão. Para isto precisamos listar as versões disponíveis para instalação.
+These are the versions I have installed on my machine today, if you have just installed nvm no version will appear. To do this we need to list the versions available for installation.
 
-###### Listar versões disponíveis para instalação
+###### List versions available for installation
 
-Este comando lista todas as versões disponíveis para baixar e instalar na sua máquina. Esse número de versão será usado no comando para realizar a instalação.
+This command lists all the versions available for download and installation on your machine. This version number will be used in the command to perform the installation.
 
     $ nvm ls-remote
 
-Vai aparecer uma lista com todas as versões do node, em especial caso seja um projeto de produção, utilize as versões estáveis(marcadas com LTS).
+A list of all node versions will appear, in particular if it is a production project, use the stable versions (marked with LTS).
 
-###### Instalar uma versão
+###### Installing a version
 
-Para instalar usamos o comando `install` seguido pelo número da versão que queremos (mostrada no comando anterior, `ls-remote, lembrando que te avisei que íamos utiliza-lo depois `).
+To install we use the `install` command followed by the version number we want (shown in the previous command, `ls-remote, remember I told you we were going to use it later `).
 
-    nvm install <versão-escolhida>
+    nvm install <version-choose>
 
-Basta mudar a _versão-escolhida_ pelos números da versão que quer baixar como `v.0.11.5` ou `v.12.4.0`.
+Just change the _version-chosen_ by the numbers of the version you want to download like `v.0.11.5` or `v.12.4.0`.
 
-Para instalar a versão mais recente, utilize `node` no lugar do número da versão:
+To install the latest version, use `node` in place of the version number:
 
     nvm install node
 
-A primeira versão que você instalar será usada por padrão sempre que você abrir o terminal. A versão padrão pode ser alterada depois utilizando o comando:
+The first version you install will be used by default whenever you open the terminal. The default version can be changed later using the command:
 
-    nvm default <versão-escolhida>
+    nvm default <chosen-version>
 
-###### Versão corrente
+###### Current version
 
-Caso deseje saber qual versão esta utilizando no momento, execute o comando:
+If you want to know which version you are currently using, run the command:
 
     nvm current
 
-Ele vai te retornar a versão utilizada no terminal que estiver usando.
+This will return the version used on the terminal you are using.
 
-###### Desinstalar uma versão
+###### Uninstalling a version
 
-O comando `uninstall` é usado para desinstalar uma versão presente em nossa máquina. É utilizado da mesma maneira que o `install.`
+The `uninstall` command is used to uninstall a version present on our machine. It is used in the same way as `install.`
 
-    nvm uninstall <versão-escolhida>
+    nvm uninstall <version-choose>
 
-###### Definir nome para uma versão
+###### Define name for a version
 
-Para não ter que ficar chamando uma versão pelo seu número, podemos definir um tipo de apelido para cada versão. Para isso usamos o comando `alias` e passamos o nome do apelido e a versão que queremos apelidar.
+To avoid having to keep calling a version by its number, we can define some sort of alias for each version. To do this we use the `alias` command and pass the name of the alias and the version we want to alias.
 
-    $ nvm alias meunome <versão-escolhida>
+    $ nvm alias meername <chosen-version>
 
-É um recurso bem interessante para poder chamar com mais facilidade uma versão para um projeto especifico por exemplo.
+This is a very interesting feature to be able to more easily call a version for a specific project for example.
 
-Com isso você poderá chamar a versão <versão-escolhida>por `meunome`, como em:
+With this you can call the version <chosen-version> by `name meername`, as in:
 
-    nvm use meunome
+    nvm use meername
 
-###### Definição de versão por projeto
+###### Version definition per project
 
-A intenção de usar o NVM é poder ter uma versão do Node.js para cada projeto, mas é muito difícil conseguir lembrar qual a versão foi usada em cada um.
+The intention of using NVM is to have a version of Node.js for each project, but it is very difficult to remember which version was used in each one.
 
-Para isso, basta criar na raiz do projeto um arquivo com o nome `.nvmrc` e colocar dentro dele o número da versão do Node.js que está sendo utilizada nesse projeto, como:
+To do this, just create a file named `.nvmrc` in the root of the project and put inside it the version number of Node.js that is being used in this project, like:
 
     v12.4.0
 
-Com isso, ao abrir o terminal dentro do projeto e executar o comando `nvm use`, o NVM vai automaticamente encontrar o arquivo `.nvmrc` e utilizar a versão indicada.
+With this, when you open the terminal inside the project and run the `nvm use` command, NVM will automatically find the `.nvmrc` file and use the indicated version.
 
-##### Conclusão
+##### Conclusion
 
-Neste guia cobrimos sobre o NVM, e mais salientamos mais uma vez as vantagens de se utilizar um gerenciador de versão para o trabalhar em diversões versões e projetos. Utilizar os gerenciadores de versão é uma pratica que vai te economizar tempo e te poupar de varias dores de cabeça desnecessárias. Até a próxima ! 
+In this guide we have covered NVM, and once again highlighted the advantages of using a version manager for working on various versions and projects. Using version managers is a practice that will save you time and save you from several unnecessary headaches. Until next time ! 
