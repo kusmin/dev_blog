@@ -1,11 +1,11 @@
 +++
 aliases = []
 author = "Renan Ribeiro Lage"
-categories = ["pyenv", "gerenciadores de versão", "python"]
+categories = ["pyenv", "administradores de versiones", "python"]
 date = 2022-07-02T03:00:00Z
 math = false
 redirectUrl = ""
-series = ["Gerenciadores de versão"]
+series = ["Administradores de versiones"]
 tags = ["pyenv", "versionamento", "python"]
 thumbnail = ""
 title = "Administradores de versiones: Pyenv"
