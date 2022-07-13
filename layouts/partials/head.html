@@ -241,7 +241,10 @@
 
   {{ end }}
 
+  {{ if and hugo.IsProduction }}
 
+    {{- partial "analytics/hotjar" . -}}
+  {{ end }}
   <!-- Twitter Cards -->
   {{ template "_internal/twitter_cards.html" . }}
 
