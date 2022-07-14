@@ -16,7 +16,7 @@ Fazer a gestão de usuários no Linux, não é tão intuitiva quanto a que temos
 
 Neste post vamos aprender como criar um usuário, deletar um usuário e alterar um usuário.
 
-#### Gerenciamento de usuários 
+#### Gerenciamento de usuários
 
 Os usuários são armazenados no arquivo /etc/passwd. Executando o comando cat podemos dar uma olhada neste arquivo.
 
@@ -41,14 +41,14 @@ Estes sete campos podem ser melhor explicados desta forma:
 
        sudo cat /etc/shadow
 
-   Você vai ver as senhas que estão criptografadas. 
+   Você vai ver as senhas que estão criptografadas.
 3. O terceiro campo representa o  UID que é um identificador único do usuário dentro do sistema.
 4. O quarto campo representa o GID que é o identificador do grupo a qual aquele usuário faz parte.
-5.  No quinto campo temos uma descrição para aquele usuário. 
+5. No quinto campo temos uma descrição para aquele usuário.
 6. No sexto temos a localização (diretório) onde esta aquele usuário.
-7.  E por último temos o campo que mostra o shell representa onde esta o script daquele usuário.
+7. E por último temos o campo que mostra o shell representa onde esta o script daquele usuário.
 
-##### Criar usuários 
+##### Criar usuários
 
 Para criar um usuário dentro do sistema é bem simples. Basta executar o comando usearadd "nome-do-usuario".
 
@@ -62,8 +62,5 @@ Se a gente voltar no arquivo passwd, podemos ver o usuário criado no final do a
 
 Ele foi criado com os valores padrões, com o UID unico, um novo grupo, sem comentários e no caminho padrão de usuário e script. Podemos definir as opções com os parâmetros:
 
-* 
-
-   
-
- 
+* -s => Define o script relacionado aquele usuário, o caminho do script.
+* -c => Permite definir um comentario aquele usuaior 
