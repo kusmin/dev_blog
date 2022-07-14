@@ -1,5 +1,5 @@
 +++
-aliases = ["Sobre mim", "about-us", "about-hugo", "contact"]
+aliases = ["Sobre mim", "about-us", "contact"]
 author = "Renan Ribeiro Lage"
 date = 2022-06-30T03:00:00Z
 description = "Sobre mim"
