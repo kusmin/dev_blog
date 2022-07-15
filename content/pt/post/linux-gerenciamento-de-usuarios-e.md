@@ -8,7 +8,7 @@ redirectUrl = ""
 series = []
 tags = ["gerenciamento", "shell", "linux"]
 thumbnail = ""
-title = "Linux: Gerenciamento de Usuarios e "
+title = "Linux: Gerenciamento de Usuários"
 
 +++
 Fazer a gestão de usuários no Linux, não é tão intuitiva quanto a que temos no Windowns onde consegue fazer praticamente tudo de modo gráfico e transparente. No Linux precisamos utilizar o terminal e por incrível que pareça com alguns poucos comandos é possível gerenciar usuários e grupos de usuários de forma pratica e poderosa.
