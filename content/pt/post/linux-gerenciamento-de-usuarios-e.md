@@ -66,7 +66,7 @@ Ele foi criado com os valores padrões, com o UID unico, um novo grupo, sem come
 * -m => Solicita a criação do home. Obs: A maioria das distribuições cria a home automaticamente.
 * -d => Defini o nome da pasta home.
 * -g => O grupo primário.
-* -G => O grupo secundário. 
+* -G => O grupo secundário.
 
 Um exemplo seria:
 
@@ -116,7 +116,7 @@ Como podemos ver na primeira parte, os usuários pertencem a grupos, primário e
 
 Cada linha representa um grupo e cada grupo é separado em quatro campos:
 
-> Grupo:Senha:ID:Usuários 
+> Grupo:Senha:ID:Usuários
 
 O campo de senha assim como acontece nos usuarios fica em outro arquivo no /etc/gshadow
 
@@ -132,13 +132,13 @@ Para criar o grupo temos o comando: groupadd "nome-grupo"
 
      groupadd teste
 
-###### Alterar grupo primário do usuário 
+###### Alterar grupo primário do usuário
 
 Para alterar o grupo principal de um usuário temos o comando: usermod -g "grupo" "usuário".
 
     usermod -g teste2 teste
 
-###### Alterar grupo secundário do usuário 
+###### Alterar grupo secundário do usuário
 
 Bem parecido com o comando anterior: usermod -G "grupo" "usuário".
 
@@ -153,6 +153,25 @@ Para adicionar usuário a um grupo temos o comando: usermod -a -G "grupo" "usuá
 Aqui temos que passar o parâmetro -a para adicionar senão ele vai simplesmente alterar o grupo secundário.
 
 Obs: Um usuário pode ter somente um grupo principal e vários grupos secundários.
+
+###### Mostrar o UID e todos os GID do usuário
+
+Podemos ver todos os grupos e o UID de um usuário com o comando: id "usuário"
+
+    id teste
+
+###### Mostra grupos do usuário 
+
+Para mostrar os grupos de um usuário temos o comando: groups "usuario"
+
+    group teste
+
+###### Getent
+
+E para finalizar podemos usar o comando getent para consultar os arquivos /etc/passwd e /etc/group, para acesso temos dois comandos:
+
+1. getent passwd
+2. getent group
 
 #### Conclusão
 
