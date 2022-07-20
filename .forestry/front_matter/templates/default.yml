@@ -34,6 +34,7 @@ fields:
   label: thumbnail
 pages:
 - content/pt/portfolio/criacao-de-sites-estaticos.md
+- content/pt/post/criando-uma-api-conceitos.md
 - content/pt/post/gerenciadores-de-versao-nvm.md
 - content/pt/post/gerenciadores-de-versao-rvm.md
 - content/pt/post/gerenciadores-de-versao-sdkman.md
