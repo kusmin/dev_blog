@@ -20,4 +20,14 @@ Continuando nossa série sobre Linux, hoje veremos como gerenciar as permissões
 
 #### Definindo as permissões
 
-O primeiro
+Primeiramente vamos analisar o stat de um arquivo qualquer. Execute os comandos:
+
+    touch arquivo && stat arquivo
+
+Primeiro criamos um arquivo com o comando touch e depois visualizamos o status do arquivo com o comando stat.
+
+![status arquivo](/uploads/stat_arquivo.png "status arquivo")
+
+Como podem ver no print é retornado muitas informações uteis como o caminho relativo do arquivo, o tamanho do arquivo em memoria, o INODE que é o identificador único do arquivo dentro do Linux, etc. 
+
+A parte que nos interessa neste momento é a linha de "Acesso", ali se encontra as permissões
