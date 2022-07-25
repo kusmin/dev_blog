@@ -47,6 +47,37 @@ A outras formas de ver as informações de permissão, os mais usados sendo os c
 
 Cada simbolo deste representa uma ação que pode ser realizada pelo usuário no arquivo, vamos começar vendo a por escrita:
 
-* O "r" simboliza o "read", permissão para ler o arquivo.
-* O "w" representa o "write", permissão para escrever e alterar o arquivo.
-* O 
+* O "r" simboliza o "read", permissão para ler o arquivo ou listar arquivos do diretório.
+* O "w" representa o "write", permissão para escrever e alterar o arquivo ou criar e remover no diretório .
+* O "x" representa o "execute", permissão para executar o arquivo ou acessar o diretório.
+
+Para adicionarmos uma permissão ao arquivo para todos os usuários, podemos executar o comando "chmod +"permissão". Por exemplo.
+
+     chmod +x arquivo
+
+Com este comando adicionamos a permissão de execução para todos os usuários. Conforme podem verificar pela imagem abaixo.
+
+ ![chmod x](/uploads/chmod-x.png "chmod x")
+
+O chmod é o comando que utilizamos para alterar  a permissão, remover permissão ou redefinir as definições. Podem ser passados os parâmetros:
+
+* u => Usuário.
+* g => Grupo.
+* o => Outros.
+* a => Todos.
+
+Caso não seja passado o parâmetro o padrão é o "a" para todos. Além disso o "+" serve para adicionar permissão, o "-" para remover e o "=" para definir as permissões. Exemplos:
+
+    chmod u=rwx,g=r,o=r arquivo
+
+Definimos que o usuario tem permissão de leitura, escrita e execução para o arquivo, e o grupo e os outros somente de leitura.
+
+    chmod a-r
+
+Retiramos a permissão de leitura para todos.
+
+    chmod u+r
+
+Adicionamos a permissão de leitura para o usuário.
+
+Você sempre pode confirmar estas alterações com os comandos "stat" e "ls -l"  
