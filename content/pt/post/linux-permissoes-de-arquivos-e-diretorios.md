@@ -28,6 +28,25 @@ Primeiro criamos um arquivo com o comando touch e depois visualizamos o status d
 
 ![status arquivo](/uploads/stat_arquivo.png "status arquivo")
 
-Como podem ver no print é retornado muitas informações uteis como o caminho relativo do arquivo, o tamanho do arquivo em memoria, o INODE que é o identificador único do arquivo dentro do Linux, etc. 
+Como podem ver no print é retornado muitas informações uteis como o caminho relativo do arquivo, o tamanho do arquivo em memoria, o INODE que é o identificador único do arquivo dentro do Linux, etc.
 
-A parte que nos interessa neste momento é a linha de "Acesso", ali se encontra as permissões
+A parte que nos interessa neste momento é a linha de "Acesso", ali se encontram as permissões tanto na forma octal(0644), quanto na forma escrita (-rw-rw-r--). São duas maneiras de descrever as permissões e que possuem os mesmos valores.
+
+* O caractere "0" 'um simbolo especial que veremos mais a frente e o primeiro "-" representa o tipo de arquivo.
+* O caractere "6" e os 3 primeiros dígitos da forma escrita (rw-), representam as permissões do usuário  dono do arquivo.
+* O caractere "6" e os 3 dígitos do meio da forma escrita (rw-), representam as permissões do grupo dono do arquivo.
+* O caractere "4" e os 3 dígitos do meio da forma escrita (r--), representam as permissões de outros.
+* O Uid retorna o identificador do usuário dono mais o nome do mesmo.
+* O Gid retorna o identificador do grupo dono mais o nome do mesmo.
+
+A outras formas de ver as informações de permissão, os mais usados sendo os comandos "ll" ou "ls -l". Exemplo:
+
+    ls -l
+
+![comando ls -l](/uploads/ls-l.png "comando ls -l")
+
+Cada simbolo deste representa uma ação que pode ser realizada pelo usuário no arquivo, vamos começar vendo a por escrita:
+
+* O "r" simboliza o "read", permissão para ler o arquivo.
+* O "w" representa o "write", permissão para escrever e alterar o arquivo.
+* O 
