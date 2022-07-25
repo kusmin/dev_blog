@@ -3,7 +3,6 @@ aliases = []
 author = "Renan Ribeiro Lage"
 categories = ["Gerenciamento Linux", "Linux"]
 date = 2022-07-21T03:00:00Z
-draft = true
 math = false
 redirectUrl = ""
 series = []
@@ -80,4 +79,61 @@ Retiramos a permissão de leitura para todos.
 
 Adicionamos a permissão de leitura para o usuário.
 
-Você sempre pode confirmar estas alterações com os comandos "stat" e "ls -l"  
+Você sempre pode confirmar estas alterações com os comandos "stat" e "ls -l". 
+
+Podemos também alterar pela forma octal, que como dito antes a representa a mesma coisa somente que da forma numérica, se executarmos.
+
+     stat arquivo
+
+![ocotal](/uploads/ocotal.png "ocotal")
+
+O valor 775 representa as permissões na forma octal, que tem o mesmo correspondente na forma escrita:
+
+* O "r" tem um valor de 4.
+* O "w" tem um valor de 2.
+* O "x" tem um valor de 1.
+
+Pela soma podemos saber a permissão, o 7 representa a soma das 3 permissões, 4 +2 + 1 = 7, já o 5 representa a soma de 4 + 1 ou seja permissão de leitura e execução. Aqui podemos usar o comando chmod também na forma octal.
+
+    chmod 777 arquivo
+
+Defini permissão total para todos.
+
+    chmod 400 arquivo
+
+Defini permissão de leitura para o usuário e nenhuma para o grupo ou os outros.
+
+O chmod também tem o parâmetro -R que defini as permissões recursivamente para todos os arquivos do diretório.
+
+#### Alterando os donos do arquivo
+
+O usuário e o grupo a que pertencem os arquivos e diretórios podem ser alterados pelo comando chown:
+
+* chown usuário "arquivo ou diretório".
+* chown usuario:grupo "arquivo ou diretório".
+* chown :grupo "arquivo ou diretório".
+* chgrp grupo "arquivo ou diretorio".
+
+Podemos passar o parâmetro -R para alterar de forma recursiva.
+
+Exemplos:
+
+    chown root arquivo
+
+ Alterei o usuário do arquivo para root.
+
+    chown root:root arquivo
+
+Alterei o usuário e o grupo do arquivo para o root.
+
+    chown :root arquivo
+
+Alterei o grupo do arquivo para root.
+
+    chown -R root:root dir
+
+Alterei todos os arquivos do diretório dir para terem como usuário e grupo o root.
+
+#### Conclusão
+
+Neste post aprendemos como gerenciar e como funciona as permissões de arquivos e diretórios no Linux, utilizando principalmente os comandos chmod e chown. Até a próxima !
