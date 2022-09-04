@@ -80,3 +80,19 @@ Para usar o SQS, um serviço de enfileiramento de mensagens distribuído totalme
     {
         "QueueUrl": "http://localhost:4566/000000000000/sample-queue"
     }
+
+### Uso
+
+Para começar a usar o LocalStack, confira nossa documentação em [docs.localstack.cloud](https://docs.localstack.cloud/) .
+
+* [Configuração do LocalStack](https://docs.localstack.cloud/localstack/configuration/)
+* [LocalStack no CI](https://docs.localstack.cloud/ci/)
+* [Integrações do LocalStack](https://docs.localstack.cloud/integrations/)
+* [Ferramentas LocalStack](https://docs.localstack.cloud/tools/)
+* [Entendendo o LocalStack](https://docs.localstack.cloud/localstack/)
+* [Solucionar problemas](https://github.com/localstack/localstack/blob/master/doc/troubleshoot/README.md)
+
+Para usar o LocalStack com uma interface gráfica do usuário, você pode usar os seguintes clientes de interface do usuário:
+
+* [Aplicativo de desktop Commandeer](https://getcommandeer.com/)
+* [Interface de usuário da Web do administrador do DynamoDB](https://www.npmjs.com/package/dynamodb-admin)
