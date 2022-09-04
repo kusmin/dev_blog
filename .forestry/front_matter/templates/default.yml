@@ -35,6 +35,7 @@ fields:
 pages:
 - content/pt/portfolio/criacao-de-sites-estaticos.md
 - content/pt/post/criando-uma-api-conceitos.md
+- content/pt/post/desenvolvimento-local-localstack.md
 - content/pt/post/docker-dockerizando-o-nodejs.md
 - content/pt/post/gerenciadores-de-versao-nvm.md
 - content/pt/post/gerenciadores-de-versao-rvm.md
