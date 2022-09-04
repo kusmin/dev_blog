@@ -30,4 +30,53 @@ O LocalStack oferece suporte a um número crescente de serviços da AWS, como AW
 * `pip`(Gerenciador de pacotes Python)
 * `Docker`
 
-### 
+### Instalação
+
+A maneira mais fácil de instalar o LocalStack é via `pip`:
+
+    pip install localstack
+    
+
+**Nota** : Por favor, **não** use `sudo`ou o `root`usuário - LocalStack deve ser instalado e iniciado inteiramente sob um usuário local não root. Se você tiver problemas com permissões no macOS High Sierra, instale com`pip install --user localstack`
+
+Ele instala o `localstack-cli`que é usado para executar a imagem do Docker que hospeda o tempo de execução do LocalStack.
+
+### Exemplo
+
+Inicie o LocalStack dentro de um contêiner do Docker executando:
+
+     % localstack start -d
+    
+         __                     _______ __             __
+        / /   ____  _________ _/ / ___// /_____ ______/ /__
+       / /   / __ \/ ___/ __ `/ /\__ \/ __/ __ `/ ___/ //_/
+      / /___/ /_/ / /__/ /_/ / /___/ / /_/ /_/ / /__/ ,<
+     /_____/\____/\___/\__,_/_//____/\__/\__,_/\___/_/|_|
+    
+     💻 LocalStack CLI 1.0.0
+    
+    [20:22:20] starting LocalStack in Docker mode 🐳
+    [20:22:21] detaching
+    
+
+Você pode consultar o status dos respectivos serviços no LocalStack executando:
+
+    % localstack status services
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+    ┃ Service                  ┃ Status      ┃
+    ┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+    │ acm                      │ ✔ available │
+    │ apigateway               │ ✔ available │
+    │ cloudformation           │ ✔ available │
+    │ cloudwatch               │ ✔ available │
+    │ config                   │ ✔ available │
+    │ dynamodb                 │ ✔ available │
+    ...
+    
+
+Para usar o SQS, um serviço de enfileiramento de mensagens distribuído totalmente gerenciado, no LocalStack, execute:
+
+    % awslocal sqs create-queue --queue-name sample-queue
+    {
+        "QueueUrl": "http://localhost:4566/000000000000/sample-queue"
+    }
