@@ -33,6 +33,7 @@ fields:
   name: thumbnail
   label: thumbnail
 pages:
+- content/pt/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios.md
 - content/pt/portfolio/criacao-de-sites-estaticos.md
 - content/pt/post/criando-uma-api-conceitos.md
 - content/pt/post/desenvolvimento-local-localstack.md
