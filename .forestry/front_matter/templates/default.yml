@@ -44,6 +44,7 @@ pages:
 - content/pt/post/linux-gerenciamento-de-processos.md
 - content/pt/post/linux-gerenciamento-de-usuarios-e.md
 - content/pt/post/linux-permissoes-de-arquivos-e-diretorios.md
+- content/pt/post/podman.md
 - content/pt/post/principios-da-programacao-linguagem-de-programacao.md
 - content/pt/post/principios-da-programacao-o-que-e-programacao.md
 - content/pt/post/sites-dinamicos-x-sites-estaticos.md
