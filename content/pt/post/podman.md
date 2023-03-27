@@ -11,7 +11,7 @@ thumbnail = "/uploads/podman-logo-full-vert.png"
 title = ""
 
 +++
-# Título: Entendendo o Podman: Funcionamento, Aplicações e Prós e Contras
+# Entendendo o Podman: Funcionamento, Aplicações e Prós e Contras
 
 ### Introdução:
 
