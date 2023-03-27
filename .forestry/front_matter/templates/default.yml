@@ -35,6 +35,8 @@ fields:
 pages:
 - content/pt/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios.md
 - content/pt/portfolio/criacao-de-sites-estaticos.md
+- 'content/pt/post/Podman: Entendendo o Podman: Funcionamento, Aplicações e Prós e
+  Contras.md'
 - content/pt/post/criando-uma-api-conceitos.md
 - content/pt/post/desenvolvimento-local-localstack.md
 - content/pt/post/docker-dockerizando-o-nodejs.md
@@ -45,7 +47,6 @@ pages:
 - content/pt/post/linux-gerenciamento-de-processos.md
 - content/pt/post/linux-gerenciamento-de-usuarios-e.md
 - content/pt/post/linux-permissoes-de-arquivos-e-diretorios.md
-- content/pt/post/podman.md
 - content/pt/post/principios-da-programacao-linguagem-de-programacao.md
 - content/pt/post/principios-da-programacao-o-que-e-programacao.md
 - content/pt/post/sites-dinamicos-x-sites-estaticos.md
