@@ -11,7 +11,6 @@ thumbnail = "/uploads/nest.png"
 title = "Criando uma Aplicação NestJS com Prisma, Docker e PostgreSQL: Um CRUD de Usuários"
 
 +++
-# Criando uma Aplicação NestJS com Prisma, Docker e PostgreSQL: Um CRUD de Usuários
 
 ## Introdução
 
@@ -25,7 +24,7 @@ Para seguir este tutorial, você precisará:
 * Docker e Docker Compose instalados
 * Yarn ou NPM (gerenciadores de pacotes)
 
-2. Configurando o ambiente
+1. Configurando o ambiente
 
 Primeiro, crie um novo projeto NestJS utilizando o CLI:
 
@@ -36,7 +35,7 @@ Entre na pasta do projeto:
 
     cd my-nestjs-prisma-app
 
-3. Configurando o Docker e o PostgreSQL
+1. Configurando o Docker e o PostgreSQL
 
 Crie um arquivo chamado **`docker-compose.yml`** na raiz do projeto com o seguinte conteúdo:
 
@@ -55,13 +54,12 @@ Crie um arquivo chamado **`docker-compose.yml`** na raiz do projeto com o seguin
     
     volumes:
       db-data:
-    
 
 Inicie o container do PostgreSQL:
 
     docker-compose up -d
 
-4. Integrando o Prisma
+1. Integrando o Prisma
 
 Instale o Prisma CLI e o pacote do Prisma Client:
 
@@ -76,28 +74,25 @@ Edite o arquivo **`prisma/schema.prisma`**:
 
 * Atualize o bloco **`datasource`** com os detalhes do banco de dados PostgreSQL:
 
-    codedatasource db {
+      codedatasource db {
       provider = "postgresql"
       url      = "postgresql://myuser:mypassword@localhost:5432/mydb"
-    }
-    
-
+      }
 * Defina o modelo **`User`**:
 
-    prismaCopy codemodel User {
+      prismaCopy codemodel User {
       id        Int      @id @default(autoincrement())
       name      String
       email     String   @unique
       createdAt DateTime @default(now())
       updatedAt DateTime @updatedAt
-    }
-    
+      }
 
 Gere o Prisma Client:
 
     yarn prisma generate
 
-5. Implementando o CRUD de Usuários
+1. Implementando o CRUD de Usuários
 
 Agora, vamos criar o módulo, o serviço e o controlador para o gerenciamento de usuários:
 
@@ -107,7 +102,7 @@ Agora, vamos criar o módulo, o serviço e o controlador para o gerenciamento de
 
 Edite os arquivos gerados conforme necessário, implementando as operações CRUD com o Prisma Client. As principais alterações devem ser feitas no arquivo **`users.service.ts`**.
 
-6. Implementando o CRUD no Controller e Service
+1. Implementando o CRUD no Controller e Service
 
 Agora, vamos detalhar a implementação do CRUD no **`users.controller.ts`** e **`users.service.ts`**.
 
@@ -123,7 +118,6 @@ Primeiro, crie o arquivo **`users.module.ts`** na pasta **`src/users`**:
       providers: [UsersService, PrismaService],
     })
     export class UsersModule {}
-    
 
 Neste arquivo, importamos e configuramos o **`UsersService`**, **`UsersController`** e **`PrismaService`**. O **`PrismaService`** será injetado no **`UsersService`** como uma dependência.
 
@@ -136,9 +130,7 @@ Agora, atualize o arquivo **`src/app.module.ts`** para importar o **`UsersModule
       imports: [UsersModule],
     })
     export class AppModule {}
-    
 
-  
 Agora, com esta configuração realizada podemos nos concentrar no service e controller do user.
 
 **`users.service.ts`**:
@@ -180,7 +172,6 @@ Agora, com esta configuração realizada podemos nos concentrar no service e con
         });
       }
     }
-    
 
 **`users.controller.ts`**:
 
@@ -217,11 +208,10 @@ Agora, com esta configuração realizada podemos nos concentrar no service e con
         return this.usersService.remove(id);
       }
     }
-    
 
 No arquivo **`users.service.ts`**, implementamos os métodos CRUD (create, findAll, findOne, update e remove) usando o Prisma Service. Já no arquivo **`users.controller.ts`**, criamos os endpoints da API para cada operação CRUD, e associamos os métodos do serviço correspondentes.
 
-7. Testando a aplicação
+1. Testando a aplicação
 
 Inicie o servidor NestJS:
 
@@ -229,7 +219,7 @@ Inicie o servidor NestJS:
 
 Acesse a aplicação em **`http://localhost:3000/users`** e teste as operações CRUD usando uma ferramenta como o Postman ou o Insomnia.
 
-8. Bibliografia
+1. Bibliografia
 
 Aqui estão algumas referências úteis para aprofundar seu conhecimento sobre as tecnologias utilizadas neste tutorial:
 
