@@ -37,6 +37,7 @@ pages:
 - content/pt/portfolio/criacao-de-sites-estaticos.md
 - 'content/pt/post/Podman: Entendendo o Podman: Funcionamento, Aplicações e Prós e
   Contras.md'
+- content/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma.md
 - content/pt/post/criando-uma-api-conceitos.md
 - content/pt/post/desenvolvimento-local-localstack.md
 - content/pt/post/docker-dockerizando-o-nodejs.md
