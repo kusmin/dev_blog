@@ -24,7 +24,7 @@ Passo 1: Definir modelos de função e permissão no Prisma
 
 Primeiro, vamos criar os modelos Role e Permission no arquivo **`prisma/schema.prisma`**. Adicione o seguinte código:
 
-    prismaCopy codemodel Role {
+    Role {
       id          Int          @id @default(autoincrement())
       name        String       @unique
       permissions Permission[]
@@ -35,16 +35,14 @@ Primeiro, vamos criar os modelos Role e Permission no arquivo **`prisma/schema.p
       name       String @unique
       roles      Role[] @relation(references: [id])
     }
-    
 
 Atualize o modelo User para incluir a relação com o modelo Role:
 
-    prismaCopy codemodel User {
+    User {
       // ...
       role   Role?  @relation(fields: [roleId], references: [id])
       roleId Int?
     }
-    
 
 Em seguida, aplique as mudanças no banco de dados executando **`yarn prisma migrate dev`**.
 
@@ -52,14 +50,13 @@ Passo 2: Criar módulos, serviços e controladores para Funções e Permissões
 
 Crie os módulos, serviços e controladores para Role e Permission:
 
-    arduinoCopy codenest generate module roles
+    generate module roles
     nest generate service roles
     nest generate controller roles
     
     nest generate module permissions
     nest generate service permissions
     nest generate controller permissions
-    
 
 Implemente as operações CRUD nos arquivos gerados, como fizemos no tutorial anterior para o módulo de usuários.
 
@@ -73,23 +70,21 @@ No arquivo **`src/roles/roles.service.ts`**, adicione o seguinte código para in
         include: { permissions: true },
       });
     }
-    
 
 No arquivo **`src/users/users.service.ts`**, adicione o seguinte código para incluir a função e as permissões ao buscar um usuário:
 
-    typescriptCopy codeasync findOne(id: number) {
+    async findOne(id: number) {
       return this.prisma.user.findUnique({
         where: { id },
         include: { role: { include: { permissions: true } } },
       });
     }
-    
 
 Passo 4: Implementar um RBAC Guard
 
 Crie um novo arquivo chamado **`rbac.guard.ts`** na pasta **`src/auth`** e adicione o seguinte conteúdo:
 
-    typescriptCopy codeimport { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
+    import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
     import { Reflector } from '@nestjs/core';
     
     @Injectable()
@@ -116,24 +111,22 @@ Crie um novo arquivo chamado **`rbac.guard.ts`** na pasta **`src/auth`** e adici
         return user && user.role && hasPermission();
       }
     }
-    
 
 Passo 5: Adicionar metadados de permissões aos controladores
 
 Agora, vamos adicionar os metadados de permissões aos controladores usando decorators personalizados. Crie um novo arquivo chamado **`permission.decorator.ts`** na pasta **`src/auth`** e adicione o seguinte conteúdo:
 
-    typescriptCopy codeimport { SetMetadata } from '@nestjs/common';
+    import { SetMetadata } from '@nestjs/common';
     
     export const PERMISSIONS_KEY = 'permissions';
     export const Permission = (...permissions: string[]) =>
       SetMetadata(PERMISSIONS_KEY, permissions);
-    
 
 Passo 6: Proteger as rotas com o RbacGuard
 
 Agora, você pode proteger as rotas em seus controladores usando o **`RbacGuard`** e o decorator **`Permission`**. Por exemplo, no arquivo **`src/users/users.controller.ts`**, você pode fazer o seguinte:
 
-    typescriptCopy codeimport { Permission } from '../auth/permission.decorator';
+    import { Permission } from '../auth/permission.decorator';
     import { RbacGuard } from '../auth/rbac.guard';
     
     // ...
@@ -151,7 +144,6 @@ Agora, você pode proteger as rotas em seus controladores usando o **`RbacGuard`
     
       // ...
     }
-    
 
 Aqui, protegemos a rota POST **`/users`** com o **`RbacGuard`**, exigindo a permissão "create:user" para acessá-la.
 
