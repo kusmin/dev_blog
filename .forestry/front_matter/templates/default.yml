@@ -33,8 +33,6 @@ fields:
   name: thumbnail
   label: thumbnail
 pages:
-- content/pt/adicionando-recursos-de-upload-de-arquivos-a-aplicacao-nestjs-com-prisma-e-multer.md
-- content/pt/criando-um-sistema-de-permissoes-baseado-em-funcoes-rbac-no-nestjs-com-prisma-jwt-e-passport.md
 - content/pt/portfolio/criacao-de-sites-estaticos.md
 - 'content/pt/post/Podman: Entendendo o Podman: Funcionamento, Aplicações e Prós e
   Contras.md'
