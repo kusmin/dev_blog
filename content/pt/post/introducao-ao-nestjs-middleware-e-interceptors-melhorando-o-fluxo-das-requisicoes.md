@@ -30,33 +30,31 @@ Neste exemplo, vamos criar um middleware simples para registrar informações de
 
 1. Crie um arquivo chamado **`logger.middleware.ts`** na pasta **`src/middleware`**:
 
-    import { Injectable, NestMiddleware } from '@nestjs/common';
-    import { Request, Response, NextFunction } from 'express';
-    
-    @Injectable()
-    export class LoggerMiddleware implements NestMiddleware {
-      use(req: Request, res: Response, next: NextFunction) {
-        console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-        next();
-      }
-    }
+   import { Injectable, NestMiddleware } from '@nestjs/common';
+   import { Request, Response, NextFunction } from 'express';
 
+   @Injectable()
+   export class LoggerMiddleware implements NestMiddleware {
+   use(req: Request, res: Response, next: NextFunction) {
+   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+   next();
+   }
+   }
 2. Adicione o middleware ao seu módulo principal (**`app.module.ts`**):
 
-    import { Module, MiddlewareConsumer } from '@nestjs/common';
-    import { LoggerMiddleware } from './middleware/logger.middleware';
-    
-    @Module({
-      // ...
-    })
-    export class AppModule {
-      configure(consumer: MiddlewareConsumer) {
-        consumer
-          .apply(LoggerMiddleware)
-          .forRoutes('*');
-      }
-    }
-    
+   import { Module, MiddlewareConsumer } from '@nestjs/common';
+   import { LoggerMiddleware } from './middleware/logger.middleware';
+
+   @Module({
+   // ...
+   })
+   export class AppModule {
+   configure(consumer: MiddlewareConsumer) {
+   consumer
+   .apply(LoggerMiddleware)
+   .forRoutes('*');
+   }
+   }
 
 Agora, quando você fizer uma requisição para sua aplicação, verá as informações da requisição sendo registradas no console.
 
@@ -66,42 +64,41 @@ Neste exemplo, vamos criar um interceptor para adicionar o tempo de execução �
 
 1. Crie um arquivo chamado **`timing.interceptor.ts`** na pasta **`src/interceptors`**:
 
-    import {
-      CallHandler,
-      ExecutionContext,
-      Injectable,
-      NestInterceptor,
-    } from '@nestjs/common';
-    import { Observable } from 'rxjs';
-    import { tap } from 'rxjs/operators';
-    
-    @Injectable()
-    export class TimingInterceptor implements NestInterceptor {
-      intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-        const startTime = Date.now();
-        return next
-          .handle()
-          .pipe(
-            tap(() => console.log(`Execution time: ${Date.now() - startTime}ms`)),
-          );
-      }
-    }
+       import {
+       CallHandler,
+       ExecutionContext,
+       Injectable,
+       NestInterceptor,
+       } from '@nestjs/common';
+       import { Observable } from 'rxjs';
+       import { tap } from 'rxjs/operators';
 
+       @Injectable()
+       export class TimingInterceptor implements NestInterceptor {
+       intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+       const startTime = Date.now();
+       return next
+       .handle()
+       .pipe(
+       tap(() => console.log(Execution time: ${Date.now() - startTime}ms)),
+       );
+       }
+       }
 2. Adicione o interceptor ao seu módulo principal (**`app.module.ts`**):
 
-    import { APP_INTERCEPTOR } from '@nestjs/core';
-    import { TimingInterceptor } from './interceptors/timing.interceptor';
-    
-    @Module({
-      // ...
-      providers: [
-        {
-          provide: APP_INTERCEPTOR,
-          useClass: TimingInterceptor,
-        },
-      ],
-    })
-    export class AppModule {}
+       import { APP_INTERCEPTOR } from '@nestjs/core';
+       import { TimingInterceptor } from './interceptors/timing.interceptor';
+
+       @Module({
+       // ...
+       providers: [
+       {
+       provide: APP_INTERCEPTOR,
+       useClass: TimingInterceptor,
+       },
+       ],
+       })
+       export class AppModule {}
 
 Agora, quando você fizer uma requisição para sua aplicação, verá o tempo de execução sendo registrado no console.
 
