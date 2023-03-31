@@ -56,6 +56,7 @@ pages:
 - content/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js.md
 - content/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao.md
 - content/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes.md
+- content/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc.md
 - content/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas.md
 - content/pt/post/ntroducao-ao-vue.js-um-guia-para-iniciantes.md
 - content/pt/post/principios-da-programacao-linguagem-de-programacao.md
