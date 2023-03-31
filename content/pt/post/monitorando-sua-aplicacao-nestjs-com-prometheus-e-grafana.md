@@ -27,69 +27,62 @@ Configurando o Prometheus e o Grafana
 
 1. Crie um arquivo chamado **`docker-compose.yml`** na raiz do projeto com o seguinte conteúdo:
 
-    version: '3.8'
-    services:
-      prometheus:
-        image: prom/prometheus
-        ports:
-          - '9090:9090'
-        volumes:
-          - './prometheus.yml:/etc/prometheus/prometheus.yml'
-    
-      grafana:
-        image: grafana/grafana
-        ports:
-          - '3001:3000'
-    
-
+       version: '3.8'
+       services:
+       prometheus:
+       image: prom/prometheus
+       ports:
+       - '9090:9090'
+       volumes:
+       - './prometheus.yml:/etc/prometheus/prometheus.yml'
+       
+       grafana:
+       image: grafana/grafana
+       ports:
+       - '3001:3000'
 2. Crie um arquivo chamado **`prometheus.yml`** na raiz do projeto com o seguinte conteúdo:
 
-    global:
-      scrape_interval: 15s
-    
-    scrape_configs:
-      - job_name: 'nestjs_app'
-        static_configs:
-          - targets: ['host.docker.internal:3000']
-    
-
+       global:
+       scrape_interval: 15s
+       
+       scrape_configs:
+       
+       job_name: 'nestjs_app'
+       static_configs:
+       
+       targets: ['host.docker.internal:3000']
 3. Inicie o Prometheus e o Grafana com o Docker Compose:
 
-    docker-compose up -d
+   docker-compose up -d
 
 Integrando o NestJS com o Prometheus
 
 1. Instale o pacote **`@nestjs/metrics`**:
 
-    bashCopy codenpm install --save @nestjs/metrics
-    
-
+   npm install --save @nestjs/metrics
 2. Importe o módulo **`MetricsModule`** no arquivo **`app.module.ts`**:
 
-    import { MetricsModule } from '@nestjs/metrics';
-    
-    @Module({
-      imports: [
-        MetricsModule.forRoot({
-          defaultLabels: {
-            app: 'nestjs_app',
-          },
-          route: {
-            path: '/metrics',
-            enableGcMetrics: true,
-          },
-        }),
-        // ...
-      ],
-      // ...
-    })
-    export class AppModule {}
-    
-
+       import { MetricsModule } from '@nestjs/metrics';
+       
+       @Module({
+         imports: [
+           MetricsModule.forRoot({
+             defaultLabels: {
+               app: 'nestjs_app',
+             },
+             route: {
+               path: '/metrics',
+               enableGcMetrics: true,
+             },
+           }),
+           // ...
+         ],
+         // ...
+       })
+       export class AppModule {}
 3. Inicie sua aplicação NestJS:
 
-    npm run start
-
+   npm run start
 4. Verifique se as métricas estão disponíveis acessando **`http://localhost:3000/metrics`**.
 
 ### Configurando o Grafana
@@ -105,12 +98,11 @@ Integrando o NestJS com o Prometheus
    * Adicione um gráfico ou qualquer outro elemento visual e configure a consulta para exibir as métricas desejadas. Por exemplo, você pode usar a seguinte consulta para visualizar o tempo médio de resposta da sua aplicação:
 
          rate(http_request_duration_seconds_sum{app="nestjs_app"}[1m]) / rate(http_request_duration_seconds_count{app="nestjs_app"}[1m])
-         
-     4. Personalize o painel conforme necessário, adicionando mais elementos visuais e ajustando suas consultas para exibir outras métricas relevantes. Algumas métricas comuns incluem:
+     1. Personalize o painel conforme necessário, adicionando mais elementos visuais e ajustando suas consultas para exibir outras métricas relevantes. Algumas métricas comuns incluem:
         * **`http_requests_total{app="nestjs_app"}`**: Total de solicitações HTTP recebidas pela aplicação.
         * **`http_request_duration_seconds_count{app="nestjs_app"}`**: Contagem de duração das solicitações HTTP.
         * **`process_cpu_seconds_total{app="nestjs_app"}`**: Tempo total da CPU gasto pelo processo.
-     5. Salve seu painel para consultá-lo mais tarde. Você também pode criar alertas com base nas métricas monitoradas para notificá-lo quando algo estiver errado.
+     2. Salve seu painel para consultá-lo mais tarde. Você também pode criar alertas com base nas métricas monitoradas para notificá-lo quando algo estiver errado.
 
      ### Conclusão
 
