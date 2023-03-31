@@ -45,6 +45,7 @@ pages:
 - content/pt/post/gerenciadores-de-versao-nvm.md
 - content/pt/post/gerenciadores-de-versao-rvm.md
 - content/pt/post/gerenciadores-de-versao-sdkman.md
+- content/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada.md
 - content/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1.md
 - content/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes.md
 - content/pt/post/linux-gerenciamento-de-processos-parte-2.md
