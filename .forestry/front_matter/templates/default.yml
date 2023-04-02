@@ -40,6 +40,7 @@ pages:
 - content/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi.md
 - content/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao.md
 - content/pt/post/criando-uma-api-conceitos.md
+- content/pt/post/criando-uma-skill-do-alexa-com-chat-gpt-em-python.md
 - content/pt/post/desenvolvimento-local-localstack.md
 - content/pt/post/docker-dockerizando-o-nodejs.md
 - content/pt/post/gerenciadores-de-versao-nvm.md
