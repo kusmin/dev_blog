@@ -2,7 +2,7 @@
 aliases = []
 author = "Renan Ribeiro Lage"
 categories = ["lambda", "aws", "python", "chatgpt", "alexa"]
-date = 2023-04-02T03:00:00Z
+date = 2023-04-02T08:00:00Z
 math = false
 redirectUrl = ""
 series = ["alexa"]
