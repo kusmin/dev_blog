@@ -53,6 +53,7 @@ pages:
 - content/pt/post/linux-gerenciamento-de-processos.md
 - content/pt/post/linux-gerenciamento-de-usuarios-e.md
 - content/pt/post/linux-permissoes-de-arquivos-e-diretorios.md
+- content/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack.md
 - content/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana.md
 - content/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js.md
 - content/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao.md
