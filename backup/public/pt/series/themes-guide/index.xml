@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Themes Guide on Blog de programação</title>
+    <link>http://updevblog.com/pt/series/themes-guide/</link>
+    <description>Recent content in Themes Guide on Blog de programação</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 13 Mar 2021 21:47:41 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/series/themes-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Figure Shortcode</title>
+      <link>http://updevblog.com/pt/post/template/</link>
+      <pubDate>Sat, 13 Mar 2021 21:47:41 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/template/</guid>
+      
+        <description>Template</description>
+      
+    </item>
+    
+  </channel>
+</rss>

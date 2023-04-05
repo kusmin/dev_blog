@@ -1,0 +1,24 @@
+{
+  "name": "dev_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kusmin/dev_blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kusmin/dev_blog/issues"
+  },
+  "homepage": "https://github.com/kusmin/dev_blog#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.3",
+    "tinacms": "^1.4.3"
+  }
+}

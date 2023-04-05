@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog de programação</title>
+    <link>http://updevblog.com/pt/post/</link>
+    <description>Recent content in Posts on Blog de programação</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 02 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerenciadores de versão: Pyenv</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</guid>
+      
+        <description>Em prosseguimento a nossa serie de gerenciadores de versão, hoje vamos tratar do mundo Python e conversar sobre o pyenv que é o meu gerenciador favorito de versão para o Python.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão: Sdkman</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</guid>
+      
+        <description>Hoje vamos começar nossa primeira serie aqui no site, que será sobre os gerenciadores de versão de linguagem.</description>
+      
+    </item>
+    
+    <item>
+      <title>Sites Dinâmicos x Sites Estáticos </title>
+      <link>http://updevblog.com/pt/post/sites-dinamicos-x-sites-estaticos/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/sites-dinamicos-x-sites-estaticos/</guid>
+      
+        <description>De acordo com o https://www.internetlivestats.com/ tem mais de 1.847.469.200 sites na internet no dia que este post foi escrito 29 de março de 2021, deixei o numero assim nesse formato pelo seu tamanho impressionante, isso com quase 5 bilhões de usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Zoho</title>
+      <link>http://updevblog.com/pt/post/zoho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/zoho/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

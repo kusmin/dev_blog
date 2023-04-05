@@ -1,0 +1,21 @@
+
+[pt]
+LanguageName = "pt-br"
+contentDir = "content/pt"
+description = 'Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!'
+title = "UpDev Blog - Tecnologia, Programação e Desenvolvimento"
+weight = 1
+
+[en]
+LanguageName = "en"
+contentDir = "content/en"
+description = 'A blog with news and information about technology and programming. In addition to tutorials and tips on Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue and others (we have no prejudice against any technology) that will make you take off in the IT world !'
+title = "programming blog"
+weight = 1
+
+[es]
+LanguageName = "es"
+contentDir = "content/es"
+description = 'Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!'
+title = "blog de programacion"
+weight = 1
