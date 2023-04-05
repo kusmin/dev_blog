@@ -2,6 +2,7 @@
 _template: default
 ---
 
+
 +++
 aliases = []
 author = "Renan Ribeiro Lage"

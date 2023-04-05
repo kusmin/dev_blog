@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/kusmin/dev_blog#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.5.3",
-    "tinacms": "^1.4.3"
+    "@tinacms/cli": "^1.5.5",
+    "tinacms": "^1.4.5"
   }
 }
