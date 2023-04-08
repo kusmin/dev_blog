@@ -1,7 +1,3 @@
----
-_template: default
----
-
 
 +++
 aliases = []
