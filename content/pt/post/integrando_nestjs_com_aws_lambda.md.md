@@ -25,13 +25,13 @@ Para seguir este tutorial, você precisará de:
 
 Instale o Serverless Framework globalmente usando npm:
 
-npm install -g serverless
+`npm install -g serverless`
 
 ## Passo 2: Criando a aplicação NestJS
 
 Crie uma nova aplicação NestJS utilizando o CLI:
 
-npx @nestjs/cli new nestjs-lambda
+`npx @nestjs/cli new nestjs-lambda`
 
 Entre na pasta do projeto:
 
@@ -106,9 +106,9 @@ Antes de fazer o deploy da aplicação na AWS, você deve testá-la localmente p
 
 Primeiro, instale o plugin como uma dependência de desenvolvimento:
 
-npm install --save-dev serverless-offline
+`npm install --save-dev serverless-offline`
 
-npm install --save-dev serverless-plugin-typescript
+`npm install --save-dev serverless-plugin-typescript`
 
 Em seguida, atualize o arquivo serverless.yml para incluir o plugin:
 
@@ -124,7 +124,7 @@ custom:
 
 Agora, você pode executar a aplicação NestJS localmente usando o seguinte comando:
 
-serverless offline
+`serverless offline`
 
 Agora, sua aplicação NestJS estará disponível localmente no endereço [http://localhost:3000](http://localhost:3000/). Você pode testar os endpoints da API usando Postman ou CURL.
 
@@ -143,7 +143,7 @@ Observação: O ideal é criar o usuário com permissões especificas, foi feito
 
 Para configurar o AWS CLI com suas credenciais da AWS, use o seguinte comando:
 
-aws configure
+`aws configure`
 
 Isso iniciará um prompt interativo solicitando sua Access Key ID, Secret Access Key, região padrão e formato de saída. Insira as informações solicitadas.
 
@@ -151,19 +151,17 @@ Isso iniciará um prompt interativo solicitando sua Access Key ID, Secret Access
 
 Agora que você tem tudo configurado, pode fazer deploy da sua aplicação na AWS. O Serverless Framework facilita esse processo. Na raiz do seu projeto, execute o seguinte comando:
 
-serverless deploy
+`serverless deploy`
 
 Isso irá empacotar sua aplicação e implantá-la na AWS. Ao final do processo, o Serverless Framework irá fornecer a URL da sua API na AWS. Você pode usar essa URL para testar sua API.
 
-
-Passo 8: Monitorando sua função Serverless
-------------------------------------------
+## Passo 8: Monitorando sua função Serverless
 
 Depois de implantar sua aplicação, você pode querer monitorá-la para entender o comportamento da aplicação e rastrear possíveis erros. O Serverless Framework fornece um comando muito útil para este propósito: serverless --console.
 
 Para começar a monitorar sua aplicação, execute o seguinte comando no terminal:
 
-serverless --console
+`serverless --console`
 
 Isso abrirá o console Serverless Dashboard, onde você pode monitorar sua aplicação em tempo real. Você verá informações detalhadas sobre cada execução da função, incluindo logs, duração, uso de memória e muito mais.
 
