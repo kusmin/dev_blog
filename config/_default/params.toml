@@ -5,6 +5,7 @@ commentoURL="https://commento.updevblog.com/js/commento.js"
 contactFormAction="https://kwesforms.com/api/foreign/forms/TWboUdDBnvqStejn56BU"
 Title="UpDev Blog"
 author="UpDev Blog"
+utterances = { repo = "kusmin/dev_blog_comments" }
 [umami]
 serverURL="umami.updevblog.com"
 id="48a61b1e-2fe0-4f38-8d5d-d01af53a7254"
