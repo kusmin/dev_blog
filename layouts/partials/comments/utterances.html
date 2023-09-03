@@ -1,7 +1,7 @@
 <script
   src="https://utteranc.es/client.js"
   repo="{{ .Site.Params.utterances.repo }}"
-  issue-term="{{ .Site.Params.utterances.issueTerm }}"
+  issue-term="{{ with .Site.Params.utterances.issueTerm }}{{ . }}{{ else }}pathname{{ end }}"
   theme="{{ .Site.Params.utterances.theme }}"
   {{ with .Site.Params.utterances.label }}
     label="{{ . }}"
