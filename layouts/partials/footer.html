@@ -44,5 +44,4 @@
 {{- if and (hugo.IsProduction) (.context.Site.Params.gtagId) -}}
   {{ partial "google-analytics-gtag-async.html" .context }}
 
-  {{partil "contact.html" .context }}
 {{- end -}}
