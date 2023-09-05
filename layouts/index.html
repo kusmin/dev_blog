@@ -105,4 +105,22 @@
     {{ template "partials/pagination.html" . }}
   </div>
 
+
+<script>
+  (function(d,t) {
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src="https://app.chaskiq.io/embed.js"
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      new window.ChaskiqMessengerEncrypted({
+        domain: 'https://app.chaskiq.io',
+        ws:  'wss://app.chaskiq.io/cable',
+        app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+        data: "YOUR_ENCRYPTED_JWE_DATA",
+        lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG"
+      })
+    }
+  })(document,"script");
+</script>
+
 {{ end }}
