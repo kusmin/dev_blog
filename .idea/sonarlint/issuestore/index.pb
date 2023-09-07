@@ -127,3 +127,15 @@ m
 =content/pt/post/testando-aplicativos-com-firebase-test-lab.md,7/7/77f2f4a00f4d48b46081953633189b5f6ea1c926
 t
 Dcontent/pt/post/vuetify-uma-biblioteca-vue-js-poderosa-e-elegante.md,7/a/7a3aa8f9658b44d087f45216f40e5ad80439c05a
+N
+layouts/shortcodes/notice.html,3/0/30b6a615792efd130e1ac5d0293851f734df3dea
+O
+layouts/shortcodes/loading.html,d/2/d2259c11bd5fd32c63eb9f20ab11927f27de22c7
+a
+1layouts/partials/google-analytics-gtag-async.html,6/9/694caaa7ce8068189b32b0e3bb88bf15682e028f
+M
+layouts/partials/contact.html,2/0/208ca8f94b0e733ab5ad8f61afc93a6269a48c18
+J
+layouts/partials/chat.html,8/a/8a2b8ac029a8ff0450de27697722d28c730203ae
+L
+layouts/partials/footer.html,f/e/fe27181e0262620e07619a0590d81e89fef855ec
