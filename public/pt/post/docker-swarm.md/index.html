@@ -15,7 +15,7 @@
 
   
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="generator" content="Hugo 0.101.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="UpDev Blog" />
   <meta
     name="description"
@@ -382,8 +382,8 @@
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
     crossorigin="anonymous"
   ></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
@@ -599,15 +599,15 @@
 </span></span></code></pre></div><p>Substitua &lt;MANAGER-IP&gt; pelo endereço IP do nó gerente.</p>
 <h3 id="adicionando-nós-ao-swarm">Adicionando nós ao Swarm</h3>
 <p>Para adicionar nós trabalhadores ao Swarm, execute o seguinte comando nos nós desejados:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">swarm</span> <span class="n">join</span> <span class="p">-</span><span class="n">-token</span> <span class="p">&lt;</span><span class="nb">WORKER-TOKEN</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nb">MANAGER-IP</span><span class="p">&gt;</span><span class="err">:</span><span class="mf">2377</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">swarm</span> <span class="n">join</span> <span class="p">-</span><span class="n">-token</span> <span class="p">&lt;</span><span class="nb">WORKER-TOKEN</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nb">MANAGER-IP</span><span class="p">&gt;</span><span class="err">:</span><span class="n">2377</span>
 </span></span></code></pre></div><p>Substitua &lt;WORKER-TOKEN&gt; pelo token de trabalhador gerado pelo gerente e &lt;MANAGER-IP&gt; pelo endereço IP do nó gerente.</p>
 <h3 id="usando-docker-compose-com-docker-swarm">Usando Docker Compose com Docker Swarm</h3>
 <p>Você pode implantar sua aplicação no Docker Swarm usando o mesmo arquivo docker-compose.yml. Para fazer isso, execute o seguinte comando no nó gerente:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">stack</span> <span class="n">deploy</span> <span class="n">-c</span> <span class="nb">docker-compose</span><span class="p">.</span><span class="py">yml</span> <span class="n">myapp</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">stack</span> <span class="n">deploy</span> <span class="n">-c</span> <span class="nb">docker-compose</span><span class="p">.</span><span class="n">yml</span> <span class="n">myapp</span>
 </span></span></code></pre></div><p>Substitua myapp pelo nome que deseja dar à sua aplicação. O Docker Swarm criará serviços, redes e volumes conforme definido no arquivo docker-compose.yml.</p>
 <h3 id="escalando-serviços-no-docker-swarm">Escalando serviços no Docker Swarm</h3>
 <p>Para escalar um serviço, execute o seguinte comando no nó gerente:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">service</span> <span class="n">scale</span> <span class="n">myapp_web</span><span class="p">=</span><span class="mf">3</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">docker</span> <span class="n">service</span> <span class="n">scale</span> <span class="n">myapp_web</span><span class="p">=</span><span class="n">3</span>
 </span></span></code></pre></div><p>Substitua myapp_web pelo nome do serviço que deseja escalar e 3 pelo número de réplicas desejadas.</p>
 <h2 id="conclusão">Conclusão</h2>
 <p>O Docker Compose e o Docker Swarm são ferramentas poderosas para gerenciar recursos no Docker e simplificar a implantação e escalabilidade de aplicações. Com o Docker Compose, você pode definir e executar aplicações multi-contêiner usando um único arquivo de configuração, enquanto o Docker Swarm permite criar e gerenciar clusters de nós Docker para fornecer recursos avançados, como escalabilidade, balanceamento de carga e tolerância a falhas. Juntos, essas ferramentas podem ajudá-lo a gerenciar eficientemente os recursos do Docker e a garantir que suas aplicações sejam altamente disponíveis e escaláveis.</p>
@@ -694,8 +694,8 @@
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.602bd2014468bd348112e2aa24f595c530d257a4ed6c335d7baaa6ac9a7ca6fb.js"
+    integrity="sha256-YCvSAURovTSBEuKqJPWVxTDSV6TtbDNde6qmrJp8pvs="
     crossorigin="anonymous"
   ></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
