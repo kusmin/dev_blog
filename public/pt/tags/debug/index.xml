@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debug on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/tags/debug/</link>
+    <description>Recent content in debug on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 22 Apr 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Depurar aplicação web pelo iphone</title>
+      <link>http://updevblog.com/pt/post/depurar-iphone.md/</link>
+      <pubDate>Sat, 22 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/depurar-iphone.md/</guid>
+      
+        <description>Depurar aplicativos pelo iPhone pode ser uma tarefa útil para desenvolvedores que desejam verificar o comportamento do aplicativo em um dispositivo real.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

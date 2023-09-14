@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="pt"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Autenticação de Usuários com Firebase Authentication
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/pt/post/autenticacao-de-usuarios-com-firebase-authentication/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Autenticação de Usuários com Firebase Authentication"/>
+<meta name="twitter:description" content="Firebase Authentication é um serviço que pode autenticar seus usuários de várias maneiras."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Autenticação de Usuários com Firebase Authentication" />
+<meta property="og:description" content="Firebase Authentication é um serviço que pode autenticar seus usuários de várias maneiras." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/pt/post/autenticacao-de-usuarios-com-firebase-authentication/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-20T21:03:00-03:00" />
+<meta property="article:modified_time" content="2023-06-20T21:03:00-03:00" /><meta property="og:site_name" content="UpDev Blog - Tecnologia, Programação e Desenvolvimento" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Autenticação de Usuários com Firebase Authentication",
+        "headline": "Autenticação de Usuários com Firebase Authentication",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Firebase Authentication é um serviço que pode autenticar seus usuários de várias maneiras.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/pt\/post\/autenticacao-de-usuarios-com-firebase-authentication\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-06-20T21:03:00.00Z",
+        "datePublished": "2023-06-20T21:03:00.00Z",
+        "dateModified": "2023-06-20T21:03:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/pt\/post\/autenticacao-de-usuarios-com-firebase-authentication\/",
+        "wordCount" : "475",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/pt">UpDev Blog - Tecnologia, Programação e Desenvolvimento</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/"
+              
+              title="Home"
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/contact/"
+              
+              title=""
+              >Contato</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Autenticação De Usuários Com Firebase Authentication</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Tue, Jun 20, 2023
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">Tempo de leitura: 3 minutos</span>
+          </li>
+        </ul>
+
+      <p>Firebase Authentication é um serviço que pode autenticar seus usuários de várias maneiras. Ele suporta autenticação por e-mail/senha, autenticação por telefone e provedores de identidade federados, como Google, Facebook e Twitter. Neste artigo, vamos explorar como implementar cada um desses métodos de autenticação.</p>
+<h2 id="configuração-do-ambiente">Configuração do Ambiente</h2>
+<p>Primeiramente, você precisa adicionar o Firebase ao seu projeto JavaScript. Se você ainda não fez isso, pode instalar o pacote firebase com npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm install --save firebase
+</span></span></code></pre></div><p>Após a instalação, você pode importar o firebase em seu arquivo JavaScript:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">import * as firebase from <span class="s1">&#39;firebase/app&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">import <span class="s1">&#39;firebase/auth&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="autenticação-por-e-mailsenha">Autenticação por E-mail/Senha</h2>
+<p>A autenticação por e-mail/senha é talvez o método de autenticação mais comum. Veja como implementá-lo:</p>
+<h3 id="criação-de-uma-nova-conta-de-usuário">Criação de uma nova conta de usuário</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.createUserWithEmailAndPassword<span class="o">(</span>email, password<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>userCredential<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    var <span class="nv">user</span> <span class="o">=</span> userCredential.user<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário criado:&#39;</span>, user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro na criação de usuário:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="login-com-e-mail-e-senha">Login com e-mail e senha</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.signInWithEmailAndPassword<span class="o">(</span>email, password<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>userCredential<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    var <span class="nv">user</span> <span class="o">=</span> userCredential.user<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário logado:&#39;</span>, user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro no login:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="autenticação-por-telefone">Autenticação por Telefone</h2>
+<p>A autenticação por telefone permite que seus usuários entrem usando seus números de telefone. Veja como implementar a autenticação por telefone:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">const <span class="nv">phoneNumber</span> <span class="o">=</span> <span class="s2">&#34;+5511999999999&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">const <span class="nv">appVerifier</span> <span class="o">=</span> window.recaptchaVerifier<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.signInWithPhoneNumber<span class="o">(</span>phoneNumber, appVerifier<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>confirmationResult<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    const <span class="nv">verificationCode</span> <span class="o">=</span> window.prompt<span class="o">(</span><span class="s1">&#39;Por favor, insira o código de verificação que foi enviado para o seu celular.&#39;</span><span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> confirmationResult.confirm<span class="o">(</span>verificationCode<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>result<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário logado:&#39;</span>, result.user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro na autenticação por telefone:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="autenticação-com-provedores-de-identidade-federados">Autenticação com Provedores de Identidade Federados</h2>
+<p>Firebase Authentication suporta autenticação usando provedores de identidade federados, como Google, Facebook e Twitter.</p>
+<h3 id="google">Google</h3>
+<p>Para autenticar usuários com o Google, você precisa criar uma nova instância do provedor de autenticação do Google e passá-la para <code>signInWithPopup()</code> ou <code>signInWithRedirect()</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">const <span class="nv">provider</span> <span class="o">=</span> new firebase.auth.GoogleAuthProvider<span class="o">()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.signInWithPopup<span class="o">(</span>provider<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>result<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário logado:&#39;</span>, result.user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro na autenticação com Google:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="facebook">Facebook</h3>
+<p>Autenticar usuários com o Facebook é semelhante à autenticação com o Google. Você cria uma nova instância do provedor de autenticação do Facebook e a passa para <code>signInWithPopup()</code> ou <code>signInWithRedirect()</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">const <span class="nv">provider</span> <span class="o">=</span> new firebase.auth.FacebookAuthProvider<span class="o">()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.signInWithPopup<span class="o">(</span>provider<span class="o">)</span>
+</span></span><span class="line"><span class="cl">   .then<span class="o">((</span>result<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário logado:&#39;</span>, result.user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro na autenticação com Facebook:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="twitter">Twitter</h3>
+<p>A autenticação do Twitter também segue o mesmo padrão. Você cria uma nova instância do provedor de autenticação do Twitter e a passa para <code>signInWithPopup()</code> ou <code>signInWithRedirect()</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">const <span class="nv">provider</span> <span class="o">=</span> new firebase.auth.TwitterAuthProvider<span class="o">()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firebase.auth<span class="o">()</span>.signInWithPopup<span class="o">(</span>provider<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  .then<span class="o">((</span>result<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.log<span class="o">(</span><span class="s1">&#39;Usuário logado:&#39;</span>, result.user.uid<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span>
+</span></span><span class="line"><span class="cl">  .catch<span class="o">((</span>error<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    console.error<span class="o">(</span><span class="s1">&#39;Erro na autenticação com Twitter:&#39;</span>, error<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">})</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="conclusão">Conclusão</h2>
+<p>Firebase Authentication fornece uma variedade de métodos para autenticar usuários em seu aplicativo. Neste artigo, exploramos como implementar a autenticação por e-mail/senha, autenticação por telefone e autenticação com provedores de identidade federados, como Google, Facebook e Twitter. Esses métodos de autenticação proporcionam uma experiência de login flexível e segura para seus usuários e são fáceis de implementar graças ao Firebase.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentários</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>servidor on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/categories/servidor/</link>
+    <description>Recent content in servidor on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 03 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/categories/servidor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerenciador de email: Zoho</title>
+      <link>http://updevblog.com/pt/post/gerenciador-email-zoho/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciador-email-zoho/</guid>
+      
+        <description>Muitas vezes você vai querer o seu próprio serviço de e-mail para sua empresa ou para utilização pessoal, tem varias alternativas pagas e simples de implementar, talvez o mais conhecido seja o Gmail.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

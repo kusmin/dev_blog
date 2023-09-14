@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="es"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Programming Principles: ¿Qué es la programación?
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/es/post/principios-da-programacao-o-que-e-programacao/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Programming Principles: ¿Qué es la programación?"/>
+<meta name="twitter:description" content="Puede parecer trivial, pero empezar con los conceptos de lo que hace o es una determinada cosa, nos ayuda a desarrollarnos mejor en esa área de interés."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Programming Principles: ¿Qué es la programación?" />
+<meta property="og:description" content="Puede parecer trivial, pero empezar con los conceptos de lo que hace o es una determinada cosa, nos ayuda a desarrollarnos mejor en esa área de interés." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/es/post/principios-da-programacao-o-que-e-programacao/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-07T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-07T03:00:00+00:00" /><meta property="og:site_name" content="blog de programacion" />
+
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Programming Principles: ¿Qué es la programación?",
+        "headline": "Programming Principles: ¿Qué es la programación?",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Puede parecer trivial, pero empezar con los conceptos de lo que hace o es una determinada cosa, nos ayuda a desarrollarnos mejor en esa área de interés.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/es\/post\/principios-da-programacao-o-que-e-programacao\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-07T03:00:00.00Z",
+        "datePublished": "2022-07-07T03:00:00.00Z",
+        "dateModified": "2022-07-07T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/es\/post\/principios-da-programacao-o-que-e-programacao\/",
+        "wordCount" : "597",
+        "genre" : [ 
+      
+      "conceptos"
+
+    
+      
+        ,
+
+      
+      "principios"
+
+    ],
+        "keywords" : [ 
+      
+      "lenguaje"
+
+    
+      
+        ,
+
+      
+      "comunicación"
+
+    
+      
+        ,
+
+      
+      "principios"
+
+    
+      
+        ,
+
+      
+      "programación"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/es">blog de programacion</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/contact/"
+              
+              title=""
+              >Contacto</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >es <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/en/post/principios-da-programacao-o-que-e-programacao/" title="en"
+                    ><span
+                      
+                      aria-label="en"
+                      >en</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/principios-da-programacao-o-que-e-programacao/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Programming Principles: ¿Qué Es La Programación?</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Thu, Jul 7, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3 minutos de lectura</span>
+          </li>
+        </ul>
+
+      <p>Puede parecer trivial, pero empezar con los conceptos de lo que hace o es una determinada cosa, nos ayuda a desarrollarnos mejor en esa área de interés. Hoy voy a empezar una serie que trata esencialmente de estos conceptos, casi como si fuera nuestro viejo y olvidado diccionario (hoy google hace este trabajo por nosotros :)).</p>
+<p>Y para empezar nada mejor que hablar de lo que es la programación tanto en la teoría como en la práctica. Mucha gente dice: &ldquo;Quiero ser programador&rdquo;, &ldquo;Cómo puedo ser programador&rdquo;. Pero ahí está el detalle, ¿qué es la programación? ¿Qué hace un programador?</p>
+<h5 id="qué-es-la-programación">¿Qué es la programación?</h5>
+<p>Cuando te levantas por la mañana, muchas veces nos encontramos con otras personas, saludamos, damos los buenos días, hablamos, preguntamos cómo van las cosas, o a veces simplemente movemos la cabeza en señal de saludo o a veces ni siquiera eso, incluso no nos comunicamos verbalmente, nuestras acciones y cuerpos hablan comunican. Cada acción que realizamos o dejamos de realizar comunica algo a alguien o algo, somos seres intrínsecamente sociales. Por mucho que diga que soy antisocial (¡yo mismo lo digo mucho!), lo cierto es que la comunicación es la base de nuestra sociedad.</p>
+<p>Y en este caso, cuando hablamos de programación, hablamos de una forma de comunicación entre hombre-máquina, creador-creación. En este caso tenemos el grave problema de que uno no entiende al otro, el hombre habla a través de letras y palabras, una máquina puede entender ceros y unos. Para que podamos hablar e interactuar con la máquina necesitamos un intérprete, que pueda hacer la traducción de un lado a otro, para esto tenemos los Lenguajes de Programación, que tiene este papel para garantizar una comunicación eficiente entre el hombre y la máquina.</p>
+<p>Llegando a comunicar lo que se debe hacer a la máquina, a través de esta interacción, podemos crear sitios, aplicaciones, procesamiento de datos y varias otras herramientas que nos ayudan en nuestro día a día.</p>
+<p>Este es un concepto inicial de lo que es la programación, hay muchos otros conceptos detrás que en este primer momento no tiene mucho sentido abordar en este momento, pero que iremos afinando a medida que esta serie vaya avanzando.</p>
+<p>Y ahora, ¿dónde está el programador en todo esto?</p>
+<h5 id="qué-hace-el-programador">¿Qué hace el programador?</h5>
+<p>El programador, de nuevo un concepto inicial, se encarga de escribir en un lenguaje de programación las instrucciones para que la máquina realice alguna acción.</p>
+<p>Tiene como herramienta principal el lenguaje de programación, es sobre todo un lingüista que pasa las instrucciones de la forma humana al lenguaje de programación. Hace entre la carne y la silicona (eso fue una declaración un poco dramática).</p>
+<p>Tiene el papel de garantizar que lo que se pide en lenguaje humano, se transporta al lenguaje del ordenador garantizando el mínimo de pérdidas posibles en esta comunicación. Aquí viene un detalle muy importante antes de empezar a escribir el código para la máquina, el programador debe entender muy bien lo que se debe hacer (la mayoría de los errores de programación ocurren aquí, cuando la comunicación entre cliente-programador no está bien hecha). Y más que crear debe asegurar que el programa siga funcionando en el tiempo, asegurar no sólo su creación, sino su mantenimiento y evolución.</p>
+<h5 id="conclusión">Conclusión</h5>
+<p>En este artículo, ponemos algunos conceptos iniciales que cualquier persona que esté queriendo entrar en el mundo de la programación debe procurar conocer, para que entienda mejor hacia dónde va y qué debe hacer para empezar con buen pie. En los próximos posts veremos algunos conceptos más y profundizaremos en lo que es la programación. Hasta la próxima.</p>
+
+
+
+<h3>Posts en esta serie</h3>
+<ul>
+  
+    <li><a href="/es/post/principios-da-programacao-o-que-e-programacao/">Programming Principles: ¿Qué Es La Programación?</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/es/categories/conceptos/">conceptos</a><a class="category" href="/es/categories/principios/">principios</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/es/tags/lenguaje/">lenguaje</a><a class="tag" href="/es/tags/comunicaci%C3%B3n/">comunicación</a><a class="tag" href="/es/tags/principios/">principios</a><a class="tag" href="/es/tags/programaci%C3%B3n/">programación</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentarios</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

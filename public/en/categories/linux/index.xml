@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on programming blog</title>
+    <link>http://updevblog.com/en/categories/linux/</link>
+    <description>Recent content in Linux on programming blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 21 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux: File and directory permissions</title>
+      <link>http://updevblog.com/en/post/linux-permissoes-de-arquivos-e-diretorios/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/linux-permissoes-de-arquivos-e-diretorios/</guid>
+      
+        <description>CContinuing our series on Linux, today we&amp;rsquo;ll look at how to manage file and directory permissions.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: User Management</title>
+      <link>http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/</link>
+      <pubDate>Thu, 14 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/</guid>
+      
+        <description>Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Process Management - Part 1</title>
+      <link>http://updevblog.com/en/post/linux-gerenciamento-de-processos/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/linux-gerenciamento-de-processos/</guid>
+      
+        <description>In today&amp;rsquo;s post we will talk about some useful process management commands in Linux.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

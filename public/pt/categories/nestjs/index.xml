@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nestjs on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/categories/nestjs/</link>
+    <description>Recent content in nestjs on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 24 Jun 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/categories/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integrando NestJS com Firebase</title>
+      <link>http://updevblog.com/pt/post/firebase_nestjs.md/</link>
+      <pubDate>Sat, 24 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/firebase_nestjs.md/</guid>
+      
+        <description>Integrando NestJS com Firebase O Firebase é uma plataforma de desenvolvimento de aplicativos que fornece infraestrutura e serviços de back-end para desenvolver aplicativos de qualidade.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integrando NestJS com GraphQL e MongoDB</title>
+      <link>http://updevblog.com/pt/post/nestjs-mongodb.md/</link>
+      <pubDate>Sun, 23 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-mongodb.md/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integração do NestJS com o AWS Lambda e API Gateway</title>
+      <link>http://updevblog.com/pt/post/aws-lambda-nestjs.md/</link>
+      <pubDate>Sat, 22 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/aws-lambda-nestjs.md/</guid>
+      
+        <description>Introdução Neste artigo, você aprenderá como integrar sua aplicação NestJS com o AWS Lambda e o API Gateway, permitindo que sua aplicação seja executada sem servidores e gerencie solicitações HTTP através do API Gateway.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e Microsserviços: Implementando Comunicação Entre Serviços com gRPC</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/</link>
+      <pubDate>Tue, 11 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/</guid>
+      
+        <description>Introdução Neste artigo, exploraremos como implementar a comunicação entre microsserviços usando o NestJS e o gRPC, um framework RPC (Remote Procedure Call) de alto desempenho desenvolvido pelo Google.</description>
+      
+    </item>
+    
+    <item>
+      <title>Conectando o NestJS com AWS S3</title>
+      <link>http://updevblog.com/pt/post/conecta_nestjs_s3/</link>
+      <pubDate>Fri, 07 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/conecta_nestjs_s3/</guid>
+      
+        <description>Introdução Neste artigo, mostraremos como conectar sua aplicação NestJS ao serviço de armazenamento simples (S3) da Amazon Web Services (AWS).</description>
+      
+    </item>
+    
+    <item>
+      <title>Construindo um CMS para Hugo com NestJS</title>
+      <link>http://updevblog.com/pt/post/contruindo-cms-para-hugo-usando-nestjs.md/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/contruindo-cms-para-hugo-usando-nestjs.md/</guid>
+      
+        <description>Introdução Neste artigo, mostraremos como criar um CMS (Sistema de Gerenciamento de Conteúdo) para o gerador de sites estáticos Hugo, utilizando o framework NestJS.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma API com NestJS, TypeORM e MySQL: Filtragem, Ordenação e Paginação</title>
+      <link>http://updevblog.com/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao/</guid>
+      
+        <description>Introdução Neste artigo, vamos aprender como criar uma API usando NestJS, TypeORM e MySQL, focando na filtragem, ordenação e paginação de resultados.</description>
+      
+    </item>
+    
+    <item>
+      <title>Introdução ao NestJS Middleware e Interceptors: Melhorando o Fluxo das Requisições</title>
+      <link>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes/</guid>
+      
+        <description>Introdução Neste tutorial, exploraremos os conceitos de middleware e interceptors no NestJS e como eles podem ser utilizados para melhorar o fluxo das requisições na sua aplicação.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e GraphQL: Criando APIs Flexíveis e Eficazes</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes/</link>
+      <pubDate>Wed, 05 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma API flexível e eficaz usando NestJS e GraphQL.</description>
+      
+    </item>
+    
+    <item>
+      <title>Monitorando e Exibindo Logs Centralizados com NestJS e ELK Stack</title>
+      <link>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</link>
+      <pubDate>Sun, 02 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</guid>
+      
+        <description>Introdução Neste artigo, vamos aprender como monitorar e exibir logs centralizados com NestJS e a ELK Stack (Elasticsearch, Logstash e Kibana).</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS com Prisma: Implementando Testes de Unidade e Integração</title>
+      <link>http://updevblog.com/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao/</link>
+      <pubDate>Sun, 02 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao/</guid>
+      
+        <description>Introdução
+Neste artigo, vamos explorar como implementar testes de unidade e integração em uma aplicação NestJS usando Prisma.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e Redis: Implementando Cache e Filas de Tarefas</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</link>
+      <pubDate>Fri, 31 Mar 2023 22:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como integrar o NestJS com o Redis, uma poderosa e flexível solução de armazenamento em cache e gerenciamento de filas de tarefas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integração do NestJS com Elasticsearch para Pesquisa Avançada</title>
+      <link>http://updevblog.com/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada/</link>
+      <pubDate>Fri, 31 Mar 2023 10:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada/</guid>
+      
+        <description>Introdução O Elasticsearch é um mecanismo de pesquisa e análise distribuído e escalável, amplamente utilizado para casos de uso como pesquisa de texto completo, análise de logs e análise de métricas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Monitorando sua aplicação NestJS com Prometheus e Grafana</title>
+      <link>http://updevblog.com/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana/</link>
+      <pubDate>Fri, 31 Mar 2023 09:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana/</guid>
+      
+        <description>Introdução Neste artigo, aprenderemos como monitorar sua aplicação NestJS usando o Prometheus e o Grafana.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando Documentação de API com NestJS, Swagger e OpenAPI</title>
+      <link>http://updevblog.com/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi/</link>
+      <pubDate>Fri, 31 Mar 2023 08:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi/</guid>
+      
+        <description>Introdução Neste artigo, aprenderemos como criar documentação de API para sua aplicação NestJS utilizando o Swagger e o OpenAPI.</description>
+      
+    </item>
+    
+    <item>
+      <title>Introdução ao NestJS Middleware e Interceptors: Melhorando o Fluxo das Requisições</title>
+      <link>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1/</link>
+      <pubDate>Thu, 30 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1/</guid>
+      
+        <description>Introdução Neste tutorial, exploraremos os conceitos de middleware e interceptors no NestJS e como eles podem ser utilizados para melhorar o fluxo das requisições na sua aplicação.</description>
+      
+    </item>
+    
+    <item>
+      <title>Construindo uma API de Chat em Tempo Real com NestJS, WebSocket e Prisma</title>
+      <link>http://updevblog.com/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma/</link>
+      <pubDate>Wed, 29 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma aplicação de chat em tempo real usando NestJS, WebSocket e Prisma.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js</title>
+      <link>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</link>
+      <pubDate>Tue, 28 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</guid>
+      
+        <description>Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma Aplicação NestJS com Prisma, Docker e PostgreSQL: Um CRUD de Usuários</title>
+      <link>http://updevblog.com/pt/post/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios/</link>
+      <pubDate>Mon, 27 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma aplicação NestJS, utilizando o Prisma como ORM (Object-Relational Mapping), o Docker para o ambiente de desenvolvimento e o PostgreSQL como banco de dados.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

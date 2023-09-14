@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/series/spring/</link>
+    <description>Recent content in spring on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 20 Jul 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/series/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Profundizando no Swagger: Adicionando Autenticação e Testando Endpoints</title>
+      <link>http://updevblog.com/pt/post/testando_swagger_java/</link>
+      <pubDate>Thu, 20 Jul 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/testando_swagger_java/</guid>
+      
+        <description>Depois de ter configurado o Swagger em sua aplicação Spring Boot, como vimos no último artigo, você pode querer saber como fazer mais com esta ferramenta.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

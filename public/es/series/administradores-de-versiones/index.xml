@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Administradores de versiones on blog de programacion</title>
+    <link>http://updevblog.com/es/series/administradores-de-versiones/</link>
+    <description>Recent content in Administradores de versiones on blog de programacion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 06 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/series/administradores-de-versiones/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administradores de versiones: NVM</title>
+      <link>http://updevblog.com/es/post/gerenciadores-de-versao-nvm/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/post/gerenciadores-de-versao-nvm/</guid>
+      
+        <description>El nvm(node version manager), es el gestor de versiones para el nodo.</description>
+      
+    </item>
+    
+    <item>
+      <title>Administradores de versiones: RVM</title>
+      <link>http://updevblog.com/es/post/gerenciadores-de-versao-rvm/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/post/gerenciadores-de-versao-rvm/</guid>
+      
+        <description>Hoy en nuestra serie sobre gestores de versiones, hablaremos de uno de los primeros gestores que fue RVM (Ruby Version Manager), que es un gestor de versiones para el lenguaje ruby, que se hizo muy conocido por su framework Ruby on Rails.</description>
+      
+    </item>
+    
+    <item>
+      <title>Administradores de versiones: Pyenv</title>
+      <link>http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/</guid>
+      
+        <description>Continuando con nuestra serie sobre gestores de versiones, hoy vamos a tratar el mundo de Python y hablaremos de pyenv que es mi gestor de versiones favorito para Python.</description>
+      
+    </item>
+    
+    <item>
+      <title>Administradores de versiones: Sdkman</title>
+      <link>http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/</guid>
+      
+        <description>Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

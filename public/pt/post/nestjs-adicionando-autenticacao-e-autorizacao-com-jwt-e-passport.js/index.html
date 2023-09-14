@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="pt"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js"/>
+<meta name="twitter:description" content="Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js" />
+<meta property="og:description" content="Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-28T03:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-28T03:00:00+00:00" /><meta property="og:site_name" content="UpDev Blog - Tecnologia, Programação e Desenvolvimento" />
+
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js",
+        "headline": "NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/pt\/post\/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-03-28T03:00:00.00Z",
+        "datePublished": "2023-03-28T03:00:00.00Z",
+        "dateModified": "2023-03-28T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/pt\/post\/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js\/",
+        "wordCount" : "606",
+        "genre" : [ 
+      
+      "nestjs"
+
+    ],
+        "keywords" : [ 
+      
+      "typescript"
+
+    
+      
+        ,
+
+      
+      "nestjs"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/pt">UpDev Blog - Tecnologia, Programação e Desenvolvimento</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/"
+              
+              title="Home"
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/contact/"
+              
+              title=""
+              >Contato</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/uploads/captura-de-tela-de-2023-03-28-22-12-03.png" alt="Thumbnail image" />
+      </div>
+
+    
+    <div class="post__content">
+      <h1>NestJS: Adicionando Autenticação E Autorização Com JWT E Passport.js</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Tue, Mar 28, 2023
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">Tempo de leitura: 3 minutos</span>
+          </li>
+        </ul>
+
+      <h2 id="introdução">Introdução</h2>
+<p>No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários. Neste tutorial, vamos adicionar autenticação e autorização usando JWT (JSON Web Tokens) e Passport.js. Isso garantirá que apenas usuários autorizados possam acessar e manipular recursos em nossa aplicação.</p>
+<p>Pré-requisitos Para seguir este tutorial, é necessário ter:</p>
+<ul>
+<li>Um projeto NestJS com CRUD de usuários (conforme descrito no artigo anterior)</li>
+<li>Conhecimento básico de JWT e Passport.js</li>
+</ul>
+<p>Passo 1: Instalando as dependências necessárias Primeiro, instale as dependências necessárias:</p>
+<pre><code>yarn add @nestjs/passport @nestjs/jwt passport passport-jwt jsonwebtoken
+</code></pre>
+<p>Passo 2: Configurando o módulo JWT Crie um arquivo chamado <strong><code>jwt.module.ts</code></strong> na pasta <strong><code>src/auth</code></strong>:</p>
+<pre><code>{ Module } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
+import { jwtConstants } from './constants';
+
+@Module({
+  imports: [
+    JwtModule.register({
+      secret: jwtConstants.secret,
+      signOptions: { expiresIn: '60m' },
+    }),
+  ],
+  exports: [JwtModule],
+})
+export class JwtConfigModule {}
+</code></pre>
+<p>Crie um arquivo chamado <strong><code>constants.ts</code></strong> na pasta <strong><code>src/auth</code></strong>:</p>
+<pre><code>const jwtConstants = {
+  secret: 'mySecretKey',
+};
+</code></pre>
+<p>Passo 3: Implementando a estratégia JWT Crie um arquivo chamado <strong><code>jwt.strategy.ts</code></strong> na pasta <strong><code>src/auth</code></strong>:</p>
+<pre><code>{ Injectable } from '@nestjs/common';
+import { PassportStrategy } from '@nestjs/passport';
+import { ExtractJwt, Strategy } from 'passport-jwt';
+import { jwtConstants } from './constants';
+
+@Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy) {
+  constructor() {
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      ignoreExpiration: false,
+      secretOrKey: jwtConstants.secret,
+    });
+  }
+
+  async validate(payload: any) {
+    return { userId: payload.sub, email: payload.email };
+  }
+}
+</code></pre>
+<p>Passo 4: Implementando o módulo de autenticação Crie um arquivo chamado <strong><code>auth.module.ts</code></strong> na pasta <strong><code>src/auth</code></strong>:</p>
+<pre><code>{ Module } from '@nestjs/common';
+import { UsersModule } from '../users/users.module';
+import { AuthService } from './auth.service';
+import { JwtStrategy } from './jwt.strategy';
+import { JwtConfigModule } from './jwt.module';
+
+@Module({
+  imports: [UsersModule, JwtConfigModule],
+  providers: [AuthService, JwtStrategy],
+  exports: [AuthService],
+})
+export class AuthModule {}
+</code></pre>
+<p>Passo 5: Implementando o AuthService Crie um novo arquivo chamado <strong><code>auth.service.ts</code></strong> na pasta <strong><code>src/auth</code></strong> e adicione o seguinte conteúdo:</p>
+<pre><code>typescriptCopy codeimport { Injectable } from '@nestjs/common';
+import { UsersService } from '../users/users.service';
+import { JwtService } from '@nestjs/jwt';
+
+@Injectable()
+export class AuthService {
+  constructor(
+    private usersService: UsersService,
+    private jwtService: JwtService,
+  ) {}
+
+  async validateUser(email: string, password: string): Promise&lt;any&gt; {
+    const user = await this.usersService.findByEmail(email);
+    if (user &amp;&amp; user.password === password) {
+      const { password, ...result } = user;
+      return result;
+    }
+    return null;
+  }
+
+  async login(user: any) {
+    const payload = { email: user.email, sub: user.id };
+    return {
+      access_token: this.jwtService.sign(payload),
+    };
+  }
+}
+</code></pre>
+<p>Passo 6: Adicionando rotas de login e registro No arquivo <strong><code>users.controller.ts</code></strong>, adicione os seguintes métodos:</p>
+<pre><code>typescriptCopy codeimport { AuthService } from '../auth/auth.service';
+
+// Adicione o AuthService no construtor
+constructor(private readonly usersService: UsersService, private authService: AuthService) {}
+
+@Post('register')
+async register(@Body() createUserDto: CreateUserDto) {
+  const user = await this.usersService.create(createUserDto);
+  const { password, ...result } = user;
+  return result;
+}
+
+@UseGuards(LocalAuthGuard)
+@Post('login')
+async login(@Request() req) {
+  return this.authService.login(req.user);
+}
+</code></pre>
+<p>Não se esqueça de importar <strong><code>LocalAuthGuard</code></strong>, <strong><code>UseGuards</code></strong>, e <strong><code>Request</code></strong>:</p>
+<pre><code>typescriptCopy codeimport { LocalAuthGuard } from '../auth/local-auth.guard';
+import { UseGuards } from '@nestjs/common';
+import { Request } from 'express';
+</code></pre>
+<p>Passo 7: Protegendo rotas com o AuthGuard do Passport No arquivo <strong><code>users.controller.ts</code></strong>, adicione o seguinte código antes dos métodos que você deseja proteger:</p>
+<pre><code>typescriptCopy code@UseGuards(JwtAuthGuard)
+</code></pre>
+<p>Não se esqueça de importar <strong><code>JwtAuthGuard</code></strong>:</p>
+<pre><code>typescriptCopy codeimport { JwtAuthGuard } from '../auth/jwt-auth.guard';
+</code></pre>
+<p>Agora, suas rotas estarão protegidas e só poderão ser acessadas por usuários autenticados com um token JWT válido.</p>
+<p>Conclusão Neste tutorial, você adicionou autenticação e autorização à sua aplicação NestJS usando JWT e Passport.js. Agora, apenas usuários autenticados podem acessar e manipular recursos na sua aplicação. Você pode aprimorar ainda mais sua aplicação adicionando mais recursos e funcionalidades, como recuperação de senha, confirmação de e-mail, e permissões baseadas em funções.</p>
+<p>Referências adicionais:</p>
+<ul>
+<li>Documentação oficial do NestJS: <a href="https://docs.nestjs.com/" title="https://docs.nestjs.com/"><strong>https://docs.nestjs.com/</strong></a></li>
+<li>Documentação oficial do Passport.js: <a href="http://www.passportjs.org/docs/" title="http://www.passportjs.org/docs/"><strong>http://www.passportjs.org/docs/</strong></a></li>
+<li>Documentação oficial do JWT: <a href="https://jwt.io/introduction" title="https://jwt.io/introduction"><strong>https://jwt.io/introduction</strong></a></li>
+</ul>
+
+
+
+<h3>Posts desta série</h3>
+<ul>
+  
+    <li><a href="/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/">NestJS: Adicionando Autenticação E Autorização Com JWT E Passport.js</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/pt/categories/nestjs/">nestjs</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/pt/tags/typescript/">typescript</a><a class="tag" href="/pt/tags/nestjs/">nestjs</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentários</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/</link>
+    <description>Recent content on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 07 Sep 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Instalar o Chaskiq no DigitalOcean: Um Guia Completo</title>
+      <link>http://updevblog.com/pt/post/deploy-digital-ocean-chaskiq.md/</link>
+      <pubDate>Thu, 07 Sep 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/deploy-digital-ocean-chaskiq.md/</guid>
+      
+        <description>Introdução O Chaskiq é uma plataforma de suporte ao cliente e gestão de conversas que oferece um conjunto robusto de recursos para negócios de todos os tamanhos.</description>
+      
+    </item>
+    
+    <item>
+      <title>PrimeReact: Uma Biblioteca Rica de Componentes para React</title>
+      <link>http://updevblog.com/pt/post/primereact-uma-biblioteca-rica-de-componentes-para-react/</link>
+      <pubDate>Sun, 20 Aug 2023 21:28:11 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/primereact-uma-biblioteca-rica-de-componentes-para-react/</guid>
+      
+        <description>Introdução React é conhecido por sua flexibilidade e eficiência na construção de interfaces de usuário (UI).</description>
+      
+    </item>
+    
+    <item>
+      <title>Integração do New Relic com Spring Boot: Instalando o Agente Java</title>
+      <link>http://updevblog.com/pt/post/integracao-do-new-relic-com-spring-boot-instalando-o-agente-java/</link>
+      <pubDate>Fri, 18 Aug 2023 09:59:11 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/integracao-do-new-relic-com-spring-boot-instalando-o-agente-java/</guid>
+      
+        <description>O New Relic é uma ferramenta essencial para monitorar e otimizar aplicações, oferecendo insights críticos sobre desempenho, confiabilidade e experiência do usuário.</description>
+      
+    </item>
+    
+    <item>
+      <title>New Relic: Uma Ferramenta Abrangente de Monitoramento e Performance</title>
+      <link>http://updevblog.com/pt/post/new-relic-uma-ferramenta-abrangente-de-monitoramento-e-performance/</link>
+      <pubDate>Fri, 18 Aug 2023 08:34:00 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/new-relic-uma-ferramenta-abrangente-de-monitoramento-e-performance/</guid>
+      
+        <description>Introdução New Relic é uma plataforma de observabilidade em tempo real que ajuda as empresas a analisar, solucionar problemas e otimizar suas aplicações.</description>
+      
+    </item>
+    
+    <item>
+      <title>Configurando o Swagger no Spring Boot com springdoc-openapi-ui</title>
+      <link>http://updevblog.com/pt/post/configurando_swagger_java.md/</link>
+      <pubDate>Thu, 20 Jul 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/configurando_swagger_java.md/</guid>
+      
+        <description>Swagger é uma poderosa ferramenta para documentação e teste de APIs REST.</description>
+      
+    </item>
+    
+    <item>
+      <title>Profundizando no Swagger: Adicionando Autenticação e Testando Endpoints</title>
+      <link>http://updevblog.com/pt/post/testando_swagger_java/</link>
+      <pubDate>Thu, 20 Jul 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/testando_swagger_java/</guid>
+      
+        <description>Depois de ter configurado o Swagger em sua aplicação Spring Boot, como vimos no último artigo, você pode querer saber como fazer mais com esta ferramenta.</description>
+      
+    </item>
+    
+    <item>
+      <title>Pentest com a OWASP ZAP</title>
+      <link>http://updevblog.com/pt/post/pentest-com-a-owasp-zap/</link>
+      <pubDate>Thu, 13 Jul 2023 21:39:18 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/pentest-com-a-owasp-zap/</guid>
+      
+        <description>Introdução O teste de penetração, ou pentest, é uma prática de segurança cibernética que envolve a simulação de ataques reais a sistemas para identificar vulnerabilidades e falhas de segurança.</description>
+      
+    </item>
+    
+    <item>
+      <title>O que é bloqueio de iframe?</title>
+      <link>http://updevblog.com/pt/post/o-que-e-bloqueio-de-iframe/</link>
+      <pubDate>Thu, 13 Jul 2023 20:54:29 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/o-que-e-bloqueio-de-iframe/</guid>
+      
+        <description>O bloqueio de iframe é um recurso de segurança que impede que uma página da web seja exibida em um iframe em outra página da web.</description>
+      
+    </item>
+    
+    <item>
+      <title>Primeiros Passos em Go e Instalação com o ASDF</title>
+      <link>http://updevblog.com/pt/post/primeiros-passos-em-go-e-instalacao-com-o-asdf/</link>
+      <pubDate>Thu, 13 Jul 2023 20:47:37 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/primeiros-passos-em-go-e-instalacao-com-o-asdf/</guid>
+      
+        <description>Neste artigo, você aprenderá como dar seus primeiros passos com a linguagem de programação Go, também conhecida como Golang, e como fazer a instalação da linguagem usando a ferramenta ASDF.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integrando Venom Bot com o ChatGPT usando Nest.js</title>
+      <link>http://updevblog.com/pt/post/integrando-venom-bot-com-o-chatgpt-usando-nest-js/</link>
+      <pubDate>Sun, 09 Jul 2023 15:10:55 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/integrando-venom-bot-com-o-chatgpt-usando-nest-js/</guid>
+      
+        <description>Neste artigo, aprenderemos como integrar o Venom Bot, uma solução de automação de WhatsApp, com o ChatGPT, um modelo de linguagem gerativo avançado, usando o Nest.</description>
+      
+    </item>
+    
+    <item>
+      <title>Aplicando Temas Personalizados com Material-UI no React</title>
+      <link>http://updevblog.com/pt/post/aplicando-temas-personalizados-com-material-ui-no-react/</link>
+      <pubDate>Sat, 08 Jul 2023 21:31:23 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/aplicando-temas-personalizados-com-material-ui-no-react/</guid>
+      
+        <description>Material-UI é uma biblioteca de componentes popular para React que implementa o design Material da Google.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando um Bot de WhatsApp com NestJS e Venom-Bot</title>
+      <link>http://updevblog.com/pt/post/criando-um-bot-de-whatsapp-com-nestjs-e-venom-bot/</link>
+      <pubDate>Tue, 04 Jul 2023 22:07:25 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-um-bot-de-whatsapp-com-nestjs-e-venom-bot/</guid>
+      
+        <description>Hoje vamos explorar como criar um bot para WhatsApp usando o Venom-Bot em conjunto com o NestJS, um framework de backend para Node.</description>
+      
+    </item>
+    
+    <item>
+      <title>Vuetify: Uma Biblioteca Vue.js Poderosa e Elegante</title>
+      <link>http://updevblog.com/pt/post/vuetify-uma-biblioteca-vue-js-poderosa-e-elegante/</link>
+      <pubDate>Thu, 29 Jun 2023 19:16:51 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/vuetify-uma-biblioteca-vue-js-poderosa-e-elegante/</guid>
+      
+        <description>O desenvolvimento front-end evoluiu significativamente nos últimos anos, impulsionado pela necessidade crescente de interfaces de usuário interativas e responsivas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciando Autenticação com Firebase e NestJS</title>
+      <link>http://updevblog.com/pt/post/firebase_nestjs_auth.md/</link>
+      <pubDate>Sat, 24 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/firebase_nestjs_auth.md/</guid>
+      
+        <description>Gerenciando Autenticação com Firebase e NestJS Neste artigo, vamos discutir como você pode usar o Firebase para gerenciar autenticação de usuários em seu aplicativo NestJS.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integrando NestJS com Firebase</title>
+      <link>http://updevblog.com/pt/post/firebase_nestjs.md/</link>
+      <pubDate>Sat, 24 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/firebase_nestjs.md/</guid>
+      
+        <description>Integrando NestJS com Firebase O Firebase é uma plataforma de desenvolvimento de aplicativos que fornece infraestrutura e serviços de back-end para desenvolver aplicativos de qualidade.</description>
+      
+    </item>
+    
+    <item>
+      <title>Melhores Práticas de Segurança no Firebase</title>
+      <link>http://updevblog.com/pt/post/melhores-praticas-de-seguranca-no-firebase/</link>
+      <pubDate>Thu, 22 Jun 2023 21:54:15 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/melhores-praticas-de-seguranca-no-firebase/</guid>
+      
+        <description>A segurança é um aspecto crucial do desenvolvimento de aplicativos, e o Firebase fornece várias ferramentas e recursos para ajudar os desenvolvedores a construir aplicativos seguros.</description>
+      
+    </item>
+    
+    <item>
+      <title>Previsão de Comportamento do Usuário com Firebase Predictions</title>
+      <link>http://updevblog.com/pt/post/previsao-de-comportamento-do-usuario-com-firebase-predictions/</link>
+      <pubDate>Thu, 22 Jun 2023 21:49:52 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/previsao-de-comportamento-do-usuario-com-firebase-predictions/</guid>
+      
+        <description>Firebase Predictions é uma ferramenta de aprendizado de máquina que analisa os dados do seu aplicativo e prevê o comportamento futuro dos usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Distribuindo Aplicativos com Firebase App Distribution</title>
+      <link>http://updevblog.com/pt/post/distribuindo-aplicativos-com-firebase-app-distribution/</link>
+      <pubDate>Thu, 22 Jun 2023 21:47:37 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/distribuindo-aplicativos-com-firebase-app-distribution/</guid>
+      
+        <description>Firebase App Distribution é uma solução poderosa que ajuda a distribuir versões de pré-lançamento do seu aplicativo para testadores.</description>
+      
+    </item>
+    
+    <item>
+      <title>Rastreando o Desempenho do Aplicativo com Firebase Performance Monitoring</title>
+      <link>http://updevblog.com/pt/post/rastreando-o-desempenho-do-aplicativo-com-firebase-performance-monitoring/</link>
+      <pubDate>Thu, 22 Jun 2023 21:45:48 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/rastreando-o-desempenho-do-aplicativo-com-firebase-performance-monitoring/</guid>
+      
+        <description>O Firebase Performance Monitoring é uma ferramenta que ajuda a entender o desempenho do seu aplicativo ao rastrear métricas de desempenho em tempo real.</description>
+      
+    </item>
+    
+    <item>
+      <title>Testando Aplicativos com Firebase Test Lab</title>
+      <link>http://updevblog.com/pt/post/testando-aplicativos-com-firebase-test-lab/</link>
+      <pubDate>Thu, 22 Jun 2023 21:40:27 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/testando-aplicativos-com-firebase-test-lab/</guid>
+      
+        <description>O Firebase Test Lab é um serviço baseado em nuvem que permite testar seu aplicativo em uma variedade de dispositivos e configurações de sistema.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciando bugs com Firebase Crashlytics</title>
+      <link>http://updevblog.com/pt/post/gerenciando-bugs-com-firebase-crashlytics/</link>
+      <pubDate>Thu, 22 Jun 2023 21:36:06 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciando-bugs-com-firebase-crashlytics/</guid>
+      
+        <description>Firebase Crashlytics é uma solução eficaz de rastreamento de erros que ajuda você a monitorar, priorizar e corrigir problemas de estabilidade que comprometem a qualidade do seu aplicativo.</description>
+      
+    </item>
+    
+    <item>
+      <title>Personalizando Aplicações Web com Firebase Remote Config</title>
+      <link>http://updevblog.com/pt/post/personalizando-aplicacoes-web-com-firebase-remote-config/</link>
+      <pubDate>Thu, 22 Jun 2023 21:27:59 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/personalizando-aplicacoes-web-com-firebase-remote-config/</guid>
+      
+        <description>Firebase Remote Config é uma ferramenta que permite alterar a aparência e o comportamento da sua aplicação sem precisar exigir uma atualização do usuário.</description>
+      
+    </item>
+    
+    <item>
+      <title>Personalizando seu Aplicativo com Firebase Remote Config</title>
+      <link>http://updevblog.com/pt/post/personalizando-seu-aplicativo-com-firebase-remote-config/</link>
+      <pubDate>Thu, 22 Jun 2023 21:16:06 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/personalizando-seu-aplicativo-com-firebase-remote-config/</guid>
+      
+        <description>O Firebase Remote Config é um serviço que permite alterar o comportamento e a aparência do seu aplicativo sem a necessidade de exigir uma atualização do usuário.</description>
+      
+    </item>
+    
+    <item>
+      <title>Estratégias de Service Workers: Ampliando as Possibilidades da Web Moderna</title>
+      <link>http://updevblog.com/pt/post/estrategias-de-service-workers-ampliando-as-possibilidades-da-web-moderna/</link>
+      <pubDate>Thu, 22 Jun 2023 20:26:12 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/estrategias-de-service-workers-ampliando-as-possibilidades-da-web-moderna/</guid>
+      
+        <description>Os Service Workers são um poderoso recurso da Web moderna, fornecendo ao desenvolvedor capacidades até então indisponíveis, como a possibilidade de executar ações no plano de fundo, interceptar e manipular requisições de rede e gerenciar o cache de recursos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Autenticação de Usuários com Firebase Authentication</title>
+      <link>http://updevblog.com/pt/post/autenticacao-de-usuarios-com-firebase-authentication/</link>
+      <pubDate>Tue, 20 Jun 2023 21:03:00 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/autenticacao-de-usuarios-com-firebase-authentication/</guid>
+      
+        <description>Firebase Authentication é um serviço que pode autenticar seus usuários de várias maneiras.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciando dados com Cloud Firestore e Cloud Storage no Firebase</title>
+      <link>http://updevblog.com/pt/post/gerenciando-dados-com-cloud-firestore-e-cloud-storage-no-firebase/</link>
+      <pubDate>Tue, 20 Jun 2023 19:27:06 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciando-dados-com-cloud-firestore-e-cloud-storage-no-firebase/</guid>
+      
+        <description>O Firebase oferece dois poderosos serviços para o gerenciamento de dados: o Cloud Firestore, um banco de dados NoSQL flexível e escalável, e o Cloud Storage, um serviço de armazenamento de objetos para arquivos de qualquer tipo.</description>
+      
+    </item>
+    
+    <item>
+      <title>Como Aproveitar ao Máximo as Cloud Functions do Firebase</title>
+      <link>http://updevblog.com/pt/post/como-aproveitar-ao-maximo-as-cloud-functions-do-firebase/</link>
+      <pubDate>Tue, 20 Jun 2023 18:58:07 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/como-aproveitar-ao-maximo-as-cloud-functions-do-firebase/</guid>
+      
+        <description>As Cloud Functions do Firebase são um recurso poderoso e flexível que permite executar código de back-end em resposta a eventos acionados por recursos do Firebase e HTTPs.</description>
+      
+    </item>
+    
+    <item>
+      <title>Como integrar Firebase com React para desenvolvimento de aplicações web</title>
+      <link>http://updevblog.com/pt/post/como-integrar-firebase-com-react-para-desenvolvimento-de-aplicacoes-web/</link>
+      <pubDate>Tue, 20 Jun 2023 18:45:21 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/como-integrar-firebase-com-react-para-desenvolvimento-de-aplicacoes-web/</guid>
+      
+        <description>Este artigo guiará você através dos passos necessários para integrar o Firebase, uma plataforma de desenvolvimento de aplicativos da Google, com React, uma biblioteca JavaScript para construção de interfaces de usuário.</description>
+      
+    </item>
+    
+    <item>
+      <title>Melhores Práticas para o Uso de Service Workers</title>
+      <link>http://updevblog.com/pt/post/melhores-praticas-para-o-uso-de-service-workers/</link>
+      <pubDate>Mon, 19 Jun 2023 21:36:33 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/melhores-praticas-para-o-uso-de-service-workers/</guid>
+      
+        <description>Os Service Workers podem fornecer uma série de recursos e melhorias valiosos para a experiência do usuário em um aplicativo da web, incluindo a capacidade de funcionar offline, enviar notificações push e fornecer atualizações em segundo plano.</description>
+      
+    </item>
+    
+    <item>
+      <title>Segurança no WordPress: Implementando SSL e Segurança de Cabeçalho</title>
+      <link>http://updevblog.com/pt/post/seguranca-no-wordpress-implementando-ssl-e-seguranca-de-cabecalho/</link>
+      <pubDate>Mon, 19 Jun 2023 08:43:48 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/seguranca-no-wordpress-implementando-ssl-e-seguranca-de-cabecalho/</guid>
+      
+        <description>Introdução A segurança do seu site WordPress deve ser uma de suas prioridades máximas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma extensão no Chrome Manifest V3</title>
+      <link>http://updevblog.com/pt/post/criando-uma-extensao-no-chrome-manifest-v3/</link>
+      <pubDate>Sun, 18 Jun 2023 12:51:32 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-extensao-no-chrome-manifest-v3/</guid>
+      
+        <description>Neste tutorial, você aprenderá a criar uma extensão para o Google Chrome usando o Manifest V3, a última versão da plataforma de extensões do Google Chrome.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integrando NestJS com AWS Lambda e API Gateway usando o Serverless Framework</title>
+      <link>http://updevblog.com/pt/post/integrando_nestjs_com_aws_lambda.md/</link>
+      <pubDate>Sun, 11 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/integrando_nestjs_com_aws_lambda.md/</guid>
+      
+        <description>Introdução Este tutorial, foi motivado pelo feedback do Henrique Guedes que agradeço a colaboração, apresentou o erro no passo 3 do tutotial de http://updevblog.</description>
+      
+    </item>
+    
+    <item>
+      <title>Configuração de TLS e Cloudflare: Um guia passo a passo</title>
+      <link>http://updevblog.com/pt/post/configuracao-de-tls-e-cloudflare-um-guia-passo-a-passo/</link>
+      <pubDate>Thu, 08 Jun 2023 18:30:54 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/configuracao-de-tls-e-cloudflare-um-guia-passo-a-passo/</guid>
+      
+        <description>Transport Layer Security (TLS) é o protocolo de segurança que garante privacidade e integridade de dados entre dois aplicativos se comunicando pela internet.</description>
+      
+    </item>
+    
+    <item>
+      <title>Agendamento de limpeza no Docker com Docker GC</title>
+      <link>http://updevblog.com/pt/post/agendamento-de-limpeza-no-docker-com-docker-gc/</link>
+      <pubDate>Mon, 05 Jun 2023 21:02:18 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/agendamento-de-limpeza-no-docker-com-docker-gc/</guid>
+      
+        <description>![](https://i0.wp.com/updev.dev.br/wp-content/uploads/2023/06/docker.png?resize=300%2C168&amp;ssl=1)Passo 2: Configurar Docker GC ----------------------------- O Docker é uma plataforma popular para desenvolvimento, implantação e execução de aplicações em contêineres.</description>
+      
+    </item>
+    
+    <item>
+      <title>A arte de criar temas personalizados no WordPress</title>
+      <link>http://updevblog.com/pt/post/a-arte-de-criar-temas-personalizados-no-wordpress/</link>
+      <pubDate>Sun, 04 Jun 2023 18:48:11 -0300</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/a-arte-de-criar-temas-personalizados-no-wordpress/</guid>
+      
+        <description>Olá, leitores do nosso blog! Hoje, vamos explorar a fascinante jornada de criar temas personalizados para o WordPress, uma plataforma de criação de sites que alimenta mais de 40% de todos os sites na web!</description>
+      
+    </item>
+    
+    <item>
+      <title>Entendendo o Pentest e Como Usar o WPScan em Sites WordPress</title>
+      <link>http://updevblog.com/pt/post/penjtes.md/</link>
+      <pubDate>Fri, 02 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/penjtes.md/</guid>
+      
+        <description>Introdução
+No mundo cada vez mais digitalizado de hoje, a segurança cibernética tornou-se uma necessidade incontornável.</description>
+      
+    </item>
+    
+    <item>
+      <title>Melhorando a Segurança do seu Site com SSL/TLS e o SSL Labs</title>
+      <link>http://updevblog.com/pt/post/melhorando_a_seguranca_do_seu_site.md/</link>
+      <pubDate>Fri, 02 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/melhorando_a_seguranca_do_seu_site.md/</guid>
+      
+        <description>A segurança online é essencial em nossa era digital, e uma das formas mais eficazes de proteger seu site e seus usuários é garantir que você esteja utilizando corretamente o Secure Sockets Layer (SSL) e o Transport Layer Security (TLS).</description>
+      
+    </item>
+    
+    <item>
+      <title>Configurando SSL com Certificado da Cloudflare em um Servidor Apache na AWS EC2</title>
+      <link>http://updevblog.com/pt/post/configurando_ssl.md/</link>
+      <pubDate>Thu, 01 Jun 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/configurando_ssl.md/</guid>
+      
+        <description>Introdução Neste tutorial, vamos aprender como configurar um certificado SSL da Cloudflare no Apache em uma instância AWS EC2.</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://updevblog.com/pt/post/docker-swarm.md/</link>
+      <pubDate>Sun, 23 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/docker-swarm.md/</guid>
+      
+        <description>Introdução O Docker é uma excelente plataforma para desenvolver, implantar e executar aplicações em contêineres.</description>
+      
+    </item>
+    
+    <item>
+      <title>Agendamento de limpeza no Docker com Docker GC</title>
+      <link>http://updevblog.com/pt/post/agendamento-docker.md/</link>
+      <pubDate>Sun, 23 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/agendamento-docker.md/</guid>
+      
+        <description># Agendamento de limpeza no Docker com Docker GC
+## Introdução</description>
+      
+    </item>
+    
+    <item>
+      <title>Integrando NestJS com GraphQL e MongoDB</title>
+      <link>http://updevblog.com/pt/post/nestjs-mongodb.md/</link>
+      <pubDate>Sun, 23 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-mongodb.md/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Depurar aplicação web pelo iphone</title>
+      <link>http://updevblog.com/pt/post/depurar-iphone.md/</link>
+      <pubDate>Sat, 22 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/depurar-iphone.md/</guid>
+      
+        <description>Depurar aplicativos pelo iPhone pode ser uma tarefa útil para desenvolvedores que desejam verificar o comportamento do aplicativo em um dispositivo real.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integração do NestJS com o AWS Lambda e API Gateway</title>
+      <link>http://updevblog.com/pt/post/aws-lambda-nestjs.md/</link>
+      <pubDate>Sat, 22 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/aws-lambda-nestjs.md/</guid>
+      
+        <description>Introdução Neste artigo, você aprenderá como integrar sua aplicação NestJS com o AWS Lambda e o API Gateway, permitindo que sua aplicação seja executada sem servidores e gerencie solicitações HTTP através do API Gateway.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e Microsserviços: Implementando Comunicação Entre Serviços com gRPC</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/</link>
+      <pubDate>Tue, 11 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/</guid>
+      
+        <description>Introdução Neste artigo, exploraremos como implementar a comunicação entre microsserviços usando o NestJS e o gRPC, um framework RPC (Remote Procedure Call) de alto desempenho desenvolvido pelo Google.</description>
+      
+    </item>
+    
+    <item>
+      <title>Conectando o NestJS com AWS S3</title>
+      <link>http://updevblog.com/pt/post/conecta_nestjs_s3/</link>
+      <pubDate>Fri, 07 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/conecta_nestjs_s3/</guid>
+      
+        <description>Introdução Neste artigo, mostraremos como conectar sua aplicação NestJS ao serviço de armazenamento simples (S3) da Amazon Web Services (AWS).</description>
+      
+    </item>
+    
+    <item>
+      <title>Construindo um CMS para Hugo com NestJS</title>
+      <link>http://updevblog.com/pt/post/contruindo-cms-para-hugo-usando-nestjs.md/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/contruindo-cms-para-hugo-usando-nestjs.md/</guid>
+      
+        <description>Introdução Neste artigo, mostraremos como criar um CMS (Sistema de Gerenciamento de Conteúdo) para o gerador de sites estáticos Hugo, utilizando o framework NestJS.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma API com NestJS, TypeORM e MySQL: Filtragem, Ordenação e Paginação</title>
+      <link>http://updevblog.com/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao/</guid>
+      
+        <description>Introdução Neste artigo, vamos aprender como criar uma API usando NestJS, TypeORM e MySQL, focando na filtragem, ordenação e paginação de resultados.</description>
+      
+    </item>
+    
+    <item>
+      <title>Introdução ao NestJS Middleware e Interceptors: Melhorando o Fluxo das Requisições</title>
+      <link>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes/</link>
+      <pubDate>Thu, 06 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes/</guid>
+      
+        <description>Introdução Neste tutorial, exploraremos os conceitos de middleware e interceptors no NestJS e como eles podem ser utilizados para melhorar o fluxo das requisições na sua aplicação.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e GraphQL: Criando APIs Flexíveis e Eficazes</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes/</link>
+      <pubDate>Wed, 05 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma API flexível e eficaz usando NestJS e GraphQL.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma Skill do Alexa com Chat-GPT em Python</title>
+      <link>http://updevblog.com/pt/post/criando-uma-skill-do-alexa-com-chat-gpt-em-python/</link>
+      <pubDate>Sun, 02 Apr 2023 08:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-skill-do-alexa-com-chat-gpt-em-python/</guid>
+      
+        <description>Neste tutorial, você aprenderá a criar uma skill do Alexa que utiliza o modelo de Completion da OpenAI para responder às perguntas e interagir com os usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Monitorando e Exibindo Logs Centralizados com NestJS e ELK Stack</title>
+      <link>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</link>
+      <pubDate>Sun, 02 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</guid>
+      
+        <description>Introdução Neste artigo, vamos aprender como monitorar e exibir logs centralizados com NestJS e a ELK Stack (Elasticsearch, Logstash e Kibana).</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS com Prisma: Implementando Testes de Unidade e Integração</title>
+      <link>http://updevblog.com/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao/</link>
+      <pubDate>Sun, 02 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao/</guid>
+      
+        <description>Introdução
+Neste artigo, vamos explorar como implementar testes de unidade e integração em uma aplicação NestJS usando Prisma.</description>
+      
+    </item>
+    
+    <item>
+      <title>Adicionando Recursos de Upload de Arquivos à Aplicação NestJS com Prisma e Multer</title>
+      <link>http://updevblog.com/pt/post/adicionando-recursos-de-upload-de-arquivos-a-aplicacao-nestjs-com-prisma-e-multer/</link>
+      <pubDate>Sat, 01 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/adicionando-recursos-de-upload-de-arquivos-a-aplicacao-nestjs-com-prisma-e-multer/</guid>
+      
+        <description>Introdução Neste artigo, vamos adicionar recursos de upload de arquivos à nossa aplicação NestJS com Prisma e PostgreSQL.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS e Redis: Implementando Cache e Filas de Tarefas</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</link>
+      <pubDate>Fri, 31 Mar 2023 22:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como integrar o NestJS com o Redis, uma poderosa e flexível solução de armazenamento em cache e gerenciamento de filas de tarefas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Integração do NestJS com Elasticsearch para Pesquisa Avançada</title>
+      <link>http://updevblog.com/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada/</link>
+      <pubDate>Fri, 31 Mar 2023 10:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada/</guid>
+      
+        <description>Introdução O Elasticsearch é um mecanismo de pesquisa e análise distribuído e escalável, amplamente utilizado para casos de uso como pesquisa de texto completo, análise de logs e análise de métricas.</description>
+      
+    </item>
+    
+    <item>
+      <title>Monitorando sua aplicação NestJS com Prometheus e Grafana</title>
+      <link>http://updevblog.com/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana/</link>
+      <pubDate>Fri, 31 Mar 2023 09:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana/</guid>
+      
+        <description>Introdução Neste artigo, aprenderemos como monitorar sua aplicação NestJS usando o Prometheus e o Grafana.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando Documentação de API com NestJS, Swagger e OpenAPI</title>
+      <link>http://updevblog.com/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi/</link>
+      <pubDate>Fri, 31 Mar 2023 08:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi/</guid>
+      
+        <description>Introdução Neste artigo, aprenderemos como criar documentação de API para sua aplicação NestJS utilizando o Swagger e o OpenAPI.</description>
+      
+    </item>
+    
+    <item>
+      <title>Introdução ao NestJS Middleware e Interceptors: Melhorando o Fluxo das Requisições</title>
+      <link>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1/</link>
+      <pubDate>Thu, 30 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1/</guid>
+      
+        <description>Introdução Neste tutorial, exploraremos os conceitos de middleware e interceptors no NestJS e como eles podem ser utilizados para melhorar o fluxo das requisições na sua aplicação.</description>
+      
+    </item>
+    
+    <item>
+      <title>Construindo uma API de Chat em Tempo Real com NestJS, WebSocket e Prisma</title>
+      <link>http://updevblog.com/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma/</link>
+      <pubDate>Wed, 29 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma aplicação de chat em tempo real usando NestJS, WebSocket e Prisma.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando um Sistema de Permissões Baseado em Funções (RBAC) no NestJS com Prisma, JWT e Passport</title>
+      <link>http://updevblog.com/pt/post/criando-um-sistema-de-permissoes-baseado-em-funcoes-rbac-no-nestjs-com-prisma-jwt-e-passport/</link>
+      <pubDate>Wed, 29 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-um-sistema-de-permissoes-baseado-em-funcoes-rbac-no-nestjs-com-prisma-jwt-e-passport/</guid>
+      
+        <description>Introdução Neste artigo, você aprenderá a implementar um sistema de permissões baseado em funções (Role-Based Access Control - RBAC) no NestJS usando Prisma, JWT e Passport.</description>
+      
+    </item>
+    
+    <item>
+      <title>ntrodução ao Vue.js: Um Guia para Iniciantes</title>
+      <link>http://updevblog.com/pt/post/ntroducao-ao-vue.js-um-guia-para-iniciantes/</link>
+      <pubDate>Wed, 29 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/ntroducao-ao-vue.js-um-guia-para-iniciantes/</guid>
+      
+        <description>Introdução: Vue.js é um framework JavaScript progressivo e flexível para a construção de interfaces de usuário.</description>
+      
+    </item>
+    
+    <item>
+      <title>NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js</title>
+      <link>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</link>
+      <pubDate>Tue, 28 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</guid>
+      
+        <description>Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criando uma Aplicação NestJS com Prisma, Docker e PostgreSQL: Um CRUD de Usuários</title>
+      <link>http://updevblog.com/pt/post/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios/</link>
+      <pubDate>Mon, 27 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/criando-uma-aplicacao-nestjs-com-prisma-docker-e-postgresql-um-crud-de-usuarios/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como criar uma aplicação NestJS, utilizando o Prisma como ORM (Object-Relational Mapping), o Docker para o ambiente de desenvolvimento e o PostgreSQL como banco de dados.</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://updevblog.com/pt/post/podman-entendendo-o-podman-funcionamento-aplica%C3%A7%C3%B5es-e-pr%C3%B3s-e-contras/</link>
+      <pubDate>Sun, 26 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/podman-entendendo-o-podman-funcionamento-aplica%C3%A7%C3%B5es-e-pr%C3%B3s-e-contras/</guid>
+      
+        <description>Entendendo o Podman: Funcionamento, Aplicações e Prós e Contras Introdução: O Podman é uma ferramenta de gerenciamento de contêineres que vem ganhando popularidade nos últimos anos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Docker: Dockerizando o nodejs</title>
+      <link>http://updevblog.com/pt/post/docker-dockerizando-o-nodejs/</link>
+      <pubDate>Sun, 31 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/docker-dockerizando-o-nodejs/</guid>
+      
+        <description>Uma tecnologia que veio para ficar e facilitar a vida do desenvolvedor é o docker.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Permissões de arquivos e diretórios  </title>
+      <link>http://updevblog.com/pt/post/linux-permissoes-de-arquivos-e-diretorios/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-permissoes-de-arquivos-e-diretorios/</guid>
+      
+        <description>Continuando nossa série sobre Linux, hoje veremos como gerenciar as permissões de arquivos e diretórios.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Usuários</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-usuarios-e/</link>
+      <pubDate>Thu, 14 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-usuarios-e/</guid>
+      
+        <description>Fazer a gestão de usuários no Linux, não é tão intuitiva quanto a que temos no Windowns onde consegue fazer praticamente tudo de modo gráfico e transparente.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Processos - Parte 2</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-processos-parte-2/</link>
+      <pubDate>Mon, 11 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-processos-parte-2/</guid>
+      
+        <description>Neste post dando prosseguimento aos comandos úteis para gerenciamento do Linux, vamos aprender como verificar os processos com o comando &amp;lsquo;ps&amp;rsquo;, enviar sinais aos processos com os comandos &amp;lsquo;kill&amp;rsquo;, &amp;lsquo;killall&amp;rsquo; e &amp;lsquo;pkill&amp;rsquo;, processos em foreground e background e como alterar as prioridades dos mesmos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Processos - Parte 1</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-processos/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-processos/</guid>
+      
+        <description>Neste post de hoje vamos falar sobre alguns comando uteis de gerenciamento de processos no Linux.</description>
+      
+    </item>
+    
+    <item>
+      <title>Princípios Da Programação: Linguagem de Programação</title>
+      <link>http://updevblog.com/pt/post/principios-da-programacao-linguagem-de-programacao/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/principios-da-programacao-linguagem-de-programacao/</guid>
+      
+        <description>No primeiro post, conversamos um pouco sobre o que seria a programação e o que faz um programador http://updevblog.</description>
+      
+    </item>
+    
+    <item>
+      <title>Princípios da programação: O que é programação ?</title>
+      <link>http://updevblog.com/pt/post/principios-da-programacao-o-que-e-programacao/</link>
+      <pubDate>Thu, 07 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/principios-da-programacao-o-que-e-programacao/</guid>
+      
+        <description>Pode parecer trivial, mas começando pelos conceitos do que determinada coisa faz ou é, ajuda a nos desenvolvermos melhor naquela área de interesse.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão: NVM</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-nvm/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-nvm/</guid>
+      
+        <description>O nvm(node version manager), é o gerenciador de versão para o node.</description>
+      
+    </item>
+    
+    <item>
+      <title>Criação de sites estáticos </title>
+      <link>http://updevblog.com/pt/portfolio/criacao-de-sites-estaticos/</link>
+      <pubDate>Tue, 05 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/portfolio/criacao-de-sites-estaticos/</guid>
+      
+        <description>Criação de diversos sites estáticos de qualidade com as mais diversas ferramentas como o HUGO, Jekil, Gridsome, Onze, entre outros.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão: RVM</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-rvm/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-rvm/</guid>
+      
+        <description>Hoje na nossa serie sobre gerenciadores de versão,vamos falar de um dos primeiros gerenciadores que foi o RVM(Ruby Version Manager), que é um gerenciador de versão para a linguagem ruby, que ficou muito conhecida pelo seu framework de Ruby on Rails.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciador de email: Zoho</title>
+      <link>http://updevblog.com/pt/post/gerenciador-email-zoho/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciador-email-zoho/</guid>
+      
+        <description>Muitas vezes você vai querer o seu próprio serviço de e-mail para sua empresa ou para utilização pessoal, tem varias alternativas pagas e simples de implementar, talvez o mais conhecido seja o Gmail.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão: Pyenv</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-pyenv/</guid>
+      
+        <description>Em prosseguimento a nossa serie de gerenciadores de versão, hoje vamos tratar do mundo Python e conversar sobre o pyenv que é o meu gerenciador favorito de versão para o Python.</description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão: Sdkman</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-sdkman/</guid>
+      
+        <description>Hoje vamos começar nossa primeira serie aqui no site, que será sobre os gerenciadores de versão de linguagem.</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://updevblog.com/pt/about/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/about/</guid>
+      
+        <description>Sobre mim</description>
+      
+    </item>
+    
+    <item>
+      <title>Sites Dinâmicos x Sites Estáticos </title>
+      <link>http://updevblog.com/pt/post/sites-dinamicos-x-sites-estaticos/</link>
+      <pubDate>Thu, 30 Jun 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/sites-dinamicos-x-sites-estaticos/</guid>
+      
+        <description>De acordo com o https://www.internetlivestats.com/ tem mais de 1.847.469.200 sites na internet no dia que este post foi escrito 29 de março de 2021, deixei o numero assim nesse formato pelo seu tamanho impressionante, isso com quase 5 bilhões de usuários.</description>
+      
+    </item>
+    
+    <item>
+      <title>Awards</title>
+      <link>http://updevblog.com/pt/awards/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/awards/</guid>
+      
+        <description>Hugo Awards, an annual literary award for the best science fiction or fantasy works</description>
+      
+    </item>
+    
+    <item>
+      <title>Certifications</title>
+      <link>http://updevblog.com/pt/certifications/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/certifications/</guid>
+      
+        <description>Hugo Certifications</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://updevblog.com/pt/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/archives/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>http://updevblog.com/pt/contact/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/contact/</guid>
+      
+        <description>Pagina de contato</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://updevblog.com/pt/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/imprint/</guid>
+      
+        <description>Divulgação legal Informações de acordo com a lei aplicável
+Renan Ribeiro Lage</description>
+      
+    </item>
+    
+    <item>
+      <title>Configuração e Validação de Segurança SSL/TLS em Servidores Apache</title>
+      <link>http://updevblog.com/pt/post/validate_ssl.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/validate_ssl.md/</guid>
+      
+        <description>Na era digital atual, a segurança do site é de extrema importância.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
