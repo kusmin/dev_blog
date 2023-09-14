@@ -381,3 +381,9 @@ w
 G.idea/sonarlint/issuestore/b/3/b31eac3bfc4cb5ac8b8cfcbfeb25156bbfaf2b19,7/4/74e5db65435757d8b29f399596c62d601498270c
 w
 G.idea/sonarlint/issuestore/d/0/d0ed822008ef8bcf6741921fa75383eee39c7dbd,3/4/347c9107660a4f26de7d3397267e0414596384f6
+>
+static/ads.txt,9/e/9ed97d6b72c658de659610bab18aac07a4536317
+J
+.github/workflows/main.yml,c/7/c778226b6c4c0fb51cf7942c8ee1f3d9fc1249d0
+U
+%.github/workflows/codeql-analysis.yml,c/3/c3aa8b7f1c613e43d3bb9d5ac52ac6603d945e89

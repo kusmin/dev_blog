@@ -381,3 +381,9 @@ Uresources/_gen/assets/scss/scss/anatole.scss_6dd5ee34d337299a377a4ab7b84829ac.c
 Rresources/_gen/assets/scss/scss/anatole.scss_6dd5ee34d337299a377a4ab7b84829ac.json,1/2/12667df796fa0e04eea0cf992dc51432ac5db4a1
 b
 2content/pt/post/deploy-digital-ocean-chaskiq.md.md,1/1/11439a909c1b37f002c7a1ff486485005b767633
+>
+static/ads.txt,9/e/9ed97d6b72c658de659610bab18aac07a4536317
+J
+.github/workflows/main.yml,c/7/c778226b6c4c0fb51cf7942c8ee1f3d9fc1249d0
+U
+%.github/workflows/codeql-analysis.yml,c/3/c3aa8b7f1c613e43d3bb9d5ac52ac6603d945e89
