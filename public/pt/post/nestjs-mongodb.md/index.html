@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="pt"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Integrando NestJS com GraphQL e MongoDB
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/pt/post/nestjs-mongodb.md/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Integrando NestJS com GraphQL e MongoDB"/>
+<meta name="twitter:description" content="Introdução Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Integrando NestJS com GraphQL e MongoDB" />
+<meta property="og:description" content="Introdução Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/pt/post/nestjs-mongodb.md/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-04-23T03:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-23T03:00:00+00:00" /><meta property="og:site_name" content="UpDev Blog - Tecnologia, Programação e Desenvolvimento" />
+<meta property="og:see_also" content="http://updevblog.com/pt/post/firebase_nestjs_auth.md/" /><meta property="og:see_also" content="http://updevblog.com/pt/post/firebase_nestjs.md/" /><meta property="og:see_also" content="http://updevblog.com/pt/post/integrando_nestjs_com_aws_lambda.md/" /><meta property="og:see_also" content="http://updevblog.com/pt/post/aws-lambda-nestjs.md/" /><meta property="og:see_also" content="http://updevblog.com/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Integrando NestJS com GraphQL e MongoDB",
+        "headline": "Integrando NestJS com GraphQL e MongoDB",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Introdução Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/pt\/post\/nestjs-mongodb.md\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-04-23T03:00:00.00Z",
+        "datePublished": "2023-04-23T03:00:00.00Z",
+        "dateModified": "2023-04-23T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/pt\/post\/nestjs-mongodb.md\/",
+        "wordCount" : "656",
+        "genre" : [ 
+      
+      "mongodb"
+
+    
+      
+        ,
+
+      
+      "nestjs"
+
+    ],
+        "keywords" : [ 
+      
+      "nestjs"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/pt">UpDev Blog - Tecnologia, Programação e Desenvolvimento</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/"
+              
+              title="Home"
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/contact/"
+              
+              title=""
+              >Contato</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Integrando NestJS Com GraphQL E MongoDB</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Sun, Apr 23, 2023
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">Tempo de leitura: 4 minutos</span>
+          </li>
+        </ul>
+
+      <h3 id="introdução">Introdução</h3>
+<p>Neste artigo, vamos explorar como integrar o NestJS com o GraphQL, uma linguagem de consulta e execução de API, e o MongoDB, um banco de dados NoSQL orientado a documentos. Combinando essas tecnologias, você pode criar APIs flexíveis e escaláveis que podem se adaptar facilmente às necessidades do seu projeto.</p>
+<h3 id="pré-requisitos">Pré-requisitos</h3>
+<p>Antes de começar, certifique-se de ter o seguinte instalado em seu computador:</p>
+<ol>
+<li>Node.js (v14+)</li>
+<li>Yarn ou NPM (gerenciadores de pacotes)</li>
+<li>MongoDB local ou remoto</li>
+</ol>
+<h3 id="passo-1-criar-um-novo-projeto-nestjs">Passo 1: Criar um novo projeto NestJS</h3>
+<p>Primeiro, instale o CLI do NestJS e crie um novo projeto:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">npm</span> <span class="n">i</span> <span class="n">-g</span> <span class="nv">@nestjs</span><span class="p">/</span><span class="nb">cli
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span><span class="n">nest</span> <span class="n">new</span> <span class="nb">my-nestjs</span><span class="n">-graphql-mongodb-app</span>
+</span></span></code></pre></div><p>Entre na pasta do projeto:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">cd my-nestjs</span><span class="n">-graphql-mongodb-app</span>
+</span></span></code></pre></div><h3 id="passo-2-instalar-as-dependências-do-graphql-e-mongodb">Passo 2: Instalar as dependências do GraphQL e MongoDB</h3>
+<p>Para integrar o GraphQL e o MongoDB, você precisará instalar alguns pacotes adicionais:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">yarn</span> <span class="n">add</span> <span class="nv">@nestjs</span><span class="p">/</span><span class="n">graphql</span> <span class="nb">graphql-tools</span> <span class="n">graphql</span> <span class="nb">apollo-server</span><span class="n">-express</span>
+</span></span><span class="line"><span class="cl"><span class="n">yarn</span> <span class="n">add</span> <span class="nv">@nestjs</span><span class="p">/</span><span class="n">mongoose</span> <span class="n">mongoose</span>
+</span></span></code></pre></div><h3 id="passo-3-configurar-o-graphql-e-o-módulo-mongoose">Passo 3: Configurar o GraphQL e o Módulo Mongoose</h3>
+<p>No arquivo src/app.module.ts, importe o GraphQLModule e o MongooseModule. Configure o MongooseModule para se conectar ao seu banco de dados MongoDB e o GraphQLModule para usar o schema do GraphQL.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Module</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/common&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">GraphQLModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/graphql&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">MongooseModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@Module</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MongooseModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span><span class="s1">&#39;mongodb://localhost/nestjs-graphql-mongodb&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">GraphQLModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">autoSchemaFile</span><span class="o">:</span> <span class="s1">&#39;schema.gql&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppModule</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></div><h3 id="passo-4-criar-um-esquema-graphql-e-um-modelo-mongoose">Passo 4: Criar um esquema GraphQL e um modelo Mongoose</h3>
+<p>Crie um arquivo chamado src/user.schema.ts para definir o esquema do GraphQL e o modelo do Mongoose para usuários:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Prop</span><span class="p">,</span> <span class="nx">Schema</span><span class="p">,</span> <span class="nx">SchemaFactory</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ObjectType</span><span class="p">,</span> <span class="nx">Field</span><span class="p">,</span> <span class="nx">ID</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/graphql&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Document</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@ObjectType</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kd">@Schema</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">User</span> <span class="kr">extends</span> <span class="nx">Document</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">@Field</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">ID</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Field</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">@Prop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Field</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">@Prop</span><span class="p">({</span> <span class="kt">unique</span><span class="o">:</span> <span class="kc">true</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">email</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Field</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">@Prop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">age</span>: <span class="kt">number</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">UserSchema</span> <span class="o">=</span> <span class="nx">SchemaFactory</span><span class="p">.</span><span class="nx">createForClass</span><span class="p">(</span><span class="nx">User</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="passo-5-criar-um-módulo-serviço-e-resolvers-para-usuários">Passo 5: Criar um módulo, serviço e resolvers para usuários</h3>
+<p>Crie um módulo, um serviço e resolvers para gerenciar usuários:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">nest</span> <span class="n">generate</span> <span class="n">module</span> <span class="n">users</span>
+</span></span><span class="line"><span class="cl"><span class="n">nest</span> <span class="n">generate</span> <span class="n">service</span> <span class="n">users</span>
+</span></span></code></pre></div><p>Crie um arquivo chamado src/users/users.resolver.ts e implemente os resolvers GraphQL para o gerenciamento de usuários:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Resolver</span><span class="p">,</span> <span class="nx">Query</span><span class="p">,</span> <span class="nx">Mutation</span><span class="p">,</span> <span class="nx">Args</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/graphql&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">UsersService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./users.service&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">User</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;../user.schema&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">CreateUserInput</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./dto/create-user.input&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">UpdateUserInput</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./dto/update-user.input&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@Resolver</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">UsersResolver</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="kr">readonly</span> <span class="nx">usersService</span>: <span class="kt">UsersService</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Query</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">User</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">users</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">User</span><span class="err">[]</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">usersService</span><span class="p">.</span><span class="nx">findAll</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Query</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">user</span><span class="p">(</span><span class="kd">@Args</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span> <span class="nx">id</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">User</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">usersService</span><span class="p">.</span><span class="nx">findOne</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Mutation</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">createUser</span><span class="p">(</span><span class="kd">@Args</span><span class="p">(</span><span class="s1">&#39;createUserInput&#39;</span><span class="p">)</span> <span class="nx">createUserInput</span>: <span class="kt">CreateUserInput</span><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">User</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">usersService</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">createUserInput</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Mutation</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">updateUser</span><span class="p">(</span><span class="kd">@Args</span><span class="p">(</span><span class="s1">&#39;updateUserInput&#39;</span><span class="p">)</span> <span class="nx">updateUserInput</span>: <span class="kt">UpdateUserInput</span><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">User</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">usersService</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nx">updateUserInput</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">@Mutation</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">deleteUser</span><span class="p">(</span><span class="kd">@Args</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span> <span class="nx">id</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">User</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">usersService</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>### Passo 6: Atualizar o módulo de usuários</p>
+<p>Atualize o `src/users/users.module.ts` para importar o `UserSchema`, o `MongooseModule`, e os resolvers:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Module</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/common&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">MongooseModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">User</span><span class="p">,</span> <span class="nx">UserSchema</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;../user.schema&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">UsersService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./users.service&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">UsersResolver</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./users.resolver&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@Module</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span><span class="nx">MongooseModule</span><span class="p">.</span><span class="nx">forFeature</span><span class="p">([{</span> <span class="nx">name</span>: <span class="kt">User.name</span><span class="p">,</span> <span class="nx">schema</span>: <span class="kt">UserSchema</span> <span class="p">}])],</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">providers</span><span class="o">:</span> <span class="p">[</span><span class="nx">UsersService</span><span class="p">,</span> <span class="nx">UsersResolver</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">UsersModule</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></div><h3 id="passo-7-atualizar-o-módulo-principal">Passo 7: Atualizar o módulo principal</h3>
+<p>No arquivo src/app.module.ts, adicione o UsersModule às importações:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Module</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/common&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">GraphQLModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/graphql&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">MongooseModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@nestjs/mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">UsersModule</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./users/users.module&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@Module</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MongooseModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span><span class="s1">&#39;mongodb://localhost/nestjs-graphql-mongodb&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">GraphQLModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">autoSchemaFile</span><span class="o">:</span> <span class="s1">&#39;schema.gql&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">UsersModule</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">AppModule</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></div><h3 id="passo-8-testar-a-api-graphql">Passo 8: Testar a API GraphQL</h3>
+<p>Inicie o servidor:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">yarn</span> <span class="n">start</span><span class="err">:</span><span class="n">dev</span>
+</span></span></code></pre></div><p>Acesse o GraphQL Playground em http://localhost:3000/graphql e experimente as consultas e mutações:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-graphql" data-lang="graphql"><span class="line"><span class="cl"><span class="kd">query</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nc">users</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">email</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">age</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">mutation</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nc">createUser</span><span class="p">(</span><span class="py">createUserInput</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nc">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#34;John Doe&#34;</span><span class="p">,</span><span class="w"> </span><span class="nc">email</span><span class="p">:</span><span class="w"> </span><span class="s">&#34;john@example.com&#34;</span><span class="p">,</span><span class="w"> </span><span class="nc">age</span><span class="p">:</span><span class="w"> </span><span class="nc">30</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">email</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">age</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="conclusão">Conclusão</h3>
+<p>Neste artigo, você aprendeu como integrar o NestJS com o GraphQL e o MongoDB para criar APIs flexíveis e escaláveis. Agora você pode expandir ainda mais o projeto, adicionando novos recursos e otimizando a API conforme necessário.</p>
+
+
+
+<h3>Posts desta série</h3>
+<ul>
+  
+    <li><a href="/pt/post/firebase_nestjs_auth.md/">Gerenciando Autenticação Com Firebase E NestJS</a></li>
+
+  
+    <li><a href="/pt/post/firebase_nestjs.md/">Integrando NestJS Com Firebase</a></li>
+
+  
+    <li><a href="/pt/post/integrando_nestjs_com_aws_lambda.md/">Integrando NestJS Com AWS Lambda E API Gateway Usando O Serverless Framework</a></li>
+
+  
+    <li><a href="/pt/post/nestjs-mongodb.md/">Integrando NestJS Com GraphQL E MongoDB</a></li>
+
+  
+    <li><a href="/pt/post/aws-lambda-nestjs.md/">Integração Do NestJS Com O AWS Lambda E API Gateway</a></li>
+
+  
+    <li><a href="/pt/post/nestjs-e-microsservicos-implementando-comunicacao-entre-servicos-com-grpc/">NestJS E Microsserviços: Implementando Comunicação Entre Serviços Com GRPC</a></li>
+
+  
+    <li><a href="/pt/post/conecta_nestjs_s3/">Conectando O NestJS Com AWS S3</a></li>
+
+  
+    <li><a href="/pt/post/contruindo-cms-para-hugo-usando-nestjs.md/">Construindo Um CMS Para Hugo Com NestJS</a></li>
+
+  
+    <li><a href="/pt/post/criando-uma-api-com-nestjs-typeorm-e-mysql-filtragem-ordenacao-e-paginacao/">Criando Uma API Com NestJS, TypeORM E MySQL: Filtragem, Ordenação E Paginação</a></li>
+
+  
+    <li><a href="/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes/">Introdução Ao NestJS Middleware E Interceptors: Melhorando O Fluxo Das Requisições</a></li>
+
+  
+    <li><a href="/pt/post/nestjs-e-graphql-criando-apis-flexiveis-e-eficazes/">NestJS E GraphQL: Criando APIs Flexíveis E Eficazes</a></li>
+
+  
+    <li><a href="/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/">Monitorando E Exibindo Logs Centralizados Com NestJS E ELK Stack</a></li>
+
+  
+    <li><a href="/pt/post/nestjs-com-prisma-implementando-testes-de-unidade-e-integracao/">NestJS Com Prisma: Implementando Testes De Unidade E Integração</a></li>
+
+  
+    <li><a href="/pt/post/adicionando-recursos-de-upload-de-arquivos-a-aplicacao-nestjs-com-prisma-e-multer/">Adicionando Recursos De Upload De Arquivos À Aplicação NestJS Com Prisma E Multer</a></li>
+
+  
+    <li><a href="/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/">NestJS E Redis: Implementando Cache E Filas De Tarefas</a></li>
+
+  
+    <li><a href="/pt/post/integracao-do-nestjs-com-elasticsearch-para-pesquisa-avancada/">Integração Do NestJS Com Elasticsearch Para Pesquisa Avançada</a></li>
+
+  
+    <li><a href="/pt/post/monitorando-sua-aplicacao-nestjs-com-prometheus-e-grafana/">Monitorando Sua Aplicação NestJS Com Prometheus E Grafana</a></li>
+
+  
+    <li><a href="/pt/post/criando-documentacao-de-api-com-nestjs-swagger-e-openapi/">Criando Documentação De API Com NestJS, Swagger E OpenAPI</a></li>
+
+  
+    <li><a href="/pt/post/introducao-ao-nestjs-middleware-e-interceptors-melhorando-o-fluxo-das-requisicoes-1/">Introdução Ao NestJS Middleware E Interceptors: Melhorando O Fluxo Das Requisições</a></li>
+
+  
+    <li><a href="/pt/post/construindo-uma-api-de-chat-em-tempo-real-com-nestjs-websocket-e-prisma/">Construindo Uma API De Chat Em Tempo Real Com NestJS, WebSocket E Prisma</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/pt/categories/mongodb/">mongodb</a><a class="category" href="/pt/categories/nestjs/">nestjs</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/pt/tags/nestjs/">nestjs</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentários</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

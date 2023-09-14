@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/series/linux/</link>
+    <description>Recent content in Linux on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 21 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/series/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux: Permissões de arquivos e diretórios  </title>
+      <link>http://updevblog.com/pt/post/linux-permissoes-de-arquivos-e-diretorios/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-permissoes-de-arquivos-e-diretorios/</guid>
+      
+        <description>Continuando nossa série sobre Linux, hoje veremos como gerenciar as permissões de arquivos e diretórios.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Usuários</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-usuarios-e/</link>
+      <pubDate>Thu, 14 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-usuarios-e/</guid>
+      
+        <description>Fazer a gestão de usuários no Linux, não é tão intuitiva quanto a que temos no Windowns onde consegue fazer praticamente tudo de modo gráfico e transparente.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Processos - Parte 2</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-processos-parte-2/</link>
+      <pubDate>Mon, 11 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-processos-parte-2/</guid>
+      
+        <description>Neste post dando prosseguimento aos comandos úteis para gerenciamento do Linux, vamos aprender como verificar os processos com o comando &amp;lsquo;ps&amp;rsquo;, enviar sinais aos processos com os comandos &amp;lsquo;kill&amp;rsquo;, &amp;lsquo;killall&amp;rsquo; e &amp;lsquo;pkill&amp;rsquo;, processos em foreground e background e como alterar as prioridades dos mesmos.</description>
+      
+    </item>
+    
+    <item>
+      <title>Linux: Gerenciamento de Processos - Parte 1</title>
+      <link>http://updevblog.com/pt/post/linux-gerenciamento-de-processos/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/linux-gerenciamento-de-processos/</guid>
+      
+        <description>Neste post de hoje vamos falar sobre alguns comando uteis de gerenciamento de processos no Linux.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

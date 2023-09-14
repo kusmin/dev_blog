@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Linux: User Management
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="A blog with news and information about technology and programming. In addition to tutorials and tips on Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue and others (we have no prejudice against any technology) that will make you take off in the IT world !"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux: User Management"/>
+<meta name="twitter:description" content="Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Linux: User Management" />
+<meta property="og:description" content="Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-14T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-14T03:00:00+00:00" /><meta property="og:site_name" content="programming blog" />
+<meta property="og:see_also" content="http://updevblog.com/en/post/linux-permissoes-de-arquivos-e-diretorios/" /><meta property="og:see_also" content="http://updevblog.com/en/post/linux-gerenciamento-de-processos-parte-2/" /><meta property="og:see_also" content="http://updevblog.com/en/post/linux-gerenciamento-de-processos/" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Linux: User Management",
+        "headline": "Linux: User Management",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/en\/post\/linux-gerenciamento-de-usuarios-e\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-14T03:00:00.00Z",
+        "datePublished": "2022-07-14T03:00:00.00Z",
+        "dateModified": "2022-07-14T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/en\/post\/linux-gerenciamento-de-usuarios-e\/",
+        "wordCount" : "977",
+        "genre" : [ 
+      
+      "Linux"
+
+    ],
+        "keywords" : [ 
+      
+      "management"
+
+    
+      
+        ,
+
+      
+      "shell"
+
+    
+      
+        ,
+
+      
+      "linux"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/en">programming blog</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>A blog with news and information about technology and programming. In addition to tutorials and tips on Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue and others (we have no prejudice against any technology) that will make you take off in the IT world !</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/contact/"
+              
+              title=""
+              >Contact</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >en <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/linux-gerenciamento-de-usuarios-e/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/es/post/linux-gerenciamento-de-usuarios-e/" title="es"
+                    ><span
+                      
+                      aria-label="es"
+                      >es</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Linux: User Management</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Thu, Jul 14, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">5-minute read</span>
+          </li>
+        </ul>
+
+      <p>Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently. In Linux we need to use the terminal and amazingly enough with a few commands you can manage users and user groups in a practical and powerful way.</p>
+<p>In this post we will learn how to create a user, delete a user and change a user.</p>
+<h4 id="managing-users">Managing Users</h4>
+<p>Users are stored in the file /etc/passwd. By running the cat command we can take a look at this file.</p>
+<pre><code>cat /etc/passwd
+</code></pre>
+<p><img src="/uploads/usuariodosistema.png" alt="system users" title="system users"></p>
+<p>Probably on your system you will also have several users, this happens that users are not only the ones you log into the system or create for a person, but also users used by native programs of the operating system or that were installed later.</p>
+<p>This file seems full of letters and complicated, so let&rsquo;s understand what each thing does.</p>
+<p>First of all each line represents one user. In each line we have information separated by &lsquo;:&rsquo;, what we have there are seven types of information, now let&rsquo;s understand each one of them, taking there for example the user &lsquo;renan&rsquo; that was created when I put Linux on my machine.</p>
+<blockquote>
+<p>renan❌1000:1000:renan,,,:/home/renan:/bin/bash</p>
+</blockquote>
+<p>These seven fields can best be explained this way:</p>
+<blockquote>
+<p>Name:Password:UID:GID:Description:Home:Shell</p>
+</blockquote>
+<ol>
+<li>
+<p>The first field represents the user name, in this case &lsquo;renan&rsquo;.</p>
+</li>
+<li>
+<p>The second field which is marked with an &lsquo;x&rsquo; represents the password which used to be in this space but on modern systems is now stored in /etc/shadow.</p>
+<pre><code>sudo cat /etc/shadow
+</code></pre>
+<p>You will see the passwords that are encrypted.</p>
+</li>
+<li>
+<p>The third field represents the UID, which is a unique identifier for the user within the system.</p>
+</li>
+<li>
+<p>The fourth field represents the GID which is the identifier of the group that user belongs to.</p>
+</li>
+<li>
+<p>In the fifth field we have a description for that user.</p>
+</li>
+<li>
+<p>In the sixth field we have the location (directory) where that user is.</p>
+</li>
+<li>
+<p>And lastly we have the field that shows the shell that represents where the script for that user is.</p>
+</li>
+</ol>
+<h5 id="creating-users">Creating Users</h5>
+<p>To create a user within the system is very simple. Just execute the command usearadd &ldquo;username&rdquo;.</p>
+<pre><code>useradd test
+</code></pre>
+<p>If we go back in the passwd file, we can see the user created at the end of the file.</p>
+<pre><code>cat /etc/passwd
+</code></pre>
+<p><img src="/uploads/createdusername.png" alt="created user" title="created user"></p>
+<p>It has been created with the default values, with the unique UID, a new group, no comments and in the default user and script path. We can set the options with the parameters:</p>
+<ul>
+<li>-s =&gt; Defines the script related to that user, the script path.</li>
+<li>-c =&gt; Allows defining a comment for the user, the user description part of the etc/passwd file</li>
+<li>-m =&gt; Request the creation of the home. Note: Most distributions create the home automatically.</li>
+<li>-d =&gt; Define the name of the home folder.</li>
+<li>-g =&gt; The primary group.</li>
+<li>-G =&gt; The secondary group.</li>
+</ul>
+<p>An example would be:</p>
+<pre><code>useradd test2 -s bin/sh -g test -c test2
+</code></pre>
+<p>Checking the etc/passwd file.</p>
+<pre><code>cat /etc/passwd
+</code></pre>
+<p>Create user test](/uploads/criarusuarioteste.png &ldquo;Create user test&rdquo;)</p>
+<p>You can see that the user teste2 he belongs to the same group as the user teste. In addition the comment has been added, which we put and the shell path.</p>
+<p>To change the password of a user we can run the command, passwd &ldquo;name-user&rdquo;.</p>
+<pre><code>passwd test 
+</code></pre>
+<p>Remember that to change it will have to be with &lsquo;sudo&rsquo; (root) or be logged in with the user.</p>
+<h5 id="remove-users">Remove users</h5>
+<p>To remove users we have the command: userdell &ldquo;name-user&rdquo;.</p>
+<pre><code>userdel test2
+</code></pre>
+<p>If you check the etc/passwd file again the user has been removed. However if we check the /home folder the user&rsquo;s folder still exists, to delete it we need to pass the -r parameter.</p>
+<pre><code>userdel -r test
+</code></pre>
+<p>Now both the user and the folder have been removed.</p>
+<h5 id="modify-users">Modify users</h5>
+<p>We have the same parameters that can be used when creating a user. The command is: usermod &ldquo;options&rdquo; &ldquo;username&rdquo;.</p>
+<pre><code>usermod -c test test
+</code></pre>
+<p>In the example we have added a test comment to the user test.</p>
+<h4 id="group-management">Group Management</h4>
+<p>As we saw in the first part, users belong to groups, primary and can also have a secondary group. Now we will learn how to manage the groups, which just like the users have a file with information, which is the &lsquo;group&rsquo;.</p>
+<pre><code>cat /etc/group
+</code></pre>
+<p><img src="/uploads/group.png" alt="group" title="group"></p>
+<p>Each line represents a group and each group is separated into four fields:</p>
+<blockquote>
+<p>Group:Password:ID:Users</p>
+</blockquote>
+<p>The password field just like for users is in another file in /etc/gshadow</p>
+<pre><code>cat /etc/gshadow
+</code></pre>
+<p>Here also the passwords for the password are encrypted.</p>
+<p>The operation of the commands here are very similar to those of the user, so I will leave the test to you, passing only the commands to be used.</p>
+<h6 id="create-group">Create group</h6>
+<p>To create the group we have the command: groupadd &ldquo;group-name</p>
+<pre><code> groupadd test
+</code></pre>
+<h6 id="change-primary-user-group">Change primary user group</h6>
+<p>To change the primary group of a user we have the command: usermod -g &ldquo;group&rdquo; &ldquo;user&rdquo;.</p>
+<pre><code>usermod -g test2 test
+</code></pre>
+<h6 id="change-the-users-secondary-group">Change the user&rsquo;s secondary group</h6>
+<p>Much like the previous command: usermod -G &ldquo;group&rdquo; &ldquo;user&rdquo;.</p>
+<pre><code>usermod -G test2 test
+</code></pre>
+<h6 id="add-user-to-a-group">Add user to a group</h6>
+<p>To add user to a group we have the command: usermod -a -G &ldquo;group&rdquo; &ldquo;user&rdquo;.</p>
+<pre><code>usermod -G test2 test
+</code></pre>
+<p>Here we must pass the parameter -a to add, otherwise it will simply change the secondary group.</p>
+<p>Note: A user can have only one main group and several secondary groups.</p>
+<h6 id="show-the-uid-and-all-gid-of-the-user">Show the UID and all GID of the user</h6>
+<p>We can see all groups and the UID of a user with the command: id &ldquo;user</p>
+<pre><code>id test
+</code></pre>
+<h6 id="show-groups-of-the-user">Show groups of the user</h6>
+<p>To show the groups of a user we have the command: groups &ldquo;user&rdquo;</p>
+<pre><code>group test
+</code></pre>
+<h6 id="getent">Getent</h6>
+<p>To finish we can use the getent command to consult the /etc/passwd and /etc/group files:</p>
+<ol>
+<li>getent passwd</li>
+<li>getent group</li>
+</ol>
+<h4 id="conclusion">Conclusion</h4>
+<p>We have learned that it is easier and more practical than it seems to manage users and groups under Linux.</p>
+
+
+
+<h3></h3>
+<ul>
+  
+    <li><a href="/en/post/linux-permissoes-de-arquivos-e-diretorios/">Linux: File and Directory Permissions</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-usuarios-e/">Linux: User Management</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-processos-parte-2/">Linux: Process Management - Part 2</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-processos/">Linux: Process Management - Part 1</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/en/categories/linux/">Linux</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/en/tags/management/">management</a><a class="tag" href="/en/tags/shell/">shell</a><a class="tag" href="/en/tags/linux/">linux</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comments</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="es"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Administradores de versiones: Sdkman
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Administradores de versiones: Sdkman"/>
+<meta name="twitter:description" content="Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Administradores de versiones: Sdkman" />
+<meta property="og:description" content="Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/es/post/gerenciadores-de-versao-sdkman/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-01T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-01T03:00:00+00:00" /><meta property="og:site_name" content="blog de programacion" />
+<meta property="og:see_also" content="http://updevblog.com/es/post/gerenciadores-de-versao-nvm/" /><meta property="og:see_also" content="http://updevblog.com/es/post/gerenciadores-de-versao-rvm/" /><meta property="og:see_also" content="http://updevblog.com/es/post/gerenciadores-de-versao-pyenv/" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Administradores de versiones: Sdkman",
+        "headline": "Administradores de versiones: Sdkman",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/es\/post\/gerenciadores-de-versao-sdkman\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-01T03:00:00.00Z",
+        "datePublished": "2022-07-01T03:00:00.00Z",
+        "dateModified": "2022-07-01T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/es\/post\/gerenciadores-de-versao-sdkman\/",
+        "wordCount" : "537",
+        "genre" : [ 
+      
+      "sdk"
+
+    
+      
+        ,
+
+      
+      "sdkman"
+
+    
+      
+        ,
+
+      
+      "java"
+
+    
+      
+        ,
+
+      
+      "gerenciadores de versão"
+
+    
+      
+        ,
+
+      
+      "programação"
+
+    ],
+        "keywords" : [ 
+      
+      "jvm"
+
+    
+      
+        ,
+
+      
+      "opensource"
+
+    
+      
+        ,
+
+      
+      "jdk"
+
+    
+      
+        ,
+
+      
+      "java"
+
+    
+      
+        ,
+
+      
+      "sdkman"
+
+    
+      
+        ,
+
+      
+      "versionamento"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/es">blog de programacion</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/contact/"
+              
+              title=""
+              >Contacto</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >es <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/gerenciadores-de-versao-sdkman/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/en/post/gerenciadores-de-versao-sdkman/" title="en"
+                    ><span
+                      
+                      aria-label="en"
+                      >en</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/uploads/images.png" alt="Thumbnail image" />
+      </div>
+
+    
+    <div class="post__content">
+      <h1>Administradores De Versiones: Sdkman</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Fri, Jul 1, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3 minutos de lectura</span>
+          </li>
+        </ul>
+
+      <p>Hoy vamos a comenzar nuestra primera serie aquí en el sitio, que será sobre los administradores de versiones de idiomas. Si llevas tiempo programando, seguro que has pasado por la pequeña pesadilla que es tener instalada en tu máquina una versión de tu jdk o de tu intérprete de python, por ejemplo, y al ejecutar algún otro programa descubrí que tu versión es incompatible con el programa. Luego, debe desinstalar su versión, instalar la nueva, cambiar a menudo las variables de entorno, etc. ¿Qué sucede si necesita la versión anterior? Hazlo todo de nuevo&hellip;.</p>
+<p>Afortunadamente, hoy en día casi todos los idiomas tienen alguna herramienta de control de versiones que hace todo este proceso por usted y le permite tener varias versiones instaladas en su máquina y cambiar fácilmente entre ellas.</p>
+<p>Y para comenzar esta serie, hablemos de SDKMAN, que es el administrador mundial de Java.</p>
+<h2 id="sdkman">SDKMAN</h2>
+<p>Accediendo a la web oficial <a href="https://sdkman.io/" title="https://sdkman.io/">https://sdkman.io/</a>, podemos ver una breve introducción en la que se describen a sí mismos como un desarrollador de software. administrador de equipos ¡Ahora a la instalación!</p>
+<h5 id="instalación">Instalación</h5>
+<p>En la página de Sdkman en el menú superior, verá una opción llamada instalar <a href="https://sdkman.io/install" title="https://sdkman.io/install">https://sdkman.io/install</a>, ingresando la página tendrá instrucciones sobre cómo instalar dependiendo de su sistema operativo, ya que Sdkman es multiplataforma y se puede instalar en los más diversos sistemas operativos. En este ejemplo lo instalaremos en Linux.</p>
+<p>Siguiendo los comandos se pueden describir:</p>
+<pre><code>$ curl -s &quot;https://get.sdkman.io&quot; | bash
+</code></pre>
+<p>Con este comando, sdkman ya está instalado en su máquina, ahora debemos configurar una variable de entorno para Linux, con la ubicación del archivo de script sdkman.</p>
+<pre><code>$ source &quot;$HOME/.sdkman/bin/sdkman-init.sh&quot;
+</code></pre>
+<p>Ahora solo revisa la versión.</p>
+<pre><code>$ sdk version
+</code></pre>
+<p><img src="/uploads/sdkversion.png" alt=""></p>
+<p>Tal vez tu versión sea diferente a la de este tutorial, no hay problema, se actualizan de vez en cuando.</p>
+<h5 id="usando--sdkman">Usando  Sdkman</h5>
+<p>Ahora con Sdkman instalado, comencemos a usarlo. Un comando útil en Linux es ayuda, lo usaremos aquí.</p>
+<pre><code>sdk help
+</code></pre>
+<p><img src="/uploads/sdkhelp.png" alt=""></p>
+<p>En esta pantalla podemos ver los comandos principales de sdkman y cómo usarlos, por ejemplo, queremos ver una lista de todas las versiones de Java disponibles&hellip;</p>
+<pre><code>sdk list java
+</code></pre>
+<p>Aparecerá una lista de versiones de Java disponibles para la instalación.</p>
+<p><img src="/uploads/listjava.png" alt=""></p>
+<p>Al hacer clic en la flecha hacia abajo o desplazar el mouse, puede ver más versiones, para salir de la pantalla, haga clic en &lsquo;q&rsquo;.</p>
+<p>Ahora elijamos una versión i e instálela en nuestra máquina.</p>
+<pre><code>sdk install java 17.0.3-zulu
+</code></pre>
+<p>Y listo empezará a instalar esta versión de java. Podemos configurar esta versión como predeterminada escribiendo &lsquo;y&rsquo; después de la instalación o no.</p>
+<p><img src="/uploads/sdkinstall.png" alt=""></p>
+<p>Si lo prefiere, puede cambiar la versión predeterminada más tarde usando el comando.</p>
+<pre><code>sdk default java 17.0.3-zulu
+</code></pre>
+<p>Si necesitas usar alguna otra versión (que ya hayas instalado por el sdk) también es muy simple.</p>
+<p>Por ejemplo:</p>
+<pre><code>sdk use java 18.0.1-zulu
+</code></pre>
+<p>Definirá esta versión de Java para la terminal que está escribiendo para que pueda usarla sin esa complicación debido a la versión. Recordando que esta versión solo estará disponible en el terminal que estés utilizando, si abres uno nuevo, aparecerá con la versión por defecto.</p>
+<p>Sdkman es una herramienta muy simple que te ayudará a lidiar mejor con las diferentes versiones del mundo Jdk, ¡en la próxima publicación veremos sobre pyenv! Hasta la próxima !</p>
+
+
+
+<h3>Posts en esta serie</h3>
+<ul>
+  
+    <li><a href="/es/post/gerenciadores-de-versao-nvm/">Administradores De Versiones: NVM</a></li>
+
+  
+    <li><a href="/es/post/gerenciadores-de-versao-pyenv/">Administradores De Versiones: Pyenv</a></li>
+
+  
+    <li><a href="/es/post/gerenciadores-de-versao-sdkman/">Administradores De Versiones: Sdkman</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/es/categories/sdk/">sdk</a><a class="category" href="/es/categories/sdkman/">sdkman</a><a class="category" href="/es/categories/java/">java</a><a class="category" href="/es/categories/gerenciadores-de-vers%C3%A3o/">gerenciadores de versão</a><a class="category" href="/es/categories/programa%C3%A7%C3%A3o/">programação</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/es/tags/jvm/">jvm</a><a class="tag" href="/es/tags/opensource/">opensource</a><a class="tag" href="/es/tags/jdk/">jdk</a><a class="tag" href="/es/tags/java/">java</a><a class="tag" href="/es/tags/sdkman/">sdkman</a><a class="tag" href="/es/tags/versionamento/">versionamento</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentarios</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

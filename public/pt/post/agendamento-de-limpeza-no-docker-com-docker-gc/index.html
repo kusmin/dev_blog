@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="pt"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Agendamento de limpeza no Docker com Docker GC
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/pt/post/agendamento-de-limpeza-no-docker-com-docker-gc/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Agendamento de limpeza no Docker com Docker GC"/>
+<meta name="twitter:description" content="![](https://i0.wp.com/updev.dev.br/wp-content/uploads/2023/06/docker.png?resize=300%2C168&ssl=1)Passo 2: Configurar Docker GC ----------------------------- O Docker é uma plataforma popular para desenvolvimento, implantação e execução de aplicações em contêineres."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Agendamento de limpeza no Docker com Docker GC" />
+<meta property="og:description" content="![](https://i0.wp.com/updev.dev.br/wp-content/uploads/2023/06/docker.png?resize=300%2C168&ssl=1)Passo 2: Configurar Docker GC ----------------------------- O Docker é uma plataforma popular para desenvolvimento, implantação e execução de aplicações em contêineres." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/pt/post/agendamento-de-limpeza-no-docker-com-docker-gc/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-05T21:02:18-03:00" />
+<meta property="article:modified_time" content="2023-06-05T21:02:18-03:00" /><meta property="og:site_name" content="UpDev Blog - Tecnologia, Programação e Desenvolvimento" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Agendamento de limpeza no Docker com Docker GC",
+        "headline": "Agendamento de limpeza no Docker com Docker GC",
+        "alternativeHeadline": "",
+        "description": "
+      
+        ![](https:\/\/i0.wp.com\/updev.dev.br\/wp-content\/uploads\/2023\/06\/docker.png?resize=300%2C168\u0026ssl=1)Passo 2: Configurar Docker GC ----------------------------- O Docker é uma plataforma popular para desenvolvimento, implantação e execução de aplicações em contêineres.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/pt\/post\/agendamento-de-limpeza-no-docker-com-docker-gc\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-06-05T21:02:18.00Z",
+        "datePublished": "2023-06-05T21:02:18.00Z",
+        "dateModified": "2023-06-05T21:02:18.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/pt\/post\/agendamento-de-limpeza-no-docker-com-docker-gc\/",
+        "wordCount" : "484",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/pt">UpDev Blog - Tecnologia, Programação e Desenvolvimento</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Aprenda e aprimore suas habilidades em TI com nossos tutoriais, dicas e notícias sobre Java, JavaScript, Python, PHP, GO, Ruby, HTML, CSS, Docker, AWS, React, Angular, Vue e muito mais!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/"
+              
+              title="Home"
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/contact/"
+              
+              title=""
+              >Contato</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Agendamento De Limpeza No Docker Com Docker GC</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Mon, Jun 5, 2023
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">Tempo de leitura: 3 minutos</span>
+          </li>
+        </ul>
+
+      <div class="wp-block-image"><figure class="aligncenter size-full">![](https://i0.wp.com/updev.dev.br/wp-content/uploads/2023/06/docker.png?resize=300%2C168&ssl=1)</figure></div>Passo 2: Configurar Docker GC
+-----------------------------
+<p>O Docker é uma plataforma popular para desenvolvimento, implantação e execução de aplicações em contêineres. No entanto, com o uso contínuo, imagens e contêineres não utilizados podem acumular-se, ocupando espaço em disco e tornando o ambiente menos eficiente. O Docker GC é uma ferramenta de terceiros que ajuda a eliminar automaticamente contêineres e imagens não utilizados com base em diferentes critérios. Neste artigo, explicaremos como agendar a limpeza do Docker utilizando o Docker GC.</p>
+<h2 id="passo-1-instalar-docker-gc">Passo 1: Instalar Docker GC</h2>
+<p>O Docker GC é um projeto open-source desenvolvido pela Spotify. Para instalá-lo, siga os passos abaixo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git clone https://github.com/spotify/docker-gc.git
+</span></span><span class="line"><span class="cl">sudo cp docker-gc/docker-gc /usr/local/bin/
+</span></span><span class="line"><span class="cl">sudo chmod +x /usr/local/bin/docker-gc
+</span></span></code></pre></div><h2 id="passo-2-configurar-docker-gc">Passo 2: Configurar Docker GC</h2>
+<p>O Docker GC utiliza variáveis de ambiente para personalizar seu comportamento. Para eliminar imagens e contêineres não utilizados nos últimos 3 dias, crie um arquivo chamado docker-gc.env em /etc/ com o seguinte conteúdo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">GRACE_PERIOD_SECONDS</span><span class="o">=</span><span class="m">259200</span>
+</span></span></code></pre></div><p>A variável GRACE_PERIOD_SECONDS define o tempo em segundos que deve passar antes de eliminar um contêiner ou imagem não utilizados. O valor 259200 equivale a 3 dias (3 * 24 * 60 * 60).</p>
+<h2 id="passo-3-criar-um-script-para-executar-docker-gc">Passo 3: Criar um script para executar Docker GC</h2>
+<p>Crie um arquivo chamado run-docker-gc.sh em /usr/local/bin/ com o seguinte conteúdo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">source</span> /etc/docker-gc.env
+</span></span><span class="line"><span class="cl">/usr/local/bin/docker-gc
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Torne o script executável:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">``` shell
+</span></span><span class="line"><span class="cl">sudo chmod +x /usr/local/bin/run-docker-gc.sh
+</span></span></code></pre></div><h2 id="passo-4-agendar-a-limpeza-com-uma-tarefa-programada-cron-job">Passo 4: Agendar a limpeza com uma tarefa programada (cron job)</h2>
+<p>Para agendar a execução do script run-docker-gc.sh todos os dias às 9:20, abra o arquivo crontab com o seguinte comando:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo crontab -a
+</span></span></code></pre></div><p>Adicione a seguinte linha ao final do arquivo crontab:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">20</span> <span class="m">9</span> * * * /usr/local/bin/run-docker-gc.sh
+</span></span></code></pre></div><p>Salve as alterações e feche o editor. Agora, o script run-docker-gc.sh será executado diariamente às 9:20.</p>
+<h2 id="funcionalidades-adicionais-do-docker-gc">Funcionalidades adicionais do Docker GC</h2>
+<ul>
+<li>
+<p>Limpeza de imagens específicas: O Docker GC permite especificar uma lista de imagens a serem excluídas da limpeza, mesmo que não estejam em uso. Para fazer isso, adicione a variável IMAGE_EXCLUDE_PATTERN ao arquivo docker-gc.env:</p>
+</li>
+<li>
+<p>Limpeza de contêineres específicos: Similarmente, você pode excluir contêineres específicos da limpeza. Adicione a variável CONTAINER_EXCLUDE_PATTERN ao arquivo docker-gc.env:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">CONTAINER_EXCLUDE_PATTERN</span><span class="o">=</span><span class="s2">&#34;^mycontainerprefix-.*&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Forçar a remoção de imagens: O Docker GC não remove imagens em uso por padrão. Se desejar forçar a remoção de todas as imagens, incluindo as em uso, adicione a variável FORCE_IMAGE_REMOVAL ao arquivo docker-gc.env:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">FORCE_IMAGE_REMOVAL</span> <span class="o">=</span> <span class="m">1</span>
+</span></span></code></pre></div><ul>
+<li>Forçar a remoção de contêineres : Semelhante à remoção de imagens, você pode forçar a remoção de todos os contêineres, incluindo os em uso, adicionando a variável FORCE_CONTAINER_REMOVAL ao arquivo docker-gc.env:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">CLEAN_UNUSED_NETWORKS</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><ul>
+<li>Para habilitar a limpeza de volumes, adicione a variável CLEAN_UNUSED_VOLUMES ao arquivo docker-gc.env:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">CLEAN_UNUSED_VOLUMES</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><h2 id="conclusão">Conclusão</h2>
+<p>O Docker GC é uma ferramenta útil para manter seu ambiente Docker limpo e eficiente. Ao seguir os passos deste artigo, você pode configurar e personalizar a limpeza automática de contêineres, imagens, redes e volumes não utilizados. Isso ajudará a evitar o acúmulo de recursos não utilizados e a otimizar o uso do espaço em disco.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentários</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/pt/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

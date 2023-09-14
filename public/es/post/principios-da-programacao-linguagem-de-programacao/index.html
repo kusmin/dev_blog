@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="es"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Principios de la Programación: Lenguaje de Programación
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/es/post/principios-da-programacao-linguagem-de-programacao/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Principios de la Programación: Lenguaje de Programación"/>
+<meta name="twitter:description" content="En el primer post, hablamos un poco de lo que es la programación y lo que hace un programador http://updevblog."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Principios de la Programación: Lenguaje de Programación" />
+<meta property="og:description" content="En el primer post, hablamos un poco de lo que es la programación y lo que hace un programador http://updevblog." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/es/post/principios-da-programacao-linguagem-de-programacao/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-09T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-09T03:00:00+00:00" /><meta property="og:site_name" content="blog de programacion" />
+
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Principios de la Programación: Lenguaje de Programación",
+        "headline": "Principios de la Programación: Lenguaje de Programación",
+        "alternativeHeadline": "",
+        "description": "
+      
+        En el primer post, hablamos un poco de lo que es la programación y lo que hace un programador http:\/\/updevblog.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/es\/post\/principios-da-programacao-linguagem-de-programacao\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-09T03:00:00.00Z",
+        "datePublished": "2022-07-09T03:00:00.00Z",
+        "dateModified": "2022-07-09T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/es\/post\/principios-da-programacao-linguagem-de-programacao\/",
+        "wordCount" : "877",
+        "genre" : [ 
+      
+      "principios de la programación"
+
+    
+      
+        ,
+
+      
+      "linguagem"
+
+    ],
+        "keywords" : [ 
+      
+      "lenguaje de programación"
+
+    
+      
+        ,
+
+      
+      "principios"
+
+    
+      
+        ,
+
+      
+      "conceitos"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/es">blog de programacion</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>Un blog con noticias e información sobre tecnología y programación. Además de tutoriales y tips sobre Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue y otros (no tenemos prejuicios contra ninguna tecnología) que te harán despegar en el mundo de la informatica!</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/pt/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/es/contact/"
+              
+              title=""
+              >Contacto</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >es <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/principios-da-programacao-linguagem-de-programacao/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/en/post/principios-da-programacao-linguagem-de-programacao/" title="en"
+                    ><span
+                      
+                      aria-label="en"
+                      >en</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Principios De La Programación: Lenguaje De Programación</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Sat, Jul 9, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">5 minutos de lectura</span>
+          </li>
+        </ul>
+
+      <p>En el primer post, hablamos un poco de lo que es la programación y lo que hace un programador <a href="http://updevblog.com/pt/post/principios-da-programacao-o-que-e-programacao/" title="http://updevblog.com/pt/post/principios-da-programacao-o-que-e-programacao/">http://updevblog.com/pt/post/principios-da-programacao-o-que-e-programacao/</a> . Hemos mencionado brevemente los lenguajes de programación y su importante papel en la comunicación hombre-máquina, vamos a profundizar en este post sobre los lenguajes de programación.</p>
+<h4 id="qué-es-un-lenguaje-de-programación">¿Qué es un lenguaje de programación?</h4>
+<p>El lenguaje de programación como se ha dicho antes es una forma de comunicación entre el programador y la máquina, es a través de él que le decimos a la máquina cómo actuar y qué debe hacer. Al ser una lengua por naturaleza, tiene un método <em>estandarizado</em> con reglas <em>sintácticas</em> y <em>semánticas</em>. Es decir, un programador es ante todo un lingüista, un especialista en el estudio y la enseñanza de las lenguas.</p>
+<p>Al igual que un escritor o redactor, cuanto más domine un programador el lenguaje en el que escribe, más sofisticado, legible y comprensible será el código que escriba. La legibilidad y la facilidad de comprensión son fundamentales, para que otros programadores y personas puedan entender tu código.</p>
+<p>Una alta legibilidad del código permite a un lego en programación entender lo que hace ese código, incluso sin entender el lenguaje, desde el ver la importancia de asignar nombres significativos a nuestras variables, funciones y clases.</p>
+<p>Un código (algoritmo) bien escrito es como escribir un libro, hace una introducción (lo que hace el código), presenta los personajes (variables y clases) y entra en el clímax (normalmente la razón de ser del programa, con su dominio y regla de negocio). Es posible crear en el contexto adecuado obras literarias de gran éxito y verdaderas.</p>
+<h4 id="lenguajes-de-alto-y-bajo-nivel">Lenguajes de alto y bajo nivel</h4>
+<p>Cuanto más cercano es el lenguaje de programación al lenguaje humano, cuanto más alto es el nivel, más fácil es aprenderlo y utilizarlo porque ya nos es familiar, por lo que la curva de aprendizaje es menor (aumenta drásticamente la productividad) que los lenguajes de programación de bajo nivel que están más cerca del lenguaje de la máquina con sus ceros y unos.</p>
+<p>Un lenguaje de alto nivel es más abstracto y permite al programador decirle a la máquina lo que tiene que hacer sin tener que preocuparse a menudo de detalles específicos de la máquina, como la asignación de memoria o el sistema operativo. Crea menos dependencia entre máquinas y entornos informáticos específicos, lo que garantiza una mayor flexibilidad y portabilidad. Como programador y escritor, es su obligación asegurarse de que su código sea lo más flexible y portable posible.</p>
+<h4 id="qué-hace-la-máquina-con-mi-código">¿Qué hace la máquina con mi código?</h4>
+<p>Después de escribir su código en un lenguaje de programación (normalmente de alto nivel), habrá una fase intermedia en la que su código será <em>compilado</em> o <em>interpretado,</em> en un lenguaje que el ordenador pueda entender y realizar las acciones e instrucciones descritas en su código.</p>
+<p>No nos centraremos en este momento en cómo se hace, sólo en que existe un compilador o intérprete que traducirá su código.</p>
+<h4 id="un-poco-de-historia">Un poco de historia</h4>
+<h5 id="tomado-de-wikipedia">Tomado de wikipedia</h5>
+<p>La primera obra de lenguaje de programación fue creada por <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace" title="Ada Lovelace">Ada Lovelace</a>, amiga íntima de <a href="https://pt.wikipedia.org/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a>. El proyecto de la primera calculadora mecánica programable fue concebido por <a href="https://pt.wikipedia.org/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a> quien, tras gastar una fortuna y mucho tiempo, no pudo realizar el proyecto. El lenguaje de programación <a href="https://pt.wikipedia.org/wiki/Ada_(program_language%C3%A7%C3%A3o)" title="Ada (lenguaje de programación)">ADA</a> recibió el nombre de este primer programador.</p>
+<p>Uno de los primeros lenguajes de programación para ordenadores fue probablemente el <a href="https://pt.wikipedia.org/wiki/Plankalk%C3%BCl" title="Plankalkül">Plankalkül</a>, creado por <a href="https://pt.wikipedia.org/wiki/Konrad_Zuse" title="Konrad Zuse">Konrad Zuse</a> en la <a href="https://pt.wikipedia.org/wiki/Alemanha_Nazista" title="Nazi Germany">Alemania nazi</a>, pero que tuvo poco o ningún impacto en el futuro de los lenguajes de programación.</p>
+<p>El primer compilador fue escrito por <a href="https://pt.wikipedia.org/wiki/Grace_Hopper" title="Grace Hopper">Grace Hopper</a> en 1952 para el lenguaje de programación <a href="https://pt.wikipedia.org/wiki/Sistema_A-0" title="A-0 System">A-0</a>.[\N<a href="https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o#cite_note-wexel-15">14]</a> El primer lenguaje de programación de alto nivel ampliamente utilizado fue <a href="https://pt.wikipedia.org/wiki/Fortran" title="Fortran">Fortran</a>, creado en 1954. En 1957, se creó <a href="https://pt.wikipedia.org/wiki/B-0" title="B-0">B-0</a>, un sucesor de A-0, que daría lugar a <a href="https://pt.wikipedia.org/wiki/Flow-Matic" title="Flow-Matic">Flow-Matic</a> (1958), el predecesor inmediato de <a href="https://pt.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, a partir de 1959. COBOL era un lenguaje ampliamente aceptado para uso comercial. El lenguaje <a href="https://pt.wikipedia.org/wiki/ALGOL" title="ALGOL">ALGOL</a> fue creado en 1958-1960 ALGOL-60 tuvo una gran influencia en el diseño de muchos lenguajes posteriores.</p>
+<p>El lenguaje <a href="https://pt.wikipedia.org/wiki/Lisp" title="Lisp">Lisp</a> fue creado en <a href="https://pt.wikipedia.org/wiki/1958" title="1958">1958</a> y se utilizó ampliamente en la investigación en el campo de la <a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" title="Computer Science">ciencia de la computación</a>, sobre todo en el campo de la <a href="https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_Artificial" title="Artificial Intelligence">Inteligencia Artificial</a>. Otro lenguaje relacionado con el campo de la IA que surgió en 1972 es el lenguaje <a href="https://pt.wikipedia.org/wiki/Prolog" title="Prolog">Prolog</a>, un lenguaje del paradigma lógico.</p>
+<p>La orientación a objetos](<a href="https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos">https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos</a> &ldquo;Object Orientation&rdquo;) es otro hito importante en la historia de los lenguajes de programación. El lenguaje <a href="https://pt.wikipedia.org/wiki/Simula_67" title="Simula 67">Simula 67</a> introduce el concepto de clases. El lenguaje <a href="https://pt.wikipedia.org/wiki/Smalltalk" title="Smalltalk">Smalltalk</a> amplía el concepto de clases y se convierte en el primer lenguaje de programación que ofrece un soporte completo para la programación orientada a objetos. El lenguaje <a href="https://pt.wikipedia.org/wiki/C%2B%2B" title="C++">C++</a> (originalmente conocido como C con clases) populariza la orientación a objetos.</p>
+<p>Desde entonces han surgido varios lenguajes de programación. Entre ellos se encuentran <a href="https://pt.wikipedia.org/wiki/C_Sharp" title="C Sharp">C#</a>, <a href="https://pt.wikipedia.org/wiki/VB.NET" title="VB.NET">VB.NET</a>, <a href="https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o_Java" title="Java programming language">Java</a>, <a href="https://pt.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="https://pt.wikipedia.org/wiki/Objective-C" title="Objective-C">Objective-C</a>, [PHP](https://pt. wikipedia.org/wiki/PHP &ldquo;PHP&rdquo;), <a href="https://pt.wikipedia.org/wiki/Python" title="Python">Python</a>, <a href="https://pt.wikipedia.org/wiki/SuperCollider" title="SuperCollider">SuperCollider</a>, <a href="https://pt.wikipedia.org/wiki/D_(programming_language%C3%A7%C3%A3o)" title="D (lenguaje de programación)">D language</a> y <a href="https://pt.wikipedia.org/wiki/Ruby_(programming_language%C3%A3o)" title="Ruby (lenguaje de programación)">Ruby</a>.</p>
+<h4 id="conclusión">Conclusión</h4>
+<p>En este post hemos visto un poco lo que son los lenguajes de programación, y cómo se alinean con el trabajo diario del programador. Cómo un mayor conocimiento del lenguaje permite crear código de mayor calidad y legibilidad.</p>
+<p>¡Espero que este artículo te influya para estudiar y profundizar en el área de la informática! Hasta la próxima, chicos.</p>
+
+
+
+<h3>Posts en esta serie</h3>
+<ul>
+  
+    <li><a href="/es/post/principios-da-programacao-linguagem-de-programacao/">Principios De La Programación: Lenguaje De Programación</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/es/categories/principios-de-la-programaci%C3%B3n/">principios de la programación</a><a class="category" href="/es/categories/linguagem/">linguagem</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/es/tags/lenguaje-de-programaci%C3%B3n/">lenguaje de programación</a><a class="tag" href="/es/tags/principios/">principios</a><a class="tag" href="/es/tags/conceitos/">conceitos</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comentarios</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/es/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

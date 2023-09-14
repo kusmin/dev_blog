@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>servidor on programming blog</title>
+    <link>http://updevblog.com/en/categories/servidor/</link>
+    <description>Recent content in servidor on programming blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 03 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/categories/servidor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mail manager: Zoho</title>
+      <link>http://updevblog.com/en/post/gerenciador-email-zoho/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/gerenciador-email-zoho/</guid>
+      
+        <description>Often you will want your own email service for your business or personal use, there are several paid and easy to implement alternatives, perhaps the best known is Gmail.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

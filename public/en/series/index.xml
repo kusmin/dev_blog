@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on programming blog</title>
+    <link>http://updevblog.com/en/series/</link>
+    <description>Recent content in Series on programming blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 21 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>http://updevblog.com/en/series/linux/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/series/linux/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Programming Principles</title>
+      <link>http://updevblog.com/en/series/programming-principles/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/series/programming-principles/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Principles of programming</title>
+      <link>http://updevblog.com/en/series/principles-of-programming/</link>
+      <pubDate>Thu, 07 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/series/principles-of-programming/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Version managers</title>
+      <link>http://updevblog.com/en/series/version-managers/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/series/version-managers/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Gerenciadores de versão</title>
+      <link>http://updevblog.com/en/series/gerenciadores-de-vers%C3%A3o/</link>
+      <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/series/gerenciadores-de-vers%C3%A3o/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

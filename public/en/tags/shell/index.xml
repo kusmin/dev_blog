@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on programming blog</title>
+    <link>http://updevblog.com/en/tags/shell/</link>
+    <description>Recent content in shell on programming blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 14 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux: User Management</title>
+      <link>http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/</link>
+      <pubDate>Thu, 14 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/</guid>
+      
+        <description>Managing users in Linux is not as intuitive as it is in Windows, where you can do almost everything graphically and transparently.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

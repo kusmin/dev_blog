@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nesjts on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/series/nesjts/</link>
+    <description>Recent content in nesjts on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 28 Mar 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/series/nesjts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NestJS: Adicionando Autenticação e Autorização com JWT e Passport.js</title>
+      <link>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</link>
+      <pubDate>Tue, 28 Mar 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-adicionando-autenticacao-e-autorizacao-com-jwt-e-passport.js/</guid>
+      
+        <description>Introdução No artigo anterior, criamos uma aplicação NestJS com Prisma, Docker e PostgreSQL, implementando um CRUD de usuários.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gerenciadores de versão on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/tags/gerenciadores-de-vers%C3%A3o/</link>
+    <description>Recent content in gerenciadores de versão on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 04 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/gerenciadores-de-vers%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerenciadores de versão: RVM</title>
+      <link>http://updevblog.com/pt/post/gerenciadores-de-versao-rvm/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/gerenciadores-de-versao-rvm/</guid>
+      
+        <description>Hoje na nossa serie sobre gerenciadores de versão,vamos falar de um dos primeiros gerenciadores que foi o RVM(Ruby Version Manager), que é um gerenciador de versão para a linguagem ruby, que ficou muito conhecida pelo seu framework de Ruby on Rails.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
