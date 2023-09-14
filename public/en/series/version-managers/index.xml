@@ -6,7 +6,29 @@
     <description>Recent content in Version managers on programming blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 01 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/series/version-managers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/en/series/version-managers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Version managers: NVM</title>
+      <link>http://updevblog.com/en/post/gerenciadores-de-versao-nvm/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/gerenciadores-de-versao-nvm/</guid>
+      
+        <description>The nvm(node version manager), is the version manager for node. If you already work with express, angular, react, vue and other of the millions of Javascript frameworks, at some point you had to use it and as we know there are several versions of node.</description>
+      
+    </item>
+    
+    <item>
+      <title>Version managers: RVM</title>
+      <link>http://updevblog.com/en/post/gerenciadores-de-versao-rvm/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/en/post/gerenciadores-de-versao-rvm/</guid>
+      
+        <description>Today in our series about version managers, we&amp;rsquo;ll talk about one of the first managers that was RVM (Ruby Version Manager), which is a version manager for the ruby language, which became well known for its Ruby on Rails framework.</description>
+      
+    </item>
+    
     <item>
       <title>Version managers: Sdkman</title>
       <link>http://updevblog.com/en/post/gerenciadores-de-versao-sdkman/</link>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/categories/redis/</link>
+    <description>Recent content in redis on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 31 Mar 2023 22:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/categories/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NestJS e Redis: Implementando Cache e Filas de Tarefas</title>
+      <link>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</link>
+      <pubDate>Fri, 31 Mar 2023 22:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/nestjs-e-redis-implementando-cache-e-filas-de-tarefas/</guid>
+      
+        <description>Introdução Neste artigo, vamos explorar como integrar o NestJS com o Redis, uma poderosa e flexível solução de armazenamento em cache e gerenciamento de filas de tarefas.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

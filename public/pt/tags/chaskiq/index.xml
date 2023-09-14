@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chaskiq on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/tags/chaskiq/</link>
+    <description>Recent content in chaskiq on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 07 Sep 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/chaskiq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Instalar o Chaskiq no DigitalOcean: Um Guia Completo</title>
+      <link>http://updevblog.com/pt/post/deploy-digital-ocean-chaskiq.md/</link>
+      <pubDate>Thu, 07 Sep 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/deploy-digital-ocean-chaskiq.md/</guid>
+      
+        <description>Introdução O Chaskiq é uma plataforma de suporte ao cliente e gestão de conversas que oferece um conjunto robusto de recursos para negócios de todos os tamanhos.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

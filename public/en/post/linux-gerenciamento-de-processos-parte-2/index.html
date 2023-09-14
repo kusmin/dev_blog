@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    UpDev Blog
+        |
+        Linux: Process Management - Part 2
+
+
+      
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="UpDev Blog" />
+  <meta
+    name="description"
+    content="A blog with news and information about technology and programming. In addition to tutorials and tips on Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue and others (we have no prejudice against any technology) that will make you take off in the IT world !"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.b2e0cb07595e3519ab1193bb421914e06c0e26b0cc561fef23b3c6131d4d2ffa.css"
+      integrity="sha256-suDLB1leNRmrEZO7QhkU4GwOJrDMVh/vI7PGEx1NL/o="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.b1c4e6a10bdbab01f33fff9d78816ee68cf9a9a731f07668afd546a79924cb80.css"
+    integrity="sha256-scTmoQvbqwHzP/&#43;deIFu5oz5qacx8HZor9VGp5kky4A="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.423dee17c62f55fa733a4ee13e00d523dfce88cc4f4ab4549a24ba36bd9de681.css"
+    integrity="sha256-Qj3uF8YvVfpzOk7hPgDVI9/OiMxPSrRUmiS6Nr2d5oE="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.b7d54133b27e5b4de15245b8e143de3e8ed2d674c706137274cedc9953f31917.css"
+    integrity="sha256-t9VBM7J&#43;W03hUkW44UPePo7S1nTHBhNydM7cmVPzGRc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-180x180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-152x152.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-144x144.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-120x120.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+
+  <link rel="canonical" href="http://updevblog.com/en/post/linux-gerenciamento-de-processos-parte-2/" />
+
+  
+  
+  
+  
+
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NL3CMDX"></script>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJCSFBD');</script>
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+  
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3064769,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux: Process Management - Part 2"/>
+<meta name="twitter:description" content="In this post continuing with useful Linux management commands, we will learn how to check processes with the &lsquo;ps&rsquo; command, send signals to processes with the &lsquo;kill&rsquo;, &lsquo;killall&rsquo; and &lsquo;pkill&rsquo; commands, foreground and background processes and how to change their priorities."/>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4427338533585215"
+          crossorigin="anonymous"></script>
+
+
+  
+  <meta property="og:title" content="Linux: Process Management - Part 2" />
+<meta property="og:description" content="In this post continuing with useful Linux management commands, we will learn how to check processes with the &lsquo;ps&rsquo; command, send signals to processes with the &lsquo;kill&rsquo;, &lsquo;killall&rsquo; and &lsquo;pkill&rsquo; commands, foreground and background processes and how to change their priorities." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://updevblog.com/en/post/linux-gerenciamento-de-processos-parte-2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-11T03:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-11T03:00:00+00:00" /><meta property="og:site_name" content="programming blog" />
+<meta property="og:see_also" content="http://updevblog.com/en/post/linux-permissoes-de-arquivos-e-diretorios/" /><meta property="og:see_also" content="http://updevblog.com/en/post/linux-gerenciamento-de-usuarios-e/" /><meta property="og:see_also" content="http://updevblog.com/en/post/linux-gerenciamento-de-processos/" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Linux: Process Management - Part 2",
+        "headline": "Linux: Process Management - Part 2",
+        "alternativeHeadline": "",
+        "description": "
+      
+        In this post continuing with useful Linux management commands, we will learn how to check processes with the \u0026lsquo;ps\u0026rsquo; command, send signals to processes with the \u0026lsquo;kill\u0026rsquo;, \u0026lsquo;killall\u0026rsquo; and \u0026lsquo;pkill\u0026rsquo; commands, foreground and background processes and how to change their priorities.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/updevblog.com\/en\/post\/linux-gerenciamento-de-processos-parte-2\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Renan Ribeiro Lage"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-07-11T03:00:00.00Z",
+        "datePublished": "2022-07-11T03:00:00.00Z",
+        "dateModified": "2022-07-11T03:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Renan Ribeiro Lage",
+            "url": "http://updevblog.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/updevblog.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/updevblog.com\/en\/post\/linux-gerenciamento-de-processos-parte-2\/",
+        "wordCount" : "1165",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "linux"
+
+    
+      
+        ,
+
+      
+      "process"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJCSFBD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/imagem.jpeg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/en">programming blog</a>
+        </div>
+
+      
+      <div class="sidebar__introduction-description">
+        <p>A blog with news and information about technology and programming. In addition to tutorials and tips on Java, Javascript, Python, PHP, GO, Ruby, HTML, CSS, docker, AWS, React, Angular, Vue and others (we have no prejudice against any technology) that will make you take off in the IT world !</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/renan-ribeiro-b1368872/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/kusmin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.instagram.com/renanlagee/"
+            target="_blank"
+            rel="noopener"
+            aria-label="instagram"
+            title="instagram"
+          >
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:renan.lagee@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/en/contact/"
+              
+              title=""
+              >Contact</a
+            >
+          </li>
+
+        
+
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >en <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/pt/post/linux-gerenciamento-de-processos-parte-2/" title="pt-br"
+                    ><span
+                      
+                      aria-label="pt-br"
+                      >pt-br</span
+                    >
+                  </a>
+                </li>
+
+              
+                <li class="optionswitch__list-item">
+                  <a href="/es/post/linux-gerenciamento-de-processos-parte-2/" title="es"
+                    ><span
+                      
+                      aria-label="es"
+                      >es</span
+                    >
+                  </a>
+                </li>
+
+              
+            </ul>
+          </div>
+        </li>
+
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Linux: Process Management - Part 2</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Mon, Jul 11, 2022
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">6-minute read</span>
+          </li>
+        </ul>
+
+      <p>In this post continuing with useful Linux management commands, we will learn how to check processes with the &lsquo;ps&rsquo; command, send signals to processes with the &lsquo;kill&rsquo;, &lsquo;killall&rsquo; and &lsquo;pkill&rsquo; commands, foreground and background processes and how to change their priorities.</p>
+<h4 id="ps">PS</h4>
+<p>The ps command lists the current processes in the user terminal.</p>
+<pre><code>ps
+</code></pre>
+<p><img src="/uploads/ps.png" alt="ps" title="ps"></p>
+<p>As you can see in my case, I only had ps and bash running on my terminal at the time, and it returns the PID of these processes.</p>
+<p>We can pass some parameters next to <em>ps</em> for more detailed information. Running the command:</p>
+<pre><code>ps --help all
+</code></pre>
+<p>It brings a list of parameters that we can use, the most important of which are</p>
+<ul>
+<li>-u =&gt; Show more information related to the user.</li>
+<li>-x =&gt; Show processes that have not been started directly on your terminal.</li>
+<li>-a =&gt; Show all the user&rsquo;s processes.</li>
+</ul>
+<p>If we type the command:</p>
+<pre><code>ps aux
+</code></pre>
+<p><img src="/uploads/ps-aux.png" alt="ps aux" title="ps aux"></p>
+<p>This returns a list of all the processes in great detail, it is a very useful command for everyday use.</p>
+<p>It is quite common along with ps aux command, we use grep to be able to filter this list which is quite long. Here is an example:</p>
+<pre><code>ps aux | grep nginx
+</code></pre>
+<p><img src="/uploads/ps-nginx.png" alt="ps nginx" title="ps nginx"></p>
+<p>With grep we can see only the processes that we are interested in, in this case, it did not return the nginx processes that are running on my machine.</p>
+<h4 id="sending-signals-to-the-processes">Sending signals to the processes</h4>
+<h5 id="kill">kill</h5>
+<p>The kill command is used to send signals to the processes, signals can be of various types, to end, pause, resume a process and others, with the command:</p>
+<pre><code>kill -l
+</code></pre>
+<p>It will return a list of signals that we can send to the processes.</p>
+<p><img src="/uploads/kill-list.png" alt=""></p>
+<p>An example of a signal is when we are starting to type a command or even when we are executing a command and we type Crtl + C, in this case we are sending a signal, which is the 2) SIGINT interrupt signal.</p>
+<p>Another two examples we have of very used signals is the 15 is SIGTERM which ends a process and the 9 SIGKILL which ends the process abruptly. The most recommended is to always run 15 first as it will send the process to terminate and the process will finish whatever it is doing at that moment and then terminate. On 9 it will terminate the process regardless, which can lead to problems if the process is doing something important like a commit to the database, in which case if it had used 15 it would have finished the commit and only then terminated the process.</p>
+<p>There are two ways to send the signals to the processes:</p>
+<ol>
+<li>kill -s SIGTERM &ldquo;PID-PROCESS&rdquo;</li>
+<li>kill -15 &ldquo;PID-PROCESS&rdquo;</li>
+</ol>
+<p>You can either send it by the signal name or by the signal number followed by the process name.</p>
+<p>By default the kill is 15 SIGTERM, if you want to send this signal to the process you can write it in short:</p>
+<pre><code>kill &quot;NAME-PROCESS&quot;
+</code></pre>
+<h5 id="killall-and-pkill">killall and pkill</h5>
+<p>killall kills the process based on the exact process name and pkill is a form of grep it will kill all processes found with that regex.</p>
+<pre><code>killall &quot;PROCESS-NAME&quot;
+
+pkill &quot;REGEX-PROCESSES
+</code></pre>
+<h4 id="foregroundfg-and-backgroundbg">Foreground(fg) and Background(bg)</h4>
+<p>The foreground is the process that appears to be running on your terminal at that moment, &ldquo;locking&rdquo; your terminal to it. On the other hand, the background is the process that happens behind, without you &ldquo;seeing&rdquo; it, in this case it frees the terminal for you.</p>
+<p>An example of a foreground process is when we use the command</p>
+<pre><code> tail -f &quot;file-name&quot;
+</code></pre>
+<p>In which we wait for new writes to the file, this is very useful for tracking logs. Another example of foreground, I will create a for process that will get stuck:</p>
+<pre><code>for i in `seq 1000` ; do sleep 2 ; echo $i ; done
+</code></pre>
+<p>The command runs a for from 0 to 1000, printing out the values every 2 seconds, if you ran it on your machine, you will see that you can&rsquo;t run any more commands, the process has &ldquo;stuck&rdquo; your terminal. The command is in the foreground.</p>
+<p>We can run the same command in backgound, using the same command we will add an &lsquo;&amp;&rsquo; at the end. Check it out:</p>
+<pre><code>for i in `seq 1000` ; do sleep 2 ; echo $i ; done &amp;
+</code></pre>
+<p>Now it is running the process, in the background, and you can run other commands in the terminal, while it is running in the background. When I type jobs it shows all the processes that are running in the background on the terminal.</p>
+<pre><code>jobs
+</code></pre>
+<p>jobs](/uploads/jobs.png &ldquo;jobs&rdquo;)</p>
+<p>Returns the number of jobs, their state and the command they are running. If you want to move the process to the foreground type fg followed by the job number, in this case 1.</p>
+<pre><code>fg 1
+</code></pre>
+<p>The process is now in foreground. If you now type Ctrl + Z it will pause the process and put it in the background again. To put it back in backgound just type the command bg followed by the job number.</p>
+<pre><code>bg 1
+</code></pre>
+<p>If you want to kill the job, we have the kill command. The kill command followed by % and the job number.</p>
+<pre><code>kill %1
+</code></pre>
+<p>Now let&rsquo;s talk about priorities.</p>
+<h4 id="priorities">Priorities</h4>
+<p>The priorities in Linux go from 0 to 39, in general when Linux creates a new process it is &lsquo;born&rsquo; with priority 20. The lower the priority value of the process, the higher the priority value, the lower its priority. In this case the process with 0 is the highest priority and those with 39.</p>
+<p>We can set or change the priority value with nice, which goes from -20 to 19, if we set nice to -20, the process will have priority 0, if we set it to 19 it will have priority 39.</p>
+<p>By running the top command, we can see the priority and nice values of the processes.</p>
+<pre><code>top
+</code></pre>
+<p><img src="/uploads/priorities.png" alt="priorities" title="priorities"></p>
+<p>The 3 column, &lsquo;PR&rsquo; shows the priority values and the c 4 column, &lsquo;NI&rsquo; represents the nice value. As said before the process is born with priority 20 and nice 0.</p>
+<p>To set the priority manually we can use the nice command followed by -n, the nice value, followed by the command. For example let&rsquo;s execute the top command with priority 0.</p>
+<pre><code>nice -n -20 top
+</code></pre>
+<p>Or with the minimum priority.</p>
+<pre><code>nice -n 19 top
+</code></pre>
+<p>nice can only be used when creating a process. To change the process after it has been created we have renice. It is executed using renice -n nice number, followed by the process name.</p>
+<pre><code>renice -n 'NUMERO_RENICE' 'NUMERO_PID'
+</code></pre>
+<p>One detail is that normal users can only use renice with positive values. For negative values, you must be root.</p>
+<h4 id="conclusion">Conclusion</h4>
+<p>In this post we have covered the main commands for managing Linux, we saw the ps process, kill, foreground, background and how to set priority with nice and renice.</p>
+<p>I hope that with this post you can take another step in using Linux. See you next time!</p>
+
+
+
+<h3></h3>
+<ul>
+  
+    <li><a href="/en/post/linux-permissoes-de-arquivos-e-diretorios/">Linux: File and Directory Permissions</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-usuarios-e/">Linux: User Management</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-processos-parte-2/">Linux: Process Management - Part 2</a></li>
+
+  
+    <li><a href="/en/post/linux-gerenciamento-de-processos/">Linux: Process Management - Part 1</a></li>
+
+  
+</ul>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/en/tags/linux/">linux</a><a class="tag" href="/en/tags/process/">process</a></span>
+
+
+
+
+      
+    </div>
+
+    <div id="comment">
+          <h2>comments</h2>
+          <script
+  src="https://utteranc.es/client.js"
+  repo="kusmin/dev_blog_comments"
+  issue-term="pathname"
+  theme=""
+  
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        UpDev Blog
+        2023
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/en/imprint/"
+          
+          title=""
+        >
+          Renan-Dev
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5L7KE8CQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-RG5L7KE8CQ');
+</script>
+<script>
+    (function(d,t) {
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src="https://app.chaskiq.io/embed.js"
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+            const browserLang = navigator.language || "pt_BR";
+            new window.ChaskiqMessengerEncrypted({
+                domain: 'https://app.chaskiq.io',
+                ws:  'wss://app.chaskiq.io/cable',
+                app_id: "8sXd88MqpE5c26xi8QjP3Mxx",
+                data: "YOUR_ENCRYPTED_JWE_DATA",
+                lang: browserLang,
+            })
+        }
+    })(document,"script");
+</script>
+</body>
+</html>

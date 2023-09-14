@@ -6,13 +6,167 @@
     <description>Recent content in Categories on blog de programacion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 02 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>gerenciadores de versão</title>
-      <link>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</link>
+      <title>Gestión Linux</title>
+      <link>http://updevblog.com/es/categories/gesti%C3%B3n-linux/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/gesti%C3%B3n-linux/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://updevblog.com/es/categories/linux/</link>
+      <pubDate>Thu, 21 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/linux/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>linguagem</title>
+      <link>http://updevblog.com/es/categories/linguagem/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/linguagem/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>principios de la programación</title>
+      <link>http://updevblog.com/es/categories/principios-de-la-programaci%C3%B3n/</link>
+      <pubDate>Sat, 09 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/principios-de-la-programaci%C3%B3n/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>conceptos</title>
+      <link>http://updevblog.com/es/categories/conceptos/</link>
+      <pubDate>Thu, 07 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/conceptos/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>principios</title>
+      <link>http://updevblog.com/es/categories/principios/</link>
+      <pubDate>Thu, 07 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/principios/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>http://updevblog.com/es/categories/javascript/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/javascript/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>nvm</title>
+      <link>http://updevblog.com/es/categories/nvm/</link>
+      <pubDate>Wed, 06 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/nvm/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ferramentas</title>
+      <link>http://updevblog.com/es/categories/ferramentas/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/ferramentas/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>http://updevblog.com/es/categories/ruby/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/ruby/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>versionamento</title>
+      <link>http://updevblog.com/es/categories/versionamento/</link>
+      <pubDate>Mon, 04 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/versionamento/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>http://updevblog.com/es/categories/email/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/email/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>servidor</title>
+      <link>http://updevblog.com/es/categories/servidor/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/servidor/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>zoho</title>
+      <link>http://updevblog.com/es/categories/zoho/</link>
+      <pubDate>Sun, 03 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/zoho/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>administradores de versiones</title>
+      <link>http://updevblog.com/es/categories/administradores-de-versiones/</link>
       <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
       
-      <guid>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</guid>
+      <guid>http://updevblog.com/es/categories/administradores-de-versiones/</guid>
       
         <description></description>
       
@@ -35,6 +189,17 @@
       <pubDate>Sat, 02 Jul 2022 03:00:00 +0000</pubDate>
       
       <guid>http://updevblog.com/es/categories/python/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>gerenciadores de versão</title>
+      <link>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</link>
+      <pubDate>Fri, 01 Jul 2022 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/es/categories/gerenciadores-de-vers%C3%A3o/</guid>
       
         <description></description>
       

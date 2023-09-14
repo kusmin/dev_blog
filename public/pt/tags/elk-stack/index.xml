@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elk stack on UpDev Blog - Tecnologia, Programação e Desenvolvimento</title>
+    <link>http://updevblog.com/pt/tags/elk-stack/</link>
+    <description>Recent content in elk stack on UpDev Blog - Tecnologia, Programação e Desenvolvimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 02 Apr 2023 03:00:00 +0000</lastBuildDate><atom:link href="http://updevblog.com/pt/tags/elk-stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitorando e Exibindo Logs Centralizados com NestJS e ELK Stack</title>
+      <link>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</link>
+      <pubDate>Sun, 02 Apr 2023 03:00:00 +0000</pubDate>
+      
+      <guid>http://updevblog.com/pt/post/monitorando-e-exibindo-logs-centralizados-com-nestjs-e-elk-stack/</guid>
+      
+        <description>Introdução Neste artigo, vamos aprender como monitorar e exibir logs centralizados com NestJS e a ELK Stack (Elasticsearch, Logstash e Kibana).</description>
+      
+    </item>
+    
+  </channel>
+</rss>
